@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Navbar(){
 return(
-  <nav className="container flex align-baseline justify-between px-4 py-3  mx-auto border-solid border-2 border-border-nav[0.69] bg-bg-nav/[0.6] rounded-full">
+  <nav className="container flex sticky top-0 align-baseline justify-between px-4 py-3  mx-auto border-solid border-2 border-border-nav[0.69] bg-bg-nav/[0.6] rounded-full">
   <div className="align-middle">
     <h3 className="text-2xl font-medium text-500 ">
       {/* <img  className="h-12 w-12 float-left pr-2" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="logo" />  */}Enlace</h3>
