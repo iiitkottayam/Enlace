@@ -1,10 +1,14 @@
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'bg-nav': '#3c3c3c',
+        'border-nav': '#712734',
+      }
+    },
   },
   plugins: [],
 }
