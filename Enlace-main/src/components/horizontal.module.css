@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 .HorizontalWrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -10,6 +7,7 @@
   background-size: cover;
   backdrop-filter: brightness(10%);
 }
+
 .page {
   flex: 0 0 auto;
   width: 100vw;
@@ -19,6 +17,7 @@
 .HorizontalWrapper::-webkit-scrollbar {
   display: none;
 }
+
 .HorizontalWrapper {
   scrollbar-width: none;
 }
