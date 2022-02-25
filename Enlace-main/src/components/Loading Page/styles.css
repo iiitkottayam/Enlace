@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Fondamento";
+    src: url("Fondamento-Regular.ttf") format("truetype");
+}
+body{
+    
+    background-color:#EEE8D0;
+}
+.image{
+    position:relative;
+    top:9rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    font-family:'Fondamento';
+    font-size:2.25rem;
+}
+.image img{
+    width:20%;
+    height:auto;
+}
