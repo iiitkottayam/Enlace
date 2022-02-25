@@ -7,7 +7,7 @@ const Navbar = () => {
           Enlace
         </h3>
       </div>
-      <div class="hidden space-x-16 text-500 text-white  lg:flex items-center">
+      <div className="hidden space-x-16 text-500 text-white  lg:flex items-center">
         <a href="">Events</a>
         <a href="">Sponsors</a>
         <a href="">FAQ</a>
@@ -15,10 +15,10 @@ const Navbar = () => {
         <a href="">Workshops</a>
         <a href="">Contact</a>
       </div>
-      <div class="flex lg:hidden">
+      <div className="flex lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
+          className="w-6 h-6"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
