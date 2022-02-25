@@ -1,14 +1,19 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        'bg-nav': '#3c3c3c',
-        'border-nav': '#712734',
-      }
+        "bg-nav": "#3c3c3c",
+        "border-nav": "#712734",
+        "gradient-start": "#ffd4ac",
+        "gradient-stop": "#f0616d",
+        "box-fill": "#0d0d0d",
+      },
+      fontFamily: {
+        reemkufi: ["Reem Kufi", "ui-sans-serif"],
+        poppins: ["Poppins", "ui-sans-serif"],
+      },
     },
   },
   plugins: [],
-}
+};
