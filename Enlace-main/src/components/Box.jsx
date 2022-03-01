@@ -5,7 +5,7 @@ const Box = () => {
       data-aos="zoom-in-down"
       data-aos-duration="1000"
     >
-      <div className="w-full h-full bg-box-fill/80 rounded"></div>;
+      <div className="w-full h-full bg-box-fill/80 rounded"></div>
     </div>
   );
 };
