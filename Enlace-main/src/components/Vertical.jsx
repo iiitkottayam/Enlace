@@ -1,6 +1,16 @@
 import styles from "./vertical.module.css";
 import Nav from "./Navbar.jsx";
 import dates from "../assets/dates.png";
+import RegisterButton from "./RegisterButton.jsx";
+import past1 from "../assets/past/past-1.png";
+import past2 from "../assets/past/past-2.png";
+import past3 from "../assets/past/past-3.png";
+import past4 from "../assets/past/past-4.png";
+import past5 from "../assets/past/past-5.png";
+import past6 from "../assets/past/past-6.png";
+import past7 from "../assets/past/past-7.png";
+import past8 from "../assets/past/past-8.png";
+import logotitle from "../assets/Enlace-logo-name.png";
 
 const Vertical = () => {
   return (
@@ -11,7 +21,7 @@ const Vertical = () => {
         <div className="w-11/12 h-4/6 mx-auto flex flex-col flex-nowrap justify-around items-center pt-16 lg:pt-32 lg:items-start  md:h-3/6 md:pt-16 md:items-start">
           <h2 className="text-4xl text-white lg:text-5xl">Welcome to Enlace!</h2>
           <p className="w-11/12 lg:w-6/12 text-white text-2xl py-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veniam fugit omnis pariatur porro, ipsum molestias velit aperiam suscipit accusamus quos corporis, reiciendis tempore dicta?</p>
-          <a href="#" className="inline-block rounded-lg bg-[#FFF6D8]/90  px-12 py-2 border-2 border-[#FF3D3D]">Register!</a>
+          <RegisterButton />
         </div>
         
       </div>
@@ -28,7 +38,7 @@ const Vertical = () => {
         <div className="w-11/12 h-full mx-auto flex flex-col flex-nowrap justify-around items-start">
         <p className="text-2xl text-white pb-4">Register now and come join us in this wild journey!</p>
         <div className="">
-        <a href="#" className="inline-block rounded bg-[#FFF6D8]/90  px-12 py-2 border-2 border-[#FF3D3D]">Register!</a>
+        <RegisterButton />
         </div>
         <div>
           <p className="text-1xl text-white pt-2">Into the wild</p>
@@ -41,12 +51,28 @@ const Vertical = () => {
         </div>
     </div>
     <div className={styles.page}>
-      <div className="flex justify-center items-center h-full w-full">
-        <img src={dates} alt="dates" />
+      <div className="w-full h-2/6 mx-auto flex  flex-row  flex-start flex-nowrap  ">
+        <img src={past1} alt="album" className="p-8" />
+        <img src={past8} alt="album" className="p-8"/>
+        <img src={logotitle} alt="logo-title" className="p-8"   />
+        <div className="b "><p>About us</p></div>
+
+      </div>
+      <div>
+        <img src={past3} alt="album" />
+        <img src={past4} alt="album" />
+        
       </div>
     </div>
-    <div className={styles.page}> <div className="flex justify-center items-center h-full w-full"><img src={dates} alt="dates" /></div></div>
+    <div className={styles.page}>
+      <div className="flex flex-wrap justify-center items-center h-full w-full">
+        <img src={past5} alt="album" />
+        <img src={past6} alt="album" />
+        <img src={past7} alt="album" />
+        <img src={past8} alt="album" />
 
+      </div>
+    </div>
 
     </div>
   );
