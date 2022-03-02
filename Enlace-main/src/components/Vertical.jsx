@@ -10,7 +10,6 @@ import past5 from "../assets/past/past-5.png";
 import past6 from "../assets/past/past-6.png";
 import past7 from "../assets/past/past-7.png";
 import past8 from "../assets/past/past-8.png";
-import logotitle from "../assets/Enlace-logo-name.png";
 
 const Vertical = () => {
   return (
@@ -43,51 +42,42 @@ const Vertical = () => {
         </div>
 
         <div className="mx-auto w-11/12 ">
-          <p className="text-1xl text-white ">Into the wild</p>
-          <p className="text-2xl text-white pt-2">Into the wild</p>
-          <p className="text-3xl text-white pt-4">Into the wild</p>
-          <p className="text-4xl text-white pt-6">Into the wild</p>
-          <p className="text-5xl text-white pt-6">Into the wild</p>
-          <p className="text-6xl text-white pt-8">Into the wild</p>
+          <p className="text-4xl text-white font-normal ">Into the wild</p>
+          <p className="text-5xl text-white font-medium pt-2">Into the wild</p>
+          <p className="text-6xl text-white font-semibold pt-4">Into the wild</p>
+          <p className="text-7xl text-white font-bold pt-6">Into the wild</p>
+          <p className="text-8xl text-white font-extrabold pt-6">Into the wild</p>
+          <p className="text-9xl text-white font-black pt-8">Into the wild</p>
         </div>
       </div>
       
-      {/* <div className={styles.page}>
-        <div className="w-11/12 h-full mx-auto flex flex-col flex-nowrap justify-around items-start">
-        
-        <div>
-          <p className="text-1xl text-white pt-2">Into the wild</p>
-          <p className="text-2xl text-white pt-4">Into the wild</p>
-          <p className="text-3xl text-white pt-8">Into the wild</p>
-          <p className="text-4xl text-white pt-12">Into the wild</p>
-          <p className="text-5xl text-white pt-16">Into the wild</p>
-          <p className="text-6xl text-white pt-24">Into the wild</p>
-        </div>
-        </div>
-    </div> */}
     <div className={styles.page}>
-      <div className="w-full h-2/6 mx-auto flex  flex-row  flex-start flex-wrap  ">
-        <img src={past1} alt="album" className="p-8" />
-        <img src={past8} alt="album" className="p-8"/>
-        <img src={logotitle} alt="logo-title" className="p-8"   />
-        <div className=""><p className="text-white">About us</p></div>
+      <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+        <img src={past1} alt="album" className="pl-24 " />
+        <img src={past8} alt="album" className="pl-24 "/>
+        <div className="inline-block mt-32 ml-36  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-24 w-94 rounded items-center"><p className="text-white text-4xl py-6 px-20">Who Are We</p></div>
       </div>
-      <div>
-        <img src={past3} alt="album" />
-        <img src={past4} alt="album" />
+      <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+        <img src={past6} alt="album" className="pl-36 pt-16" />
+        
+        <div className="inline-block  ml-64  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+      </div>
+
+    </div>
+    <div className={styles.page}>
+    <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+        <img src={past5} alt="album" className="p-12 basis-2/6" />
+        <img src={past3} alt="album" className="p-16 basis-1/6"/>
+        <div className="inline-block ml-24   basis-2/6  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+      </div>
+      <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+        <img src={past2} alt="album" className="pl-16 pt-16" />
+        <img src={past4} alt="album" className="pl-36 pt-16" />
+        <img src={past7} alt="album" className="pl-36 pt-16" />
+        
         
       </div>
     </div>
-    <div className={styles.page}>
-      <div className="flex flex-wrap justify-center items-center h-full w-full">
-        <img src={past5} alt="album" />
-        <img src={past6} alt="album" />
-        <img src={past7} alt="album" />
-        <img src={past8} alt="album" />
-
-      </div>
-    </div>
-
     </div>
   );
 };
