@@ -57,7 +57,7 @@ const Horizontal = () => {
   return (
     <>
       <div className={styles.HorizontalWrapper} ref={panelsContainer}>
-        <img src = {isScrolling ? jeepGif : jeepPng} alt = "jeep" className = {styles.jeep} id = "jeep"/>
+        <img src = {jeepGif} alt = "jeep" className = {styles.jeep} id = "jeep"/>
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}> 
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             
