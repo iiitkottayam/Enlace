@@ -72,7 +72,7 @@ const Horizontal = () => {
             </div>
             <div className="h-5/6 flex flex-col flex-nowrap justify-around items-center">
               <div
-                className="lg:w-96 lg:h-24 bg-gradient-to-r from-gradient-start to-gradient-stop rounded"
+                className="lg:w-96 lg:h-24 bg-gradient-to-r from-gradient-start to-gradient-stop rounded-xl"
                 data-aos="zoom-in-down"
                 data-aos-duration="1000"
               ></div>
