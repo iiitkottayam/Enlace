@@ -30,7 +30,7 @@ const Horizontal = () => {
       scrollTrigger: {
         trigger: panelsContainer.current,
         pin: true,
-        scrub: 0.7,
+        scrub: 0.4,
         end: () => "+=" + panelsContainer.current.offsetWidth,
       },
     });

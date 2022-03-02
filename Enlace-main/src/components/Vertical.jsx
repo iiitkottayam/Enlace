@@ -32,14 +32,29 @@ const Vertical = () => {
           <p className="w-11/12 lg:w-6/12 text-white text-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae, maxime minima debitis autem similique culpa corporis reiciendis?</p>
         </div>
       </div>
-      <div className={styles.page}> <div className="flex justify-center items-center h-full w-full"><img src={dates} alt="dates" /></div></div>
-      
-      <div className={styles.page}>
-        <div className="w-11/12 h-full mx-auto flex flex-col flex-nowrap justify-around items-start">
-        <p className="text-2xl text-white pb-4">Register now and come join us in this wild journey!</p>
-        <div className="">
+      <div className={styles.page}> 
+      <div className="flex flex-col flex-start justify-center items-center  w-full">
+        <img src={dates} alt="dates" className="pb-16" />
+        </div>
+
+        <div className="mx-auto w-11/12 pb-6">
+        <p className="text-2xl text-white pb-16 ">Register now and come join us in this wild journey!</p>
         <RegisterButton />
         </div>
+
+        <div className="mx-auto w-11/12 ">
+          <p className="text-1xl text-white ">Into the wild</p>
+          <p className="text-2xl text-white pt-2">Into the wild</p>
+          <p className="text-3xl text-white pt-4">Into the wild</p>
+          <p className="text-4xl text-white pt-6">Into the wild</p>
+          <p className="text-5xl text-white pt-6">Into the wild</p>
+          <p className="text-6xl text-white pt-8">Into the wild</p>
+        </div>
+      </div>
+      
+      {/* <div className={styles.page}>
+        <div className="w-11/12 h-full mx-auto flex flex-col flex-nowrap justify-around items-start">
+        
         <div>
           <p className="text-1xl text-white pt-2">Into the wild</p>
           <p className="text-2xl text-white pt-4">Into the wild</p>
@@ -49,14 +64,13 @@ const Vertical = () => {
           <p className="text-6xl text-white pt-24">Into the wild</p>
         </div>
         </div>
-    </div>
+    </div> */}
     <div className={styles.page}>
-      <div className="w-full h-2/6 mx-auto flex  flex-row  flex-start flex-nowrap  ">
+      <div className="w-full h-2/6 mx-auto flex  flex-row  flex-start flex-wrap  ">
         <img src={past1} alt="album" className="p-8" />
         <img src={past8} alt="album" className="p-8"/>
         <img src={logotitle} alt="logo-title" className="p-8"   />
-        <div className="b "><p>About us</p></div>
-
+        <div className=""><p className="text-white">About us</p></div>
       </div>
       <div>
         <img src={past3} alt="album" />
