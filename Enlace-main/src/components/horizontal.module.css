@@ -2,16 +2,18 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  background-image: url("/src/assets/horizontalBackground.svg");
+  background-image: url("../assets/horizontalBackground.svg");
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: brightness(10%);
+  position: relative;
 }
 
 .page {
   flex: 0 0 auto;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .HorizontalWrapper::-webkit-scrollbar {
@@ -20,4 +22,14 @@
 
 .HorizontalWrapper {
   scrollbar-width: none;
+}
+
+.jeep{
+  position: absolute;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  top: 68vh;
+  width: 20rem;
+  height: 10rem;
 }
