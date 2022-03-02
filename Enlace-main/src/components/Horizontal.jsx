@@ -29,11 +29,11 @@ const Horizontal = () => {
 
     gsap.to(panels.current, {
       xPercent: -100 * (totalPanels - 1),
-      ease: "none",
+      ease: "linear",
       scrollTrigger: {
         trigger: panelsContainer.current,
         pin: true,
-        scrub: 0.4,
+        scrub: 1,
         end: () => "+=" + panelsContainer.current.offsetWidth,
       },
     });
