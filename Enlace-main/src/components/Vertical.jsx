@@ -32,48 +32,50 @@ const Vertical = () => {
         </div>
       </div>
       <div className={styles.page}> 
-      <div className="flex flex-col flex-start justify-center items-center  w-full">
+      <div className="flex flex-col flex-start justify-center items-center  w-full pb-16">
         <img src={dates} alt="dates" className="pb-16" />
-        </div>
-
-        <div className="mx-auto w-11/12 pb-6">
         <p className="text-2xl text-white pb-16 ">Register now and come join us in this wild journey!</p>
         <RegisterButton />
         </div>
 
-        <div className="mx-auto w-11/12 ">
-          <p className="text-4xl text-white font-normal ">Into the wild</p>
-          <p className="text-5xl text-white font-medium pt-2">Into the wild</p>
-          <p className="text-6xl text-white font-semibold pt-4">Into the wild</p>
-          <p className="text-7xl text-white font-bold pt-6">Into the wild</p>
-          <p className="text-8xl text-white font-extrabold pt-6">Into the wild</p>
-          <p className="text-9xl text-white font-black pt-8">Into the wild</p>
+        {/* <div className="mx-auto w-11/12 pb-6">
+        <p className="text-2xl text-white pb-16 ">Register now and come join us in this wild journey!</p>
+        <RegisterButton />
+        </div> */}
+
+        <div className="mx-auto w-10/12 ">
+          <p className="text-4xl text-opacity-100 text-white font-normal ">Into the wild</p>
+          <p className="text-5xl text-opacity-80 text-white font-medium pt-2">Into the wild</p>
+          <p className="text-6xl text-opacity-60 text-white font-semibold pt-4">Into the wild</p>
+          <p className="text-7xl text-opacity-40 text-white font-bold pt-6">Into the wild</p>
+          <p className="text-8xl text-opacity-20 text-white font-extrabold pt-6">Into the wild</p>
+          <p className="text-9xl text-opacity-5 text-white font-black pt-8">Into the wild</p>
         </div>
       </div>
       
     <div className={styles.page}>
       <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
-        <img src={past1} alt="album" className="pl-24 " />
-        <img src={past8} alt="album" className="pl-24 "/>
-        <div className="inline-block mt-32 ml-36  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-24 w-94 rounded items-center"><p className="text-white text-4xl py-6 px-20">Who Are We</p></div>
+        <img data-aos="fade-down-right" data-aos-duration="1200" src={past1} alt="album" className="pl-24 " />
+        <img data-aos="flip-up" data-aos-duration="1200" src={past8} alt="album" className="pl-24 "/>
+        <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block mt-32 ml-36  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-24 w-94 rounded items-center"><p className="text-white text-4xl py-6 px-20">Who Are We</p></div>
       </div>
       <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
-        <img src={past6} alt="album" className="pl-36 pt-16" />
+        <img data-aos="zoom-out" data-aos-duration="1200" src={past6} alt="album" className="pl-36 pt-16" />
         
-        <div className="inline-block  ml-64  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+        <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
       </div>
 
     </div>
     <div className={styles.page}>
     <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
-        <img src={past5} alt="album" className="p-12 basis-2/6" />
-        <img src={past3} alt="album" className="p-16 basis-1/6"/>
-        <div className="inline-block ml-24   basis-2/6  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+        <img data-aos="fade-right" data-aos-duration="1200" src={past5} alt="album" className="p-12 basis-2/6" />
+        <img data-aos="flip-right" data-aos-duration="1200" src={past3} alt="album" className="p-16 basis-1/6"/>
+        <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block ml-24   basis-2/6  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
       </div>
       <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
-        <img src={past2} alt="album" className="pl-16 pt-16" />
-        <img src={past4} alt="album" className="pl-36 pt-16" />
-        <img src={past7} alt="album" className="pl-36 pt-16" />
+        <img data-aos="fade-up-right" data-aos-duration="1200" src={past2} alt="album" className="pl-16 pt-16" />
+        <img data-aos="zoom-in-down" data-aos-duration="1200"src={past4} alt="album" className="pl-36 pt-16" />
+        <img data-aos="fade-up" data-aos-duration="1200"src={past7} alt="album" className="pl-36 pt-16" />
         
         
       </div>
