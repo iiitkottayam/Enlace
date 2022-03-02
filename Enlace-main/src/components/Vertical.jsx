@@ -31,17 +31,13 @@ const Vertical = () => {
           <p className="w-11/12 lg:w-6/12 text-white text-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae, maxime minima debitis autem similique culpa corporis reiciendis?</p>
         </div>
       </div>
+      
       <div className={styles.page}> 
       <div className="flex flex-col flex-start justify-center items-center  w-full pb-16">
         <img src={dates} alt="dates" className="pb-16" />
         <p className="text-2xl text-white pb-16 ">Register now and come join us in this wild journey!</p>
         <RegisterButton />
         </div>
-
-        {/* <div className="mx-auto w-11/12 pb-6">
-        <p className="text-2xl text-white pb-16 ">Register now and come join us in this wild journey!</p>
-        <RegisterButton />
-        </div> */}
 
         <div className="mx-auto w-10/12 ">
           <p className="text-4xl text-opacity-100 text-white font-normal ">Into the wild</p>
