@@ -12,7 +12,9 @@ const App = () => {
   return (
     <>
       <Vertical />
+      <div className="hidden lg:block">
       <Horizontal />
+      </div>
     </>
   );
 };
