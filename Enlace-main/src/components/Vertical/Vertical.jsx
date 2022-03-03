@@ -1,15 +1,15 @@
 import styles from "./vertical.module.css";
-import Nav from "./Navbar.jsx";
-import dates from "../assets/dates.png";
-import RegisterButton from "./RegisterButton.jsx";
-import past1 from "../assets/past/past-1.png";
-import past2 from "../assets/past/past-2.png";
-import past3 from "../assets/past/past-3.png";
-import past4 from "../assets/past/past-4.png";
-import past5 from "../assets/past/past-5.png";
-import past6 from "../assets/past/past-6.png";
-import past7 from "../assets/past/past-7.png";
-import past8 from "../assets/past/past-8.png";
+import Nav from "../Navbar.jsx";
+import dates from "../../assets/dates.png";
+import RegisterButton from "../RegisterButton.jsx";
+import past1 from "../../assets/past/past-1.png";
+import past2 from "../../assets/past/past-2.png";
+import past3 from "../../assets/past/past-3.png";
+import past4 from "../../assets/past/past-4.png";
+import past5 from "../../assets/past/past-5.png";
+import past6 from "../../assets/past/past-6.png";
+import past7 from "../../assets/past/past-7.png";
+import past8 from "../../assets/past/past-8.png";
 
 const Vertical = () => {
   return (
