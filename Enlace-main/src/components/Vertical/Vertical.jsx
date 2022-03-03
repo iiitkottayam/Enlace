@@ -47,23 +47,25 @@ const Vertical = () => {
         </div>
       </div>
 
-        <div className="md:hidden ">
+    <div className="lg:hidden md:hidden aboutUs">
+      <h2 className="w-5/6 mx-auto text-center">Who Are We</h2>
+      
+    </div>
 
-        </div>
-
-
-    <div className={styles.page}>
+    <div className={styles.page} hidden>
     <div className="hidden lg:block">
       <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
         <img data-aos="fade-down-right" data-aos-duration="1200" src={past1} alt="album" className="pl-24 " />
         <img data-aos="flip-up" data-aos-duration="1200" src={past8} alt="album" className="pl-24 "/>
-
-        <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+        <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center">
+          <p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
+        </div>
       </div>
+
     </div>
-    
+
     </div>
-    <div className={styles.page}>
+    <div className={styles.page} hidden >
       <div className="hidden lg:block">
       <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
         <img data-aos="fade-right" data-aos-duration="1200" src={past5} alt="album" className="p-12 basis-2/6" />
