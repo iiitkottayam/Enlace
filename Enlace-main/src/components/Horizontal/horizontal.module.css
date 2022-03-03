@@ -17,37 +17,37 @@
 }
 
 .page:nth-of-type(1) {
-  background-image: url("../assets/Horiz1.png");
+  background-image: url("../../assets/Horiz1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page:nth-of-type(2) {
-  background-image: url("../assets/Horiz2.png");
+  background-image: url("../../assets/Horiz2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page:nth-of-type(3) {
-  background-image: url("../assets/Horiz3.png");
+  background-image: url("../../assets/Horiz3.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page:nth-of-type(4) {
-  background-image: url("../assets/Horiz4.png");
+  background-image: url("../../assets/Horiz4.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page:nth-of-type(5) {
-  background-image: url("../assets/Horiz5.png");
+  background-image: url("../../assets/Horiz5.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page:nth-of-type(6) {
-  background-image: url("../assets/Horiz6.png");
+  background-image: url("../../assets/Horiz6.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
