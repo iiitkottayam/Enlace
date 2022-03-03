@@ -12,7 +12,7 @@ import Emeraldbox from "./Emeraldbox.jsx";
 import Sapphirebox from "./Sapphirebox.jsx";
 import FAQbox from "./FAQbox.jsx";
 import jeepGif from "../assets/jeep.gif";
-import jeepPng from "../assets/jeep.png";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
