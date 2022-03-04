@@ -1,4 +1,4 @@
-import placeholder from "../assets/eventposterplaceholder.png";
+import placeholder from "../../assets/eventposterplaceholder.png";
 
 const Eventteaser = ({ title, image }) => {
   return (

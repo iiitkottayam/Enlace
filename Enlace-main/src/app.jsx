@@ -3,8 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Horizontal from "./components/Horizontal/Horizontal";
 import Vertical from "./components/Vertical/Vertical";
-import Competitions from "./components/Competitions";
-import Events from "./components/Events";
+import Competitions from "./components/Pages/Competitions";
+import Events from "./components/Pages/Events";
 
 const App = () => {
   AOS.init({
