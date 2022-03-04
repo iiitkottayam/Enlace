@@ -39,6 +39,16 @@
 	background-size: 100% 100%;
 	position: relative;
 }
+.page:nth-of-type(7) {
+	background: url(../../assets/Landing3.png);
+	background-size: 100% 100%;
+	position: relative;
+}
+.page:nth-of-type(8) {
+	background: url(../../assets/Landing3.png);
+	background-size: 100% 100%;
+	position: relative;
+}
 
 @media screen and (max-width: 500px) {
 	.page {
@@ -55,6 +65,11 @@
 	}
 	.page:nth-of-type(3) {
 		background: url(../../assets/LandingM3.png);
+		background-size: 100% 100%;
+		position: relative;
+	}
+	.page:nth-of-type(4) {
+		background: url(../../assets/LandingM1.png);
 		background-size: 100% 100%;
 		position: relative;
 	}
