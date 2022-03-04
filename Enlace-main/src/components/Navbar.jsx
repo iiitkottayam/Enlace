@@ -11,14 +11,8 @@ const Navbar = () => {
 			<div className="text-white">
 				<Link to="/">
 					<div className="md:flex">
-						<img
-							className="h-10 w-14 float-left pr-2"
-							src={logo}
-							alt="logo"
-						/>
-						<h3 className="text-3xl font-reemkufi mt-0.5">
-							ENLACE
-						</h3>
+						<img className="h-10 w-14 float-left pr-2" src={logo} alt="logo" />
+						<h3 className="text-3xl font-reemkufi mt-0.5">ENLACE</h3>
 					</div>
 				</Link>
 			</div>
