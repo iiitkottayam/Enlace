@@ -38,7 +38,7 @@ const Horizontal = () => {
   }, []);
 
   useEffect(() => {
-    gsap.to("#jeep",{
+    gsap.to("#jeep", {
       scrollTrigger: {
         trigger: "#jeep",
         start: "top center",
@@ -55,8 +55,8 @@ const Horizontal = () => {
   return (
     <>
       <div className={styles.HorizontalWrapper} ref={panelsContainer}>
-        <img src = {jeepGif} alt = "jeep" className = {styles.jeep} id = "jeep"/>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}> 
+        <img src={jeepGif} alt="jeep" className={styles.jeep} id="jeep" />
+        <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}>
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             <Timeline />
           </div>
@@ -121,7 +121,7 @@ const Horizontal = () => {
           </div>
         </div>
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 4)}>
-          <div className="mx-auto h-full w-5/6 flex flex-col flex-wrap justify-evenly items-center">
+          <div className="mx-auto h-full w-4/6 flex flex-row flex-wrap justify-evenly items-center">
             <FAQbox question="Why?" answer="Why not?" />
             <FAQbox question="Where?" answer="Here" />
             <FAQbox />

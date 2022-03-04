@@ -12,6 +12,10 @@ module.exports = {
       fontFamily: {
         reemkufi: ["Reem Kufi", "ui-sans-serif"],
         poppins: ["Poppins", "ui-sans-serif"],
+        montserrat: ["Montserrat", "ui-sans-serif"],
+      },
+      backgroundImage: {
+        "competitions-bg": 'url("/src/assets/competitions-background.png")',
       },
     },
   },
