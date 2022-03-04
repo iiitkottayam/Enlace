@@ -17,9 +17,9 @@ const Navbar = () => {
         <Navbarlink title="Events" route="/events" />
         <Navbarlink title="Competitions" route="/competitions" />
         <Navbarlink title="About us" route="/" />
-        <Navbarlink title="Sponsors" route="/" />
-        <Navbarlink title="FAQ" route="/" />
-        <Navbarlink title="Register" route="/" />
+        <Navbarlink title="Sponsors" route="/#sponsors" />
+        <Navbarlink title="FAQ" route="/#faq" />
+        <Navbarlink title="Register" route="/#register" />
       </div>
       <div className="flex md:hidden">
         <svg
