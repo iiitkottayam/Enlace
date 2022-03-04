@@ -68,7 +68,11 @@ const Horizontal = () => {
             </h1>
           </div>
         </div>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 2)}>
+        <div
+          className={styles.page}
+          ref={(e) => createPanelsRefs(e, 2)}
+          id="sponsors"
+        >
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="flex flex-col flex-nowrap justify-center items-center">
               <h1 className="font-reemkufi lg:text-7xl text-white">
@@ -120,8 +124,12 @@ const Horizontal = () => {
             </div>
           </div>
         </div>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 4)}>
-          <div className="mx-auto h-full w-4/6 flex flex-row flex-wrap justify-evenly items-center">
+        <div
+          className={styles.page}
+          ref={(e) => createPanelsRefs(e, 4)}
+          id="faq"
+        >
+          <div className="mx-auto h-full w-4/6 flex flex-col flex-wrap justify-evenly items-center">
             <FAQbox question="Why?" answer="Why not?" />
             <FAQbox question="Where?" answer="Here" />
             <FAQbox />
@@ -130,7 +138,11 @@ const Horizontal = () => {
             <FAQbox />
           </div>
         </div>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 5)}>
+        <div
+          className={styles.page}
+          ref={(e) => createPanelsRefs(e, 5)}
+          id="register"
+        >
           <div className="h-full w-full flex flex-col flex-nowrap justify-center items-center">
             <h1 className="font-reemkufi lg:text-7xl text-white mb-20">
               Register Now!
