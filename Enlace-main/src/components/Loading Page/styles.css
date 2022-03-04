@@ -1,22 +1,21 @@
 @font-face {
-    font-family: "ReemKufi";
-    src: url("ReemKufi-VariableFont_wght.ttf") format("truetype");
+  font-family: "ReemKufi";
+  src: url("ReemKufi-VariableFont_wght.ttf") format("truetype");
 }
-body{
-    
-    background-color:#EEE8D0;
+body {
+  background-color: #eee8d0;
 }
-.image{
-    position:relative;
-    top:9rem;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    font-family:'ReemKufi';
-    font-size:2.25rem;
+.image {
+  position: relative;
+  top: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "ReemKufi";
+  font-size: 2.25rem;
 }
-.image img{
-    width:20%;
-    height:auto;
+.image img {
+  width: 20%;
+  height: auto;
 }

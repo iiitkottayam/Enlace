@@ -13,7 +13,6 @@ import Sapphirebox from "./Sapphirebox.jsx";
 import FAQbox from "./FAQbox.jsx";
 import jeepGif from "../assets/jeep.gif";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Horizontal = () => {
@@ -40,7 +39,7 @@ const Horizontal = () => {
   }, []);
 
   useEffect(() => {
-    gsap.to("#jeep",{
+    gsap.to("#jeep", {
       scrollTrigger: {
         trigger: "#jeep",
         start: "top center",
@@ -57,10 +56,9 @@ const Horizontal = () => {
   return (
     <>
       <div className={styles.HorizontalWrapper} ref={panelsContainer}>
-        <img src = {jeepGif} alt = "jeep" className = {styles.jeep} id = "jeep"/>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}> 
+        <img src={jeepGif} alt="jeep" className={styles.jeep} id="jeep" />
+        <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}>
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
-            
             <div
               className="h-5/6 flex flex-col flex-nowrap justify-evenly items-center self-end"
               data-aos="fade-down"
@@ -96,8 +94,8 @@ const Horizontal = () => {
               </div>
               <p className="w-full font-poppins lg:text-2xl text-white text-left">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Veritatis ea tempore inventore. Cum dolor earum repellendus sequi
-                est, temporibus inventore.
+                Veritatis ea tempore inventore. Cum dolor earum repellendus
+                sequi est, temporibus inventore.
               </p>
               <div className="w-full flex flex-row justify-around items-center">
                 <div className="lg:w-10 lg:h-10 rounded-full bg-gradient-to-r from-gradient-start to-gradient-stop"></div>
@@ -168,7 +166,7 @@ const Horizontal = () => {
           </div>
         </div>
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 4)}>
-          <div className="mx-auto h-full w-5/6 flex flex-col flex-wrap justify-evenly items-center">
+          <div className="mx-auto h-full w-4/6 flex flex-row flex-wrap justify-evenly items-center">
             <FAQbox question="Why?" answer="Why not?" />
             <FAQbox question="Where?" answer="Here" />
             <FAQbox />
@@ -189,7 +187,6 @@ const Horizontal = () => {
         </div>
       </div>
     </>
-    
   );
 };
 
