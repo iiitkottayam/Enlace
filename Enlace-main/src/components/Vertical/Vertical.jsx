@@ -22,41 +22,47 @@ const Vertical = () => {
       <Nav />
       <div className={styles.page}>
         <div className="w-11/12 h-4/6 mx-auto flex flex-col flex-nowrap justify-around text-center items-center pt-48 lg:pt-32 lg:items-start lg:text-left md:text-left md:h-3/6 md:pt-16 md:items-start">
-          <h2 className="text-4xl text-white lg:text-5xl font-semibold">Welcome to Enlace!</h2>
-          <p className="w-9/12  pb-60 pt-12 lg:w-6/12 text-white text-1xl lg:text-3xl lg:py-12">A fest to mirror the beautiful chaos of nature and keep you on your toes, stir your souls and spark your creative flair.  </p>
+          <h2 className="text-4xl text-white lg:text-5xl font-reemkufi">Welcome to Enlace!</h2>
+          <p className="w-9/12  pb-60 pt-12 lg:w-6/12 text-white text-1xl lg:text-3xl lg:pt-10 lg:pb-14 font-poppins font-light">a fest to mirror the beautiful chaos of nature and keep you on your toes, stir your souls and spark your creative flair.  </p>
           <RegisterButton />
         </div>
 
       </div>
       <div className={styles.page}>
         <div className="mx-auto w-11/12 h-full text-center flex flex-col flex-nowrap justify-center  items-center pt-60 lg:pt-48  lg:items-start lg:text-left md:text-left md:h-4/6 md:items-start">
-          <h2 className="text-4xl text-white pb-8 lg:text-5xl lg:pb-8 lg:pb-24 pt-24">Welcome to Enlace!</h2>
-          <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl pt-16 pb-4 hidden  lg:block md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veniam fugit omnis pariatur porro, ipsum molestias velit aperiam suscipit accusamus quos corporis, reiciendis tempore dicta?</p>
-          <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl py-16 hidden lg:block md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veniam fugit omnis pariatur porro, ipsum molestias velit aperiam suscipit accusamus quos corporis, reiciendis tempore dicta?</p>
-          <p className="w-11/12 lg:w-6/12 text-white text-1xl lg:text-2xl py-8 lg:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis, </p>
+          <h2 className="text-4xl text-white pb-8 lg:text-5xl lg:pb-0 pt-16 font-reemkufi">
+            <span className="text-[#F48614] lg:text-[#FFD74B]">Enlace</span>
+            , IIITk's cultural fest,
+          </h2>
+          <div className="font-poppins font-light">
+            <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl pt-16 pb-4 lg:pt-8 hidden  lg:block md:block">has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always been the norm.</p>
+            <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl py-4 hidden lg:block md:block">It’s the amalgamation of mind gruelling competitions, thought provoking expert talks and workshops that stimulate your cerebral matter!</p>
+            <p className="w-11/12 lg:w-6/12 text-white text-1xl lg:text-2xl py-8 lg:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis, </p>
+          </div>
         </div>
       </div>
 
       <div className={styles.page}>
-        <div className="lg:hidden w-10/12 mx-auto text-white text-1xl py-2 pt-8 text-center pb-36 ">
-          <p className="pb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis, it aperiam suscipit accusamus quos corporis,</p>
+        <div className="lg:hidden w-10/12 mx-auto text-white text-1xl py-2 pt-8 text-center pb-36 font-poppins">
+          <p className="pb-0 lg:pb-16">Lorem ipsum dolor sit amet consectetur adipisicing elit.aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis, it aperiam suscipit accusamus quos corporis,</p>
         </div>
 
         <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-16">
-          <img src={dates} alt="dates" className="pb-36" />
-          <p className="text-1xl lg:text-2xl text-white pb-20 ">Register now and come join us in this wild journey!</p>
+          <img src={dates} alt="dates" className="pb-28 lg:pb-40 w-8/12 lg:w-2/5 ml-2 -mt-20" />
+          <p className="text-1xl lg:text-2xl text-white pb-20 mx-auto text-center w-9/12 font-poppins">
+            <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
+            now and come join us in this wild journey!</p>
           <RegisterButton />
         </div>
 
-        <div className="hidden lg:block mx-auto w-10/12 ">
-          <p className="text-4xl text-opacity-100 text-white font-normal ">Into the wild</p>
+        <div className="hidden lg:block mx-auto w-10/12 font-reemkufi">
           <p className="text-5xl text-opacity-70 text-white font-medium pt-2">Into the wild</p>
           <p className="text-6xl text-opacity-50 text-white font-semibold pt-4">Into the wild</p>
           <p className="text-8xl text-opacity-30 text-white font-bold pt-6">Into the wild</p>
           <p className="text-9xl text-opacity-5 text-white font-black pt-8">Into the wild</p>
         </div>
 
-        <div className="lg:hidden pt-32 pb-12">
+        <div className="lg:hidden pt-16 pb-12">
           <h1 className="text-center text-white text-3xl font-semibold ">Who Are We</h1>
         </div>
       </div>
