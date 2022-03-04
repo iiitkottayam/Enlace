@@ -1,6 +1,6 @@
 const EventBox = ({ name, time }) => {
 
-  const passive = "p-0.5 lg:w-96 lg:h-35 w-88 h-40 bg-gradient-to-r from-gradient-start/80 to-gradient-stop/80 rounded-xl box-border m-2 cursor-pointer";
+  const passive = "p-0.5  lg:w-96 lg:h-45 bg-gradient-to-r from-gradient-start/80 to-gradient-stop/80 rounded-xl box-border m-2 cursor-pointer";
   const active = "hover:bg-gradient-to-r hover:from-gradient-start hover:to-gradient-stop"
 
   return (
@@ -18,3 +18,5 @@ const EventBox = ({ name, time }) => {
 };
 
 export default EventBox;
+
+

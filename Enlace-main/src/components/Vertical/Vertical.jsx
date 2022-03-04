@@ -11,6 +11,7 @@ import past6 from "../../assets/past/past-6.png";
 import past7 from "../../assets/past/past-7.png";
 import past8 from "../../assets/past/past-8.png";
 import EventBox from "../Boxes/EventBox";
+import EventBoxSm from "../Boxes/EventBoxSm";
 
 const Vertical = () => {
   return (
@@ -95,14 +96,25 @@ const Vertical = () => {
         </div>
       </div>
 
-      <div className={styles.page}>
+      <div className="mobi-1 lg:hidden">
         <div className="lg:hidden">
-          <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-12 text-center">
+          <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
             <p className="text-white font-semibold text-4xl py-4">Day 1</p>
-            <EventBox />
-            <EventBox />
-            <EventBox />
-
+            <EventBoxSm />
+            <EventBoxSm />
+            <EventBoxSm />
+            <EventBoxSm />
+          </div>
+        </div>
+      </div>
+      <div className="mobi-2 lg:hidden">
+        <div className="lg:hidden">
+          <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
+            <p className="text-white font-semibold text-4xl py-4">Day 2</p>
+            <EventBoxSm />
+            <EventBoxSm />
+            <EventBoxSm />
+            <EventBoxSm />
           </div>
         </div>
       </div>

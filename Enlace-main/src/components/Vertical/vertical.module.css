@@ -48,6 +48,17 @@
 	background: url(../../assets/Landing3.png);
 	background-size: 100% 100%;
 	position: relative;
+	display: none;
+}
+
+.mobi {
+	height: 650px;
+}
+
+.mobi:nth-of-type(1) {
+	background: url(../../assets/Landing1.png);
+	background-size: 100% 100%;
+	padding-top: 100px;
 }
 
 @media screen and (max-width: 500px) {
@@ -69,6 +80,26 @@
 		position: relative;
 	}
 	.page:nth-of-type(4) {
+		background: url(../../assets/LandingM1.png);
+		background-size: 100% 100%;
+		position: relative;
+	}
+	.page:nth-of-type(5) {
+		background: url(../../assets/LandingM1.png);
+		background-size: 100% 100%;
+		position: relative;
+	}
+	.page:nth-of-type(6) {
+		background: url(../../assets/LandingM1.png);
+		background-size: 100% 100%;
+		position: relative;
+	}
+	.page:nth-of-type(7) {
+		background: url(../../assets/LandingM1.png);
+		background-size: 100% 100%;
+		position: relative;
+	}
+	.page:nth-of-type(8) {
 		background: url(../../assets/LandingM1.png);
 		background-size: 100% 100%;
 		position: relative;
