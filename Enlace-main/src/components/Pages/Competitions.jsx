@@ -9,7 +9,7 @@ const Competitions = () => {
       <div className="h-full w-full bg-competitions-bg">
         <Nav />
         <div className="h-full w-full pt-36">
-          <h1 className="font-reemkufi lg:text-4xl text-white text-center">
+          <h1 className="font-reemkufi text-4xl text-white text-center">
             Competitions
           </h1>
           <div className="mx-auto h-full w-5/6 flex flex-row flex-wrap justify-around items-center">
