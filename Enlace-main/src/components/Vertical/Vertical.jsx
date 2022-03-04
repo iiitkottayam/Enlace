@@ -12,6 +12,9 @@ import past7 from "../../assets/past/past-7.png";
 import past8 from "../../assets/past/past-8.png";
 import EventBox from "../Boxes/EventBox";
 import EventBoxSm from "../Boxes/EventBoxSm";
+import Emeraldbox from "../Boxes/Emeraldbox.jsx";
+import FAQbox from "../Boxes/FAQbox.jsx";
+
 
 const Vertical = () => {
   return (
@@ -96,7 +99,7 @@ const Vertical = () => {
         </div>
       </div>
 
-      <div className="mobi-1 lg:hidden">
+      <div className={styles.page}>
         <div className="lg:hidden">
           <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
             <p className="text-white font-semibold text-4xl py-4">Day 1</p>
@@ -107,7 +110,7 @@ const Vertical = () => {
           </div>
         </div>
       </div>
-      <div className="mobi-2 lg:hidden">
+      <div className={styles.page}>
         <div className="lg:hidden">
           <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
             <p className="text-white font-semibold text-4xl py-4">Day 2</p>
@@ -119,7 +122,48 @@ const Vertical = () => {
         </div>
       </div>
 
-    </div>
+      <div className={styles.page}>
+        <div className="lg:hidden">
+          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-4xl">
+            <p className="font-semibold ">Total prize of </p>
+            <p className="font-semibold ">Rs. 55,000</p>
+            <p className="font-regular ">+ exiciting gifts from</p>
+            <p className="py-6 font-bold text-4xl">Our Sponsors</p>
+            <p className=" font-semibold text-2xl py-8">Gold</p>
+          </div>
+          <div className="mx-auto text-center text-white flex  justify-center item-center">
+            <Emeraldbox />
+          </div>
+        </div>
+      </div >
+
+      <div className={styles.page}>
+        <div className="lg:hidden">
+          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-3xl">
+            <p className=" font-semibold text-2xl py-4">Silver</p>
+          </div>
+          <div className="mx-auto text-center text-white flex  justify-center item-center">
+            <Emeraldbox />
+          </div>
+          <div className="mx-auto w-full text-center text-white py-8 space-y-4 text-3xl">
+            <p className="text-4xl font-bold">FAQ</p>
+            <FAQbox />
+          </div>
+        </div>
+      </div >
+
+      <div className={styles.page}>
+        <div className="lg:hidden">
+          <div className="mx-auto w-full text-center text-white py-8 space-y-8 text-3xl">
+            <FAQbox />
+            <FAQbox />
+          </div>
+        </div>
+      </div >
+
+
+
+    </div >
   );
 };
 
