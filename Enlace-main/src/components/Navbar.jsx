@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import Navbarlink from "./Navbarlink";
 
 const Navbar = () => {
   return (
@@ -13,12 +14,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hidden space-x-8 text-500 text-white lg:space-x-16  md:flex items-center">
-        <Link to="/events">Events</Link>
-        <Link to="/competitions">Competitions</Link>
-        <a href="">About Us</a>
-        <a href="">Sponsors</a>
-        <a href="">FAQ</a>
-        <a href="">Register</a>
+        <Navbarlink title="Events" route="/events" />
+        <Navbarlink title="Competitions" route="/competitions" />
+        <Navbarlink title="About us" route="/" />
+        <Navbarlink title="Sponsors" route="/" />
+        <Navbarlink title="FAQ" route="/" />
+        <Navbarlink title="Register" route="/" />
       </div>
       <div className="flex md:hidden">
         <svg
