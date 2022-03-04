@@ -1,17 +1,16 @@
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useScrollDirection } from "react-use-scroll-direction";
+// import { useScrollDirection } from "react-use-scroll-direction";
 import { useEffect, useRef } from "react";
 import styles from "./horizontal.module.css";
-import Arrow1 from "./Arrow1.jsx";
-import Arrow2 from "./Arrow2.jsx";
-import Box from "./Box.jsx";
-import Goldbox from "./Goldbox.jsx";
-import Silverbox from "./Silverbox.jsx";
-import Emeraldbox from "./Emeraldbox.jsx";
-import Sapphirebox from "./Sapphirebox.jsx";
-import FAQbox from "./FAQbox.jsx";
-import jeepGif from "../assets/jeep.gif";
+import Arrow2 from "../Arrows/Arrow2.jsx";
+import Goldbox from "../Boxes/Goldbox.jsx";
+import Silverbox from "../Boxes/Silverbox.jsx";
+import Emeraldbox from "../Boxes/Emeraldbox.jsx";
+import Sapphirebox from "../Boxes/Sapphirebox.jsx";
+import FAQbox from "../Boxes/FAQbox.jsx";
+import jeepGif from "../../assets/jeep.gif";
+import Timeline from "../Timeline/Timeline.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +27,7 @@ const Horizontal = () => {
 
     gsap.to(panels.current, {
       xPercent: -100 * (totalPanels - 1),
-      ease: "linear",
+      ease: "none",
       scrollTrigger: {
         trigger: panelsContainer.current,
         pin: true,
@@ -51,7 +50,7 @@ const Horizontal = () => {
     });
   }, []);
 
-  const { isScrolling } = useScrollDirection();
+  // const { isScrolling } = useScrollDirection();
 
   return (
     <>
@@ -59,51 +58,7 @@ const Horizontal = () => {
         <img src={jeepGif} alt="jeep" className={styles.jeep} id="jeep" />
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}>
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
-            <div
-              className="h-5/6 flex flex-col flex-nowrap justify-evenly items-center self-end"
-              data-aos="fade-down"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              <Arrow1 />
-              <h2 className="font-reemkufi lg:text-5xl text-white">Day 2</h2>
-            </div>
-            <div className="h-5/6 flex flex-col flex-nowrap justify-around items-center">
-              <div
-                className="lg:w-96 lg:h-24 bg-gradient-to-r from-gradient-start to-gradient-stop rounded-xl"
-                data-aos="zoom-in-down"
-                data-aos-duration="1000"
-              ></div>
-              <Box />
-              <Box />
-              <Box />
-            </div>
-            <div
-              className="h-5/6 w-2/6 flex flex-col flex-nowrap justify-evenly items-center"
-              data-aos="flip-up"
-              data-aos-delay="500"
-              data-aos-duration="1000"
-            >
-              <div className="w-full text-left">
-                <h1 className="font-reemkufi lg:text-7xl text-white my-3">
-                  Day 1
-                </h1>
-                <h3 className="font-reemkufi lg:text-5xl text-white">
-                  25th March
-                </h3>
-              </div>
-              <p className="w-full font-poppins lg:text-2xl text-white text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Veritatis ea tempore inventore. Cum dolor earum repellendus
-                sequi est, temporibus inventore.
-              </p>
-              <div className="w-full flex flex-row justify-around items-center">
-                <div className="lg:w-10 lg:h-10 rounded-full bg-gradient-to-r from-gradient-start to-gradient-stop"></div>
-                <p className="lg:text-2xl text-white font-semibold">
-                  Highlight: Dance by Bond...James
-                </p>
-              </div>
-            </div>
+            <Timeline />
           </div>
         </div>
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 1)}>

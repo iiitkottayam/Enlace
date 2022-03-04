@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Horizontal from "./components/Horizontal";
-import Vertical from "./components/Vertical";
+import Horizontal from "./components/Horizontal/Horizontal";
+import Vertical from "./components/Vertical/Vertical";
 import Competitions from "./components/Competitions";
 import Events from "./components/Events";
 
@@ -18,7 +18,9 @@ const App = () => {
           <Route exact path="/">
             <>
               <Vertical />
-              <Horizontal />
+              <div className="hidden lg:block">
+                <Horizontal />
+              </div>
             </>
           </Route>
           <Route exact path="/competitions">
