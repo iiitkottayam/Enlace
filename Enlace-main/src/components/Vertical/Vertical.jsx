@@ -139,29 +139,27 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className="mx-auto w-4/6 text-center text-white py-12 space-y-4 text-3xl">
-
+          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-3xl">
             <p className=" font-semibold text-2xl py-4">Silver</p>
           </div>
           <div className="mx-auto text-center text-white flex  justify-center item-center">
             <Emeraldbox />
           </div>
-
-          <div className="mx-auto w-full text-center text-white py-12 space-y-4 text-3xl">
+          <div className="mx-auto w-full text-center text-white py-8 space-y-4 text-3xl">
             <p className="text-4xl font-bold">FAQ</p>
             <FAQbox />
           </div>
-
-
         </div>
       </div >
 
       <div className={styles.page}>
-        <div className="lg:hidden mx-auto text-center text-white space-y-4">
-
-
+        <div className="lg:hidden">
+          <div className="mx-auto w-full text-center text-white py-8 space-y-8 text-3xl">
+            <FAQbox />
+            <FAQbox />
+          </div>
         </div>
-      </div>
+      </div >
 
 
 
