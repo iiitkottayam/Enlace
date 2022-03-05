@@ -128,4 +128,27 @@ const events = {
     }]
 }
 
-export { events }
+const dayDetails = {
+    1:{
+        desc: "Eget sit amet tellus cras adipiscing enim eu turpis. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Diam phasellus vestibulum lorem sed risus ultricies tristique. Duis ultricies lacus sed turpis",
+        highlight: "adipiscing enim eu turpis"
+    },
+    2:{
+        desc: "Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nunc sed blandit libero volutpat sed cras ornare. Est ultricies integer quis auctor elit sed vulputate mi",
+        highlight: "ullamcorper velit. Nunc sed blandit"
+    },
+    3:{
+        desc: "Ac ut consequat semper viverra. Metus dictum at tempor commodo ullamcorper a lacus. Tristique senectus et netus et malesuada fames ac",
+        highlight: "Urna cursus eget nunc scelerisque"
+    },
+    4:{
+        desc: "Massa enim nec dui nunc mattis enim ut. Adipiscing enim eu turpis egestas pretium. Donec ultrices tincidunt arcu non sodales neque sodales",
+        highlight: "Augue mauris augue neque gravida in fermentum"
+    },
+    5:{
+        desc: "Vitae auctor eu augue ut lectus. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Egestas dui id ornare arcu odio ut sem nulla",
+        highlight: "Leo a diam sollicitudin tempor id eu"
+    }
+}
+
+export { events, dayDetails }
