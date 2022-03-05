@@ -1,63 +1,38 @@
-.HorizontalWrapper {
+.HorizontalWrapper{
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* backdrop-filter: brightness(10%); */
-  position: relative;
+  flex-direction: row;
+  width: 600vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: url("../../assets/Frame.png");
+  scrollbar-width: none;
 }
+::-webkit-scrollbar{
+  display: none;
+}
+.OuterWrapper{
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+/* ::-webkit-scrollbar{
+  display: none;
+}
+.OuterWrapper::-webkit-scrollbar{
+  display: none;
+} */
 
 .page {
   background-color: #000000;
-  flex: 0 0 auto;
-  width: 100vw;
   height: 100vh;
-  overflow: hidden;
-}
-
-.page:nth-of-type(1) {
-  background-image: url("../../assets/Horiz1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page:nth-of-type(2) {
-  background-image: url("../../assets/Horiz2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page:nth-of-type(3) {
-  background-image: url("../../assets/Horiz3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page:nth-of-type(4) {
-  background-image: url("../../assets/Horiz4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page:nth-of-type(5) {
-  background-image: url("../../assets/Horiz5.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.page:nth-of-type(6) {
-  background-image: url("../../assets/Horiz6.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.HorizontalWrapper::-webkit-scrollbar {
-  display: none;
-}
-
-.HorizontalWrapper {
-  scrollbar-width: none;
+  width: 100vw;
+  background-color: transparent;
 }
 
 .jeep {

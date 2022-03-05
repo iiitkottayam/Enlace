@@ -15,53 +15,54 @@ import Timeline from "../Timeline/Timeline.jsx";
 gsap.registerPlugin(ScrollTrigger);
 
 const Horizontal = () => {
-  const panels = useRef([]);
-  const panelsContainer = useRef();
+  // const panels = useRef([]);
+  // const panelsContainer = useRef();
 
-  const createPanelsRefs = (panel, index) => {
-    panels.current[index] = panel;
-  };
+  // const createPanelsRefs = (panel, index) => {
+  //   panels.current[index] = panel;
+  // };
 
-  useEffect(() => {
-    const totalPanels = panels.current.length;
+  // useEffect(() => {
+  //   const totalPanels = panels.current.length;
 
-    gsap.to(panels.current, {
-      xPercent: -100 * (totalPanels - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: panelsContainer.current,
-        pin: true,
-        scrub: 1,
-        end: () => "+=" + panelsContainer.current.offsetWidth,
-      },
-    });
-  }, []);
+  //   gsap.to(panels.current, {
+  //     xPercent: -100 * (totalPanels - 1),
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: panelsContainer.current,
+  //       pin: true,
+  //       scrub: 1,
+  //       end: () => "+=" + panelsContainer.current.offsetWidth,
+  //     },
+  //   });
+  // }, []);
 
   useEffect(() => {
     gsap.to("#jeep", {
       scrollTrigger: {
         trigger: "#jeep",
         start: "top center",
-        end: "bottom -800px",
-        scrub: 1,
+        markers: true,
+        scrub: 5,
       },
-      x: document.body.clientWidth - 320,
+      x: document.getElementById("horizontal").clientWidth + 24800,
       ease: "none",
     });
+    console.log(document.getElementById("horizontal").clientWidth);
   }, []);
 
   // const { isScrolling } = useScrollDirection();
 
   return (
-    <>
-      <div className={styles.HorizontalWrapper} ref={panelsContainer}>
-        <img src={jeepGif} alt="jeep" className={styles.jeep} id="jeep" />
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}>
+    <div className = {styles.OuterWrapper}>
+      <div className = {styles.HorizontalWrapper} id = "horizontal">
+        <img src = {jeepGif} alt = "jeep" className = {styles.jeep} id = "jeep" />
+        <div className={styles.page}>
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             <Timeline />
           </div>
         </div>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 1)}>
+        <div className={styles.page}>
           <div className="w-full h-full flex justify-center items-center">
             <h1 className="font-reemkufi lg:text-7xl text-white">
               Total Prize of <br /> ₹ 55,000
@@ -70,7 +71,6 @@ const Horizontal = () => {
         </div>
         <div
           className={styles.page}
-          ref={(e) => createPanelsRefs(e, 2)}
           id="sponsors"
         >
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
@@ -88,7 +88,7 @@ const Horizontal = () => {
             </div>
           </div>
         </div>
-        <div className={styles.page} ref={(e) => createPanelsRefs(e, 3)}>
+        <div className={styles.page}>
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="w-2/5 h-full flex flex-col flex-nowrap justify-around items-center">
               <div className="w-full h-2/5 flex flex-col flex-nowrap justify-around items-center">
@@ -126,7 +126,6 @@ const Horizontal = () => {
         </div>
         <div
           className={styles.page}
-          ref={(e) => createPanelsRefs(e, 4)}
           id="faq"
         >
           <div className="mx-auto h-full w-4/6 flex flex-col flex-wrap justify-evenly items-center">
@@ -140,7 +139,6 @@ const Horizontal = () => {
         </div>
         <div
           className={styles.page}
-          ref={(e) => createPanelsRefs(e, 5)}
           id="register"
         >
           <div className="h-full w-full flex flex-col flex-nowrap justify-center items-center">
@@ -153,7 +151,7 @@ const Horizontal = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
