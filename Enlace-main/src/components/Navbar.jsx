@@ -34,7 +34,7 @@ const Navbar = () => {
 							data-aos-duration="500"
 							onMouseEnter={() => setIsShown(true)}
 							onMouseLeave={() => setIsShown(false)}
-							className="hidden md:flex flex-col text-center box-border container w-40 h-36 absolute top-16 justify-between px-0 py-4 -mx-9 border-solid border-2 border-[#DEBF75] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-2xl "
+							className="hidden md:flex flex-col text-center box-border container w-40 h-36 absolute top-16 justify-between px-0 py-4 -mx-9 border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-2xl "
 						>
 							<Navbarlink title="Who We Are" route="/whoweare" />
 							<Navbarlink title="Contact Us" route="/contactus" />
