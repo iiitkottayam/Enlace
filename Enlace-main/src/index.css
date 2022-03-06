@@ -25,6 +25,10 @@
 	background-color: #8070d4;
 } */
 
+body{
+  overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 1em;
 }

@@ -1,6 +1,5 @@
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// import { useScrollDirection } from "react-use-scroll-direction";
 import { useEffect, useRef } from "react";
 import styles from "./horizontal.module.css";
 import Arrow2 from "../Arrows/Arrow2.jsx";
@@ -9,8 +8,8 @@ import Silverbox from "../Boxes/Silverbox.jsx";
 import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import Sapphirebox from "../Boxes/Sapphirebox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
-import jeepGif from "../../assets/jeep.gif";
 import Timeline from "../Timeline/Timeline.jsx";
+import jeepGif from "../../assets/jeep.gif";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,31 +30,27 @@ const Horizontal = () => {
       scrollTrigger: {
         trigger: panelsContainer.current,
         pin: true,
-        scrub: 1,
+        scrub: 1.5,
         end: () => "+=" + panelsContainer.current.offsetWidth,
       },
     });
-  }, []);
 
-  useEffect(() => {
-    gsap.to("#jeep", {
+    gsap.to(".jeep", {
       scrollTrigger: {
-        trigger: "#jeep",
-        start: "top center",
-        end: "bottom -800px",
+        trigger: ".jeep",
+        start: "bottom 90%",
+        end: "bottom -1000px",
         scrub: 1,
       },
-      x: document.body.clientWidth - 320,
+      x: 7800,
       ease: "none",
     });
   }, []);
 
-  // const { isScrolling } = useScrollDirection();
-
   return (
     <>
       <div className={styles.HorizontalWrapper} ref={panelsContainer}>
-        <img src={jeepGif} alt="jeep" className={styles.jeep} id="jeep" />
+        <img src = {jeepGif} alt = "jeep" className = "jeep" style = {{position: "absolute", zIndex: 0, width: "20rem", height: "10rem", top: "68vh", left: "1rem"}}/>
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}>
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             <Timeline />

@@ -166,9 +166,6 @@ const Vertical = () => {
           </div>
         </div>
       </div >
-
-
-
     </div >
   );
 };
