@@ -1,6 +1,5 @@
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// import { useScrollDirection } from "react-use-scroll-direction";
 import { useEffect, useRef } from "react";
 import styles from "./horizontal.module.css";
 import Arrow2 from "../Arrows/Arrow2.jsx";
@@ -9,60 +8,55 @@ import Silverbox from "../Boxes/Silverbox.jsx";
 import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import Sapphirebox from "../Boxes/Sapphirebox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
-import jeepGif from "../../assets/jeep.gif";
 import Timeline from "../Timeline/Timeline.jsx";
+import jeepGif from "../../assets/jeep.gif";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Horizontal = () => {
-  // const panels = useRef([]);
-  // const panelsContainer = useRef();
+  const panels = useRef([]);
+  const panelsContainer = useRef();
 
-  // const createPanelsRefs = (panel, index) => {
-  //   panels.current[index] = panel;
-  // };
-
-  // useEffect(() => {
-  //   const totalPanels = panels.current.length;
-
-  //   gsap.to(panels.current, {
-  //     xPercent: -100 * (totalPanels - 1),
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: panelsContainer.current,
-  //       pin: true,
-  //       scrub: 1,
-  //       end: () => "+=" + panelsContainer.current.offsetWidth,
-  //     },
-  //   });
-  // }, []);
+  const createPanelsRefs = (panel, index) => {
+    panels.current[index] = panel;
+  };
 
   useEffect(() => {
-    gsap.to("#jeep", {
+    const totalPanels = panels.current.length;
+
+    gsap.to(panels.current, {
+      xPercent: -100 * (totalPanels - 1),
+      ease: "none",
       scrollTrigger: {
-        trigger: "#jeep",
-        start: "top center",
-        markers: true,
-        scrub: 5,
+        trigger: panelsContainer.current,
+        pin: true,
+        scrub: 1.5,
+        end: () => "+=" + panelsContainer.current.offsetWidth,
       },
-      x: document.getElementById("horizontal").clientWidth + 24800,
+    });
+
+    gsap.to(".jeep", {
+      scrollTrigger: {
+        trigger: ".jeep",
+        start: "bottom 90%",
+        end: "bottom -1000px",
+        scrub: 1,
+      },
+      x: 7800,
       ease: "none",
     });
-    console.log(document.getElementById("horizontal").clientWidth);
   }, []);
 
-  // const { isScrolling } = useScrollDirection();
-
   return (
-    <div className = {styles.OuterWrapper}>
-      <div className = {styles.HorizontalWrapper} id = "horizontal">
-        <img src = {jeepGif} alt = "jeep" className = {styles.jeep} id = "jeep" />
-        <div className={styles.page}>
+    <>
+      <div className={styles.HorizontalWrapper} ref={panelsContainer}>
+        <img src = {jeepGif} alt = "jeep" className = "jeep" style = {{position: "absolute", zIndex: 0, width: "20rem", height: "10rem", top: "68vh", left: "1rem"}}/>
+        <div className={styles.page} ref={(e) => createPanelsRefs(e, 0)}>
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             <Timeline />
           </div>
         </div>
-        <div className={styles.page}>
+        <div className={styles.page} ref={(e) => createPanelsRefs(e, 1)}>
           <div className="w-full h-full flex justify-center items-center">
             <h1 className="font-reemkufi lg:text-7xl text-white">
               Total Prize of <br /> ₹ 55,000
@@ -71,6 +65,7 @@ const Horizontal = () => {
         </div>
         <div
           className={styles.page}
+          ref={(e) => createPanelsRefs(e, 2)}
           id="sponsors"
         >
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
@@ -88,7 +83,7 @@ const Horizontal = () => {
             </div>
           </div>
         </div>
-        <div className={styles.page}>
+        <div className={styles.page} ref={(e) => createPanelsRefs(e, 3)}>
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="w-2/5 h-full flex flex-col flex-nowrap justify-around items-center">
               <div className="w-full h-2/5 flex flex-col flex-nowrap justify-around items-center">
@@ -126,6 +121,7 @@ const Horizontal = () => {
         </div>
         <div
           className={styles.page}
+          ref={(e) => createPanelsRefs(e, 4)}
           id="faq"
         >
           <div className="mx-auto h-full w-4/6 flex flex-col flex-wrap justify-evenly items-center">
@@ -139,6 +135,7 @@ const Horizontal = () => {
         </div>
         <div
           className={styles.page}
+          ref={(e) => createPanelsRefs(e, 5)}
           id="register"
         >
           <div className="h-full w-full flex flex-col flex-nowrap justify-center items-center">
@@ -151,7 +148,7 @@ const Horizontal = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

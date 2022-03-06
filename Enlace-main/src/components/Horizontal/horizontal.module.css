@@ -1,38 +1,25 @@
-.HorizontalWrapper{
+.HorizontalWrapper {
   display: flex;
-  flex-direction: row;
-  width: 600vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  background-image: url("../../assets/Frame.png");
-  scrollbar-width: none;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  position: relative;
+  z-index: 1;
 }
-::-webkit-scrollbar{
-  display: none;
-}
-.OuterWrapper{
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-/* ::-webkit-scrollbar{
-  display: none;
-}
-.OuterWrapper::-webkit-scrollbar{
-  display: none;
-} */
 
 .page {
-  background-color: #000000;
-  height: 100vh;
+  flex: 0 0 auto;
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   background-color: transparent;
+}
+
+.HorizontalWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.HorizontalWrapper {
+  scrollbar-width: none;
 }
 
 .jeep {
@@ -43,5 +30,5 @@
   top: 68vh;
   width: 20rem;
   height: 10rem;
-  z-index: 1;
+  z-index: 0;
 }
