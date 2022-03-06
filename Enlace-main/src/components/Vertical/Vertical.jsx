@@ -10,7 +10,6 @@ import past5 from "../../assets/past/past-5.png";
 import past6 from "../../assets/past/past-6.png";
 import past7 from "../../assets/past/past-7.png";
 import past8 from "../../assets/past/past-8.png";
-import EventBox from "../Boxes/EventBox";
 import EventBoxSm from "../Boxes/EventBoxSm";
 import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
