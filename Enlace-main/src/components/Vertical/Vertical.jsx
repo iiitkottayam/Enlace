@@ -1,7 +1,8 @@
 import styles from "./vertical.module.css";
 import Nav from "../Navbar.jsx";
 import dates from "../../assets/dates.png";
-import RegisterButton from "../RegisterButton.jsx";
+import CommonButton from "../CommonButton.jsx";
+import OrangeBox from "../Boxes/OrangeBox.jsx";
 import past1 from "../../assets/past/past-1.png";
 import past2 from "../../assets/past/past-2.png";
 import past3 from "../../assets/past/past-3.png";
@@ -13,6 +14,7 @@ import past8 from "../../assets/past/past-8.png";
 import EventBoxSm from "../Boxes/EventBoxSm";
 import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
+import Footer from "../Footer.jsx";
 
 
 const Vertical = () => {
@@ -23,7 +25,8 @@ const Vertical = () => {
         <div className="w-11/12 h-4/6 mx-auto flex flex-col flex-nowrap justify-around text-center items-center pt-48 lg:pt-32 lg:items-start lg:text-left md:text-left md:h-3/6 md:pt-16 md:items-start">
           <h2 className="text-4xl text-white lg:text-5xl font-reemkufi">Welcome to Enlace!</h2>
           <p className="w-9/12  pb-60 pt-12 lg:w-6/12 text-white text-1xl lg:text-3xl lg:pt-10 lg:pb-14 font-poppins font-light">a fest to mirror the beautiful chaos of nature and keep you on your toes, stir your souls and spark your creative flair.  </p>
-          <RegisterButton />
+
+          <CommonButton />
         </div>
 
       </div>
@@ -51,7 +54,7 @@ const Vertical = () => {
           <p className="text-1xl lg:text-2xl text-white pb-20 mx-auto text-center w-9/12 font-poppins">
             <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
             now and come join us in this wild journey!</p>
-          <RegisterButton />
+          <CommonButton />
         </div>
 
         <div className="hidden lg:block mx-auto w-10/12 font-reemkufi">
@@ -150,7 +153,7 @@ const Vertical = () => {
           <div className="mx-auto text-center text-white flex  justify-center item-center">
             <Emeraldbox />
           </div>
-          <div className="mx-auto w-full text-center text-white py-8 space-y-4 text-3xl">
+          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white py-8 space-y-4 text-3xl">
             <p className="text-4xl font-bold">FAQ</p>
             <FAQbox />
           </div>
@@ -159,12 +162,24 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className="mx-auto w-full text-center text-white py-8 space-y-8 text-3xl">
+          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white py-4 space-y-8 text-3xl">
             <FAQbox />
             <FAQbox />
           </div>
         </div>
       </div >
+
+      <div className={styles.page}>
+        <div className="lg:hidden">
+          <div className="mx-auto space-y-8 pt-10 flex flex-col justify-center items-center ">
+            <OrangeBox />
+            <OrangeBox />
+            <CommonButton />
+            <Footer />
+          </div>
+        </div>
+      </div>
+
     </div >
   );
 };
