@@ -34,7 +34,7 @@ const Vertical = () => {
         <div className="mx-auto w-11/12 h-full text-center flex flex-col flex-nowrap justify-center  items-center pt-60 lg:pt-48  lg:items-start lg:text-left md:text-left md:h-4/6 md:items-start">
           <h2 className="text-4xl text-white pb-8 lg:text-5xl lg:pb-0 pt-16 font-reemkufi">
             <span className="text-[#F48614] lg:text-[#FFD74B]">Enlace</span>
-            , IIITk's cultural fest,
+            , IIITK's cultural fest
           </h2>
           <div className="font-poppins font-light">
             <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl pt-16 pb-4 lg:pt-8 hidden  lg:block md:block">has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always been the norm.</p>
@@ -61,7 +61,7 @@ const Vertical = () => {
           <p className="text-5xl text-opacity-70 text-white font-medium pt-2">Into the wild</p>
           <p className="text-6xl text-opacity-50 text-white font-semibold pt-4">Into the wild</p>
           <p className="text-8xl text-opacity-30 text-white font-bold pt-6">Into the wild</p>
-          <p className="text-9xl text-opacity-5 text-white font-black pt-8">Into the wild</p>
+          <p className="text-9xl text-opacity-20 text-white font-black pt-8">Into the wild</p>
         </div>
 
         <div className="lg:hidden pt-16 pb-12">
@@ -76,15 +76,15 @@ const Vertical = () => {
         </div>
 
         <div className="hidden lg:block">
-          <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+          <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-28 px-4 ">
             <img data-aos="fade-down-right" data-aos-duration="1200" src={past1} alt="album" className="pl-24 " />
             <img data-aos="flip-up" data-aos-duration="1200" src={past8} alt="album" className="pl-24 " />
-            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block mt-32 ml-36  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-24 w-94 rounded items-center"><p className="text-white text-4xl py-6 px-20">Who Are We</p></div>
+            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block mt-24 ml-28  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-24 w-94 rounded-2xl items-center"><p className="text-white text-5xl py-5 px-16 font-reemkufi">Who We Are</p></div>
           </div>
           <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
             <img data-aos="zoom-out" data-aos-duration="1200" src={past6} alt="album" className="pl-36 pt-16" />
 
-            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"><p className="text-white text-3xl py-8 px-6 font-poppins font-light">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@ const Vertical = () => {
           <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
             <img data-aos="fade-right" data-aos-duration="1200" src={past5} alt="album" className="p-12 basis-2/6" />
             <img data-aos="flip-right" data-aos-duration="1200" src={past3} alt="album" className="p-16 basis-1/6" />
-            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block ml-24   basis-2/6  from-[#FFD4AC]/80 to-[#F0616D]/80 bg-gradient-to-br h-96 w-2/6 rounded items-center"><p className="text-white text-3xl py-6 px-6">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block ml-28   basis-2/6  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"><p className="text-white text-3xl py-8 px-6 font-poppins font-light">Keeping the torch alight, IIIT Kottayam brings to you Enlace 2022: Into the wild, a fest to mirror the beautiful chaos of nature and keep you on your toes, stir your souls and spark your creative flair.</p></div>
           </div>
           <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
             <img data-aos="fade-up-right" data-aos-duration="1200" src={past2} alt="album" className="pl-16 pt-16" />
