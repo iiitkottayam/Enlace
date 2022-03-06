@@ -34,7 +34,7 @@ const Vertical = () => {
         <div className="mx-auto w-11/12 h-full text-center flex flex-col flex-nowrap justify-center  items-center pt-60 lg:pt-48  lg:items-start lg:text-left md:text-left md:h-4/6 md:items-start">
           <h2 className="text-4xl text-white pb-8 lg:text-5xl lg:pb-0 pt-16 font-reemkufi">
             <span className="text-[#F48614] lg:text-[#FFD74B]">Enlace</span>
-            , IIITk's cultural fest,
+            , IIITK's cultural fest
           </h2>
           <div className="font-poppins font-light">
             <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl pt-16 pb-4 lg:pt-8 hidden  lg:block md:block">has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always been the norm.</p>
