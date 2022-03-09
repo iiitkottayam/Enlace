@@ -18,7 +18,7 @@ const App = () => {
   });
 
   useEffect(() => {
-    const tween = gsap.to(".bg", {
+    gsap.to(".bg", {
       xPercent: -100, 
       x: () => window.innerWidth,
       ease: "none",
