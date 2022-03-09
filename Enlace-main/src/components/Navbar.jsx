@@ -1,18 +1,48 @@
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import Navbarlink from "./Navbarlink";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Navbar = () => {
+
+	useEffect(() => {
+		const panelsContainer = document.querySelector(".PanelsContainer");
+		const page = document.querySelector(".page");
+		const vertical = document.querySelector(".vertical");
+		document.querySelectorAll("#anchor").forEach(anchor => {
+			anchor.addEventListener("click", (e) => {
+				e.preventDefault();
+				let targetElem = document.querySelector(e.target.getAttribute("href")), y = targetElem;
+				if (targetElem && panelsContainer.isSameNode(targetElem.parentElement)) {
+					var totalScroll = page.offsetWidth,
+						totalMovement = (5) * targetElem.offsetWidth;
+					y = Math.round(vertical.offsetHeight + (targetElem.offsetLeft / totalMovement) * totalScroll);
+				}
+				gsap.to(window, {
+					scrollTo: {
+						y: y,
+						autoKill: false
+					},
+					duration: 1
+				});
+			});
+		})
+
+	}, []);
 
 	return (
 		<nav className="hidden md:flex box-border container  absolute top-3 left-0 right-0  justify-between px-7 py-2 mx-auto border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full ">
 			<div>
-				<Link to="/">
+				<a href="/" id = "anchor">
 					<div className="md:flex items-center">
 						<img className="h-10 w-14 pr-2" src={logo} alt="logo" />
 						<h3 className="text-2xl xl:text-3xl text-white font-reemkufi">ENLACE</h3>
 					</div>
-				</Link>
+				</a>
 			</div>
 			<div className="hidden space-x-8 lg:space-x-12 xl:space-x-16 text-[#ffffffd6] font-medium md:text-sm lg:text-lg font-poppins md:flex items-center">
 				<Navbarlink title="Competitions" route="/competitions" />
@@ -32,10 +62,25 @@ const Navbar = () => {
 						<Navbarlink title="Team" route="/team" />
 					</nav>
 				</div>
-				<Navbarlink title="Sponsors" route="/#sponsors" />
-				<Navbarlink title="FAQ" route="/#faq" />
+				<a href = "#sponsors"
+					className="relative hover:after:scale-x-100 after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform"
+					id = "anchor"
+				>
+					Sponsors
+				</a>
+				<a href = "#faq"
+					className="relative hover:after:scale-x-100 after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform"
+					id = "anchor"
+				>
+					FAQ
+				</a>
 				<div className="text-[#A9FF40d6]">
-					<Navbarlink title="Register" route="/#register" />
+					<a href = "#register"
+						className="relative hover:after:scale-x-100 after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform"
+						id = "anchor"
+					>
+						Register
+					</a>
 				</div>
 			</div>
 			<div className="flex md:hidden">
