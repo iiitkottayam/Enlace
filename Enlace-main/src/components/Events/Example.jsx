@@ -14,28 +14,26 @@ const Example = ({ heading, content, image, org11, org12, org13, org21, org22, o
                 <div className="h-full w-full pt-36">
                     <div className=" w-11/12 flex flex-col lg:flex-row justify-center mx-auto ">
                         <TextBox heading={heading} content={content} />
+
                         <img
                             src={image}
                             alt="event poster"
                             className="lg:w-75 lg:h-75  mx-auto rounded-2xl mb-5"
                         ></img>
+                        {/* <CommonButton /> */}
                         {/* add button */}
                     </div>
                     <div className="lg:px-20 ">
                         <TextBox />
-
                         <Box />
-
                         <TextBox className="pb-4" />
-
                         <Orglist org1={org11} org1det={org12} ph1={org13} org2={org21} org2det={org22} ph2={org23} />
                     </div>
-
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
-        </div>
 
+        </div>
     )
 }
 
@@ -49,7 +47,6 @@ Example.defaultProps = {
     org21: "fjaskdl",
     org22: "hjasflkd@casdhfjl.com",
     org23: "1354375367",
-
 };
 
 
