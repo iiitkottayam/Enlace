@@ -1,11 +1,11 @@
 const FAQbox = ({ question, answer }) => {
   return (
-    <div className="m-5 p-0.5 lg:w-96 lg:h-40 w-96 h-64 bg-gradient-to-r from-gradient-start/60 to-gradient-stop/60 rounded-xl box-border">
-      <div className=" p-1 lg:p-5 w-full h-full bg-white/60 rounded-xl">
-        <p className="mb-2  text-1xl lg:text-xl text-black">
+    <div className="m-5 p-0.5 lg:w-96 lg:h-40 w-10/12 bg-gradient-to-r from-gradient-start/60 to-gradient-stop/60 rounded-2xl box-border">
+      <div className=" p-4 py-6 lg:p-5 w-full h-full bg-white/60 rounded-2xl font-poppins">
+        <p className="pb-4 text-xl lg:text-xl text-black font-semibold">
           {question}
         </p>
-        <p className=" text-1xl lg:text-sm text-black">{answer}</p>
+        <p className=" text-lg lg:text-sm text-black">{answer}</p>
       </div>
     </div>
   );
