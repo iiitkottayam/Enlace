@@ -6,8 +6,22 @@ const Navbarlink = ({ title, route, navRef, iconRef, menuRef }) => {
     const icon = iconRef.current;
     const menu = menuRef.current;
     document.body.style.overflow = "scroll";
-    nav.classList.add("absolute", "top-3", "rounded-full", "border-2");
-    nav.classList.remove("fixed", "top-0", "h-[100vh]", "items-start");
+    nav.classList.add(
+      "absolute",
+      "top-3",
+      "rounded-full",
+      "border-2",
+      "w-11/12",
+      "items-center"
+    );
+    nav.classList.remove(
+      "fixed",
+      "top-0",
+      "h-[100vh]",
+      "items-start",
+      "pt-6",
+      "px-9"
+    );
     icon.classList.add("fa-bars");
     icon.classList.remove("fa-xmark");
     menu.classList.add("hidden");

@@ -317,7 +317,7 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white py-4 space-y-8 text-3xl">
+          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-20 space-y-16 text-3xl">
             <FAQbox />
             <FAQbox />
           </div>

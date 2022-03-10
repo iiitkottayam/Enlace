@@ -55,7 +55,7 @@ const Example = () => {
             />
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
