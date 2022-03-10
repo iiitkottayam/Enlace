@@ -67,11 +67,11 @@ const Vertical = () => {
 
       <div className={styles.page}>
       <div className="lg:hidden pt-16">
-          <h1 className="text-center text-white text-5xl font-reemkufi">Who Are We</h1>
+          <h1 className="text-center text-white text-5xl font-reemkufi">Who We Are</h1>
         </div>
         <div className="lg:hidden">
           <img src={past1} alt="album" className="pt-16 mx-auto" />
-          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
+          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">Enlace, IIIT Kottayam's cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
         </div>
 
         <div className="hidden lg:block">
@@ -83,14 +83,14 @@ const Vertical = () => {
           <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
             <img data-aos="zoom-out" data-aos-duration="1200" src={past6} alt="album" className="pl-36 pt-16" />
 
-            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"><p className="text-white text-3xl py-8 px-6 font-poppins font-light">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"><p className="text-white text-3xl py-8 px-6 font-poppins font-light">Enlace, IIIT Kottayam's cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
           </div>
         </div>
       </div>
       <div className={styles.page} >
         <div className="lg:hidden">
           <img src={past8} alt="album" className="mx-auto pt-12" />
-          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
+          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">Enlace, IIIT Kottayam's cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
         </div>
         <div className="hidden lg:block">
           <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
