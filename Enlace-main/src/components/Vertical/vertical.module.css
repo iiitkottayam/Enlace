@@ -119,7 +119,7 @@
 		background: url(../../assets/M6.png);
 		background-size: 100% 100%;
 		position: relative;
-		height: 650px;
+		height: auto;
 	}
 	.page:nth-of-type(7) {
 		background: url(../../assets/M7.png);
@@ -147,7 +147,7 @@
 	}
 	.page:nth-of-type(11) {
 		background: url(../../assets/M11.png) no-repeat;
-		height: 750px;
+		height: auto;
 		background-size: cover;
 		position: relative;
 	}
