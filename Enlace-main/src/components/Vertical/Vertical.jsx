@@ -15,8 +15,23 @@ import EventBoxSm from "../Boxes/EventBoxSm";
 import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Footer from "../Footer.jsx";
+import { events } from "../Timeline/timelineData";
 
 const Vertical = () => {
+  const startDate = 21;
+  const postfix = (date) => {
+    switch (date % 10) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
+  };
+
   return (
     <div className={styles.VerticalWrapper + " vertical"}>
       <Nav />
@@ -233,26 +248,33 @@ const Vertical = () => {
       <div className={styles.page}>
         <div className="lg:hidden">
           <div className="flex mx-auto w-10/12 flex-col flex-wrap text-center">
-            <p className="text-white font-semibold font-reemkufi text-4xl py-4">
-              Day 1
-            </p>
-            <EventBoxSm />
-            <EventBoxSm />
-            <EventBoxSm />
-            <EventBoxSm />
-          </div>
-        </div>
-      </div>
-      <div className={styles.page}>
-        <div className="lg:hidden">
-          <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
-            <p className="text-white font-semibold font-reemkufi text-4xl py-4">
-              Day 2
-            </p>
-            <EventBoxSm />
-            <EventBoxSm />
-            <EventBoxSm />
-            <EventBoxSm />
+            {Object.entries(events).map((event, index) => {
+              return event[1].map((e, i) => {
+                return (
+                  <>
+                    {i === 0 ? (
+                      <p className="text-white font-semibold font-reemkufi text-4xl py-7">
+                        Day {index + 1}
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                    {i === 0 ? (
+                      <p
+                        className="text-white font-semibold font-reemkufi text-3xl pb-3"
+                        style={{ marginTop: "-1rem" }}
+                      >
+                        {startDate + index}
+                        {postfix(startDate + index)} March
+                      </p>
+                    ) : (
+                      ""
+                    )}
+                    <EventBoxSm name={e.name} time={e.time} />
+                  </>
+                );
+              });
+            })}
           </div>
         </div>
       </div>
@@ -304,7 +326,7 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div id="mobilecontactus" className="lg:hidden">
-          <div className="mx-auto space-y-8 pt-10 flex flex-col justify-center items-center ">
+          <div className="mx-auto space-y-8 flex flex-col justify-between items-center ">
             <OrangeBox />
             <OrangeBox />
             <CommonButton />
