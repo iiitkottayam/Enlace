@@ -2,10 +2,10 @@ import logo from "../assets/wildbeatslogo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-b from-[#2D4769]/0 to-[#000000]/100 text-white">
+    <div className="bg-gradient-to-b from-[#2D4769]/0 to-[#000000]/100 text-white absolute bottom-0 left-0 right-0">
       <div className="flex flex-col md:flex-row flex-nowrap justify-between items-center">
         <img src={logo} alt="wildbeats logo" className="w-64 mx-20"></img>
-        <div className="mt-5 flex flex-row flex-nowrap justify-around items-center text-base mx-20">
+        <div className="mt-5 flex flex-row flex-nowrap justify-around items-center text-base mx-auto lg:mx-20">
           <i className="fa-brands fa-facebook-f mx-4"></i>
           <i className="fa-brands fa-youtube mx-4"></i>
           <i className="fa-brands fa-twitter mx-4"></i>

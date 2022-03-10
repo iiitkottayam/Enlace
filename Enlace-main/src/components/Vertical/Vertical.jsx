@@ -38,8 +38,8 @@ const Vertical = () => {
           </h2>
           <div className="font-poppins font-light">
             <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl pt-16 pb-4 lg:pt-8 hidden  lg:block md:block">has been celebrating arts, heritage, music and lifestyle since its inception in 2019. A myriad of events with impressive and breathtaking performances has always been the norm.</p>
-            <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl py-4 hidden lg:block md:block">It’s the amalgamation of mind gruelling competitions, thought provoking expert talks and workshops that stimulate your cerebral matter!</p>
-            <p className="w-11/12 lg:w-6/12 text-white text-1xl lg:text-2xl py-8 lg:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis, </p>
+            <p className="w-11/12  lg:w-6/12 text-white text-1xl lg:text-2xl py-4 hidden lg:block md:block">It's the amalgamation of mind gruelling competitions, thought provoking expert talks and workshops that stimulate your cerebral matter!</p>
+            <p className="w-11/12 lg:w-6/12 text-white text-1xl lg:text-2xl py-8 mx-auto lg:hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit amet consectetur adipisicing elit. it aperiam suscipit accusamus quos corporis, </p>
           </div>
         </div>
       </div>
@@ -63,16 +63,15 @@ const Vertical = () => {
           <p className="text-8xl text-opacity-30 text-white font-bold pt-6">Into the wild</p>
           <p className="text-9xl text-opacity-20 text-white font-black pt-8">Into the wild</p>
         </div>
-
-        <div className="lg:hidden pt-16 pb-12">
-          <h1 className="text-center text-white text-3xl font-semibold ">Who Are We</h1>
-        </div>
       </div>
 
       <div className={styles.page}>
+      <div className="lg:hidden pt-16">
+          <h1 className="text-center text-white text-5xl font-reemkufi">Who We Are</h1>
+        </div>
         <div className="lg:hidden">
-          <img src={past1} alt="album" className="pt-24 mx-auto" />
-          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
+          <img src={past1} alt="album" className="pt-16 mx-auto" />
+          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">Enlace, IIIT Kottayam's cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
         </div>
 
         <div className="hidden lg:block">
@@ -84,14 +83,14 @@ const Vertical = () => {
           <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
             <img data-aos="zoom-out" data-aos-duration="1200" src={past6} alt="album" className="pl-36 pt-16" />
 
-            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"><p className="text-white text-3xl py-8 px-6 font-poppins font-light">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
+            <div data-aos="zoom-in-up" data-aos-duration="750" className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"><p className="text-white text-3xl py-8 px-6 font-poppins font-light">Enlace, IIIT Kottayam's cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p></div>
           </div>
         </div>
       </div>
       <div className={styles.page} >
         <div className="lg:hidden">
           <img src={past8} alt="album" className="mx-auto pt-12" />
-          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12">Enlace, IIIT Kottayam’s cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
+          <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">Enlace, IIIT Kottayam's cultural fest, has been celebrating arts, heritage, music and lifestyle since its inception in 2019. We bring a myriad of events to life with impressive and breathtaking performances. </p>
         </div>
         <div className="hidden lg:block">
           <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
@@ -109,8 +108,8 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
-            <p className="text-white font-semibold text-4xl py-4">Day 1</p>
+          <div className="flex mx-auto w-10/12 flex-col flex-wrap text-center">
+            <p className="text-white font-semibold font-reemkufi text-4xl py-4">Day 1</p>
             <EventBoxSm />
             <EventBoxSm />
             <EventBoxSm />
@@ -121,7 +120,7 @@ const Vertical = () => {
       <div className={styles.page}>
         <div className="lg:hidden">
           <div className="flex mx-auto w-10/12 flex-col flex-wrap pt-8 text-center">
-            <p className="text-white font-semibold text-4xl py-4">Day 2</p>
+            <p className="text-white font-semibold font-reemkufi text-4xl py-4">Day 2</p>
             <EventBoxSm />
             <EventBoxSm />
             <EventBoxSm />
@@ -132,12 +131,12 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-4xl">
+          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-4xl font-reemkufi">
             <p className="font-semibold ">Total prize of </p>
             <p className="font-semibold ">Rs. 55,000</p>
-            <p className="font-regular ">+ exiciting gifts from</p>
+            <p className="font-regular text-[#ffffffc0]">+ exiciting gifts from</p>
             <p className="py-6 font-bold text-4xl">Our Sponsors</p>
-            <p className=" font-semibold text-2xl py-8">Gold</p>
+            <p className=" font-semibold text-2xl pt-10">Gold Sponsors</p>
           </div>
           <div className="mx-auto text-center text-white flex  justify-center item-center">
             <Emeraldbox />
@@ -147,14 +146,14 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-3xl">
-            <p className=" font-semibold text-2xl py-4">Silver</p>
+          <div className="mx-auto w-4/6 text-center text-white space-y-4 text-4xl font-reemkufi">
+            <p className=" font-semibold text-2xl py-4">Silver Sponsors</p>
           </div>
           <div className="mx-auto text-center text-white flex  justify-center item-center">
             <Emeraldbox />
           </div>
-          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white py-8 space-y-4 text-3xl">
-            <p className="text-4xl font-bold">FAQ</p>
+          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-24 space-y-4 text-3xl">
+            <p className="text-6xl font-reemkufi pb-16">FAQ</p>
             <FAQbox />
           </div>
         </div>
