@@ -9,17 +9,18 @@ import Vertical from "./components/Vertical/Vertical";
 import Competitions from "./components/Pages/Competitions";
 import Events from "./components/Pages/Events";
 import frame from "./assets/Frame.png";
+import Example from "./components/Events/Example";
 
 gsap.registerPlugin(ScrollTrigger);
 const App = () => {
-  
+
   AOS.init({
     mirror: true,
   });
 
   useEffect(() => {
     gsap.to(".bg", {
-      xPercent: -100, 
+      xPercent: -100,
       x: () => window.innerWidth,
       ease: "none",
       scrollTrigger: {
@@ -38,15 +39,16 @@ const App = () => {
           <Route exact path="/">
             <>
               <Vertical />
-              <div className="hidden lg:block" style = {{overflow: "hidden"}}>
-                <div className = "bg" style = {{backgroundImage: `url(${frame})`, height: "100vh", width: "500vw", backgroundSize: "cover"}}>
+              <div className="hidden lg:block" style={{ overflow: "hidden" }}>
+                <div className="bg" style={{ backgroundImage: `url(${frame})`, height: "100vh", width: "500vw", backgroundSize: "cover" }}>
                   <Horizontal />
                 </div>
               </div>
             </>
           </Route>
           <Route exact path="/competitions">
-            <Competitions />
+            {/* <Competitions /> */}
+            <Example />
           </Route>
           <Route exact path="/events">
             <Events />
