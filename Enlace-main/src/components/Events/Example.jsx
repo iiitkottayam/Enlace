@@ -30,7 +30,7 @@ const Example = ({ heading, content, image, org11, org12, org13, org21, org22, o
                         <Orglist org1={org11} org1det={org12} ph1={org13} org2={org21} org2det={org22} ph2={org23} />
                     </div>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
             </div>
 
         </div>

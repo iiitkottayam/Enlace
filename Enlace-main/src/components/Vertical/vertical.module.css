@@ -116,7 +116,7 @@
 		height: 650px;
 	}
 	.page:nth-of-type(6) {
-		background: url(../../assets/M6.png);
+		background: url(../../assets/M6L.png);
 		background-size: 100% 100%;
 		position: relative;
 		height: auto;
@@ -141,14 +141,8 @@
 	}
 	.page:nth-of-type(10) {
 		background: url(../../assets/M10.png);
-		height: 650px;
+		height: 700px;
 		background-size: 100% 100%;
-		position: relative;
-	}
-	.page:nth-of-type(11) {
-		background: url(../../assets/M11.png) no-repeat;
-		height: auto;
-		background-size: cover;
 		position: relative;
 	}
 }
