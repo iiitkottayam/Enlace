@@ -18,7 +18,7 @@ const App = () => {
   });
 
   useEffect(() => {
-    const tween = gsap.to(".bg", {
+    gsap.to(".bg", {
       xPercent: -100, 
       x: () => window.innerWidth,
       ease: "none",
@@ -38,7 +38,7 @@ const App = () => {
           <Route exact path="/">
             <>
               <Vertical />
-              <div className="hidden lg:block">
+              <div className="hidden lg:block" style = {{overflow: "hidden"}}>
                 <div className = "bg" style = {{backgroundImage: `url(${frame})`, height: "100vh", width: "500vw", backgroundSize: "cover"}}>
                   <Horizontal />
                 </div>

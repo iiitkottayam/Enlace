@@ -19,7 +19,7 @@ import Footer from "../Footer.jsx";
 
 const Vertical = () => {
   return (
-    <div className={styles.VerticalWrapper}>
+    <div className={styles.VerticalWrapper + " vertical"}>
       <Nav />
       <div className={styles.page}>
         <div className="w-11/12 h-4/6 mx-auto flex flex-col flex-nowrap justify-around text-center items-center pt-48 lg:pt-32 lg:items-start lg:text-left md:text-left md:h-3/6 md:pt-16 md:items-start">

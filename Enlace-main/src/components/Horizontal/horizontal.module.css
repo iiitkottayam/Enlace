@@ -21,14 +21,3 @@
 .HorizontalWrapper {
   scrollbar-width: none;
 }
-
-.jeep {
-  position: absolute;
-  left: 1rem;
-  margin: 0;
-  padding: 0;
-  top: 68vh;
-  width: 20rem;
-  height: 10rem;
-  z-index: 0;
-}
