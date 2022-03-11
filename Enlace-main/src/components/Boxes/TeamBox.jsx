@@ -36,7 +36,7 @@ const TeamBox = () => {
                             teams[option].map(person => {
                                 return (
                                     <div className = "flex flex-col justify-center items-center" style = {{height: "12rem"}}>
-                                        <div className = "w-full bg-white/40 flex flex-col justify-evenly items-center" style = {{height: "90%"}}>
+                                        <div className = "w-full bg-white/40 flex flex-col justify-evenly items-center rounded-2xl" style = {{height: "90%"}}>
                                             <img className = "w-2/3 h-2/3 rounded-full" src = {person.pic} alt = "members"></img>
                                             <div className = "font-semibold text-lg">{person.name}</div>
                                         </div>

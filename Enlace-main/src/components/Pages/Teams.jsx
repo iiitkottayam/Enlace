@@ -6,7 +6,7 @@ import TeamBoxSm from "../Boxes/TeamBoxSm.jsx";
 const Teams = () => {
     return (
         <div className="bg-black lg:bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
-			<div className="h-screen w-screen bg-competitions-bg relative flex flex-col">
+			<div className="h-max lg:h-screen w-screen bg-competitions-bg relative flex flex-col">
                 <div className = "relative h-1/6">
                     <Nav />
                 </div>
@@ -14,7 +14,7 @@ const Teams = () => {
                     <div id = "desktop" className = "hidden lg:block h-full flex flex-col">
                         <TeamBox />
                     </div>
-                    <div id = "mobile" className = "lg:hidden h-full">
+                    <div id = "mobile" className = "lg:hidden h-full pt-28 pb-8">
                         <TeamBoxSm />
                     </div>
                 </div>

@@ -213,7 +213,7 @@ const Navbar = () => {
         />
         <Navbarlinkmob
           title="Team"
-          route="/team"
+          route="/teams"
           navRef={navRef}
           iconRef={iconRef}
           menuRef={menuRef}
