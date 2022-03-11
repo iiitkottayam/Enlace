@@ -8,6 +8,7 @@ import Horizontal from "./components/Horizontal/Horizontal";
 import Vertical from "./components/Vertical/Vertical";
 import Competitions from "./components/Pages/Competitions";
 import Events from "./components/Pages/Events";
+import Teams from "./components/Pages/Teams";
 import frame from "./assets/Frame.png";
 import Example from "./components/Events/Example";
 
@@ -52,6 +53,9 @@ const App = () => {
           </Route>
           <Route exact path="/events">
             <Events />
+          </Route>
+          <Route exact path="/teams">
+            <Teams />
           </Route>
         </Switch>
       </>
