@@ -147,7 +147,7 @@ const Navbar = () => {
             >
               Contact Us
             </a>
-            <Navbarlink title="Team" route="/team" />
+            <Navbarlink title="Team" route="/teams" />
           </nav>
         </div>
         <a
