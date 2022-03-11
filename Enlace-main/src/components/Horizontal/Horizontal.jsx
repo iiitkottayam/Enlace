@@ -10,6 +10,8 @@ import Sapphirebox from "../Boxes/Sapphirebox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Timeline from "../Timeline/Timeline.jsx";
 import jeepGif from "../../assets/jeep.gif";
+import CommonButton from "../CommonButton.jsx";
+import OrangeBox from "../Boxes/OrangeBox.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -138,13 +140,14 @@ const Horizontal = () => {
           ref={(e) => createPanelsRefs(e, 5)}
           id="register"
         >
-          <div className="h-full w-full flex flex-col flex-nowrap justify-center items-center">
-            <h1 className="font-reemkufi lg:text-7xl text-white mb-20">
-              Register Now!
-            </h1>
-            <button className="font-poppins font-semibold lg:text-4xl text-black p-5 bg-gradient-to-r from-gradient-start/80 to-gradient-stop/80 rounded-lg box-border border-2">
-              Learn More!
-            </button>
+          <div className="h-full w-full flex flex-col flex-nowrap justify-center">
+            <div className="mx-auto pb-14">
+              <CommonButton/>
+            </div>
+            <div className="flex gap-10 w-8/12 mx-auto pt-14">
+              <OrangeBox />
+              <OrangeBox />
+            </div>
           </div>
         </div>
       </div>
