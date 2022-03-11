@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { teams } from "../../data/teamData"
 import styles from "../../Styles/teamBox.module.css";
+import { FaChevronDown } from "react-icons/fa";
 
 const TeamBox = () => {
     
@@ -29,12 +30,12 @@ const TeamBox = () => {
                         <div className = {"option cursor-pointer " + (option === "webd" ? "text-[#A9FF40d6]" : "text-white")} id = "webd">Web Dev</div>
                     </div>
                 </div>
-                <div className = "h-full w-2/3 flex justify-left items-center">
+                <div className = "h-full w-2/3 flex flex-col justify-center items-left relative">
                     <div className = {"members grid grid-cols-4 h-5/6 gap-10 overflow-auto justify-center items-center " + styles.members} style = {{width: "90%"}}>
                         {
                             teams[option].map(person => {
                                 return (
-                                    <div className = "flex flex-col justtify-center items-center" style = {{height: "12rem"}}>
+                                    <div className = "flex flex-col justify-center items-center" style = {{height: "12rem"}}>
                                         <div className = "w-full bg-white/40 flex flex-col justify-evenly items-center" style = {{height: "90%"}}>
                                             <img className = "w-2/3 h-2/3 rounded-full" src = {person.pic} alt = "members"></img>
                                             <div className = "font-semibold text-lg">{person.name}</div>
@@ -47,6 +48,7 @@ const TeamBox = () => {
                             })
                         }
                     </div>
+                    {teams[option].length > 8 ? <div className = "flex justify-center absolute bottom-3" style = {{width: "90%"}}><FaChevronDown size = "2rem"/></div> : ""}
                 </div>
             </div>
         </>
