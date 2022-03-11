@@ -17,12 +17,12 @@ const TeamBox = () => {
 
     return (
         <>
-            <div className = "font-reemkufi font-semibold text-5xl m-0" style = {{height: "10%"}}>
+            <div className = "font-reemkufi text-6xl m-0" style = {{height: "10%"}}>
                 Team
             </div>
             <div className = "flex justify-center" style = {{height: "90%"}}>
                 <div className = "h-full w-1/3 flex justify-center items-center">
-                    <div className = "bg-white/40 h-5/6 w-2/3 rounded-xl flex flex-col justify-evenly items-center text-3xl">
+                    <div className = "bg-white/40 h-5/6 w-2/3 rounded-xl flex flex-col justify-evenly items-center text-3xl font-poppins">
                         <div className = {"option cursor-pointer " + (option === "core" ? "text-[#A9FF40d6]" : "text-white")} id = "core">Core Team</div>
                         <div className = {"option cursor-pointer " + (option === "managers" ? "text-[#A9FF40d6]" : "text-white")} id = "managers">Event Managers</div>
                         <div className = {"option cursor-pointer " + (option === "sponsor" ? "text-[#A9FF40d6]" : "text-white")} id = "sponsor">Sponsorship</div>
@@ -35,12 +35,12 @@ const TeamBox = () => {
                         {
                             teams[option].map(person => {
                                 return (
-                                    <div className = "flex flex-col justify-center items-center" style = {{height: "12rem"}}>
-                                        <div className = "w-full bg-white/40 flex flex-col justify-evenly items-center rounded-2xl" style = {{height: "90%"}}>
-                                            <img className = "w-2/3 h-2/3 rounded-full" src = {person.pic} alt = "members"></img>
-                                            <div className = "font-semibold text-lg">{person.name}</div>
+                                    <div className = "flex flex-col justify-center items-center mt-1" style = {{height: "12rem"}}>
+                                        <div className = "w-full bg-white/40 flex flex-col justify-evenly items-center rounded-2xl py-4">
+                                            <img className = "w-8/12 h-10/12 rounded-full" src = {person.pic} alt = "members"></img>
+                                            <div className = "font-medium text-lg font-poppins pt-2">{person.name}</div>
                                         </div>
-                                        <div className = "font-semibold text-lg" style = {{height: "10%"}}>
+                                        <div className = "font-medium text-lg font-poppins pt-1" style = {{height: "10%"}}>
                                             {person.designation}
                                         </div>
                                     </div>
