@@ -72,6 +72,9 @@ const App = () => {
           <Route exact path="/events">
             <Events />
           </Route>
+          <Route exact path = "/teams">
+            <Teams />
+          </Route>
           <Route exact path="/example">
             <Example />
           </Route>

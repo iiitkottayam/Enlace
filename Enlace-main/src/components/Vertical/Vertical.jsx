@@ -15,7 +15,7 @@ import EventBoxSm from "../Boxes/EventBoxSm";
 import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Footer from "../Footer.jsx";
-import { events } from "../Timeline/timelineData";
+import { events } from "../../data/timelineData";
 
 const Vertical = () => {
   const startDate = 21;

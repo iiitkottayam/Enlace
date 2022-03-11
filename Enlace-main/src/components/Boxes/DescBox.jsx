@@ -1,4 +1,4 @@
-import { dayDetails } from "../Timeline/timelineData"
+import { dayDetails } from "../../data/timelineData"
 
 const DescBox = ({ day }) => {
 
