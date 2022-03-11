@@ -17,7 +17,7 @@ const TeamBox = () => {
 
     return (
         <>
-            <div className = "font-semibold text-5xl m-0" style = {{height: "10%"}}>
+            <div className = "font-reemkufi font-semibold text-5xl m-0" style = {{height: "10%"}}>
                 Team
             </div>
             <div className = "flex justify-center" style = {{height: "90%"}}>
@@ -27,7 +27,7 @@ const TeamBox = () => {
                         <div className = {"option cursor-pointer " + (option === "managers" ? "text-[#A9FF40d6]" : "text-white")} id = "managers">Event Managers</div>
                         <div className = {"option cursor-pointer " + (option === "sponsor" ? "text-[#A9FF40d6]" : "text-white")} id = "sponsor">Sponsorship</div>
                         <div className = {"option cursor-pointer " + (option === "design" ? "text-[#A9FF40d6]" : "text-white")} id = "design">Designing</div>
-                        <div className = {"option cursor-pointer " + (option === "webd" ? "text-[#A9FF40d6]" : "text-white")} id = "webd">Web Dev</div>
+                        <div className = {"option cursor-pointer " + (option === "webd" ? "text-[#A9FF40d6]" : "text-white")} id = "webd">Web Devs</div>
                     </div>
                 </div>
                 <div className = "h-full w-2/3 flex flex-col justify-center items-left relative">
