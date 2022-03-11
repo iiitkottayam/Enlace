@@ -117,7 +117,7 @@ const Navbar = () => {
       className="flex box-border container absolute top-3 left-0 right-0 justify-between px-5 md:px-7 py-2 w-11/12 md:w-auto mx-auto border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full items-center"
     >
       <div className="relative z-10">
-        <Link to="/">
+        <a href = "/">
           <div className="flex items-center">
             <img
               className="h-8 w-12 md:h-10 md:w-14 pr-2"
@@ -128,7 +128,7 @@ const Navbar = () => {
               ENLACE
             </h3>
           </div>
-        </Link>
+        </a>
       </div>
       <div className="hidden text-[#ffffffd6] font-medium text-xl md:text-sm lg:text-base md:space-x-8 lg:space-x-16 font-poppins md:flex items-center">
         <Navbarlink title="Competitions" route="/competitions" />
