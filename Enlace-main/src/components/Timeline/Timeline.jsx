@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { events } from "./timelineData";
+import { events } from "../../data/timelineData";
 import Box from "../Boxes/Box.jsx";
 import EventBox from "../Boxes/EventBox";
 import DescBox from "../Boxes/DescBox";
