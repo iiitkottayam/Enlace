@@ -4,21 +4,25 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/DancingWithTheDevil_Instagram.png";
 
 const Example = () => {
   const eventname = "enter event name here";
   const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const details = `“ We dance for laughter, we dance for tears, we dance for madness, we dance for fears,     
+we dance for hopes, we dance for screams, we are the dancers, we create the dreams.” -Angela Monet
+An intercollege event to showcase your talent. We invite vibrant youngsters to grab this opportunity to vibe, groove and feel alive. So all the dance lovers out there, are you ready to be a devil to Dance with the Devil!
+A solo dance competition, wherein the participants have to submit a video of 2-4  minutes. All dance styles are welcomed. Judges will judge on the creativity,   choreography, performance, use of properties, expressions. 
+`;
+  const date = "March 19th, 2022";
+  const time = "";
+  const org1name = "S .Kavyanjali";
+  const org1mail = "kavya20bcs157@iiitkottayam.ac.in";
+  const org1phone = "9100484080";
+  const org2name = "Karthika Madhu";
+  const org2mail = "karthikamadhu20bec33@iiitkottayam.ac.in";
+  const org2phone = "95159827629";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLSe7GCMVD5H4GVv3cID1jDoIYAuDqpFXfYKaTJNSt7r0xbFLiA/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

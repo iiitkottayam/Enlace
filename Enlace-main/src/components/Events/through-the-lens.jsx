@@ -4,21 +4,21 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/Photography instagram.jpg";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Through the Lens";
+  const highlight = "Photography event";
+  const details = `Photography is a way of expressing a situation. What you capture with your lens will be with you forever, it can be helpful to evoke the situation in the photo even after many years. Taking a photo, freezing a moment reveals innate reality. Yes, my lens can do all this with perfection`;
+  const date = "";
+  const time = "";
+  const org1name = "A.K. Sashank";
+  const org1mail = "krishnasashank20bcs26@iiitkottayam.ac.in";
+  const org1phone = "8074189474";
+  const org2name = "Ankur Kumar Mandal";
+  const org2mail = "ankurmandal20bcs34@iiitkottayam.ac.in";
+  const org2phone = "9182024792";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLScHXQz0MXDmADjUE-uxakG4rThcAe6ThbykNbCY63dntD1MTQ/viewform ";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

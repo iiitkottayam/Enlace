@@ -4,21 +4,24 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/fake_it_till_you_make_it.jpg";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Fake it Till You Make It";
+  const highlight = "A Solo Monoact Competition";
+  const details = `Ever seen a viral act video and thought, "Man, I could make a video better than this…"? Ever read a story and wished, "Man, only if the story ended like this"? Ever been in a play or a skit, and wished for more creative freedom? If your answer to any of the above questions is yes, "Fake it till you make it" is just the event for you!
+  So what are you waiting for? Sign up to our mono act competition and make the world laugh and cry.
+  “All the world's a stage.” ― William Shakespeare
+  `;
+  const date = "March 31st, 2022";
+  const time = "7:00 PM";
+  const org1name = "Arundhathy.K";
+  const org1mail = "arundhathyk20bec10@iiitkottayam.ac.in";
+  const org1phone = "9567632553";
+  const org2name = "Sravan kumar.K";
+  const org2mail = "ravankumar20bcs150@iiitkottayam.ac.in ";
+  const org2phone = "7793998142";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLScgcr3PZVpJKPgTxXL-zFkJXz3Rb7i4gRDiVUexWlkMvl8bSw/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

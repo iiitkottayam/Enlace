@@ -4,21 +4,23 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/StringsAndKeys_Instagram.jpg";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Strings and Keys";
+  const highlight = "online instrumental competition";
+  const details = `Ever wondered what the most beautiful sound in the 
+  world is? A nightingale's cry? A snow wolf’s howl? They say that the most beautiful sound lies in the depths of nature, where there is no limit for melodious chimes. That’s why the path of music is never ending, so is the love it gets from people of passion. Show your love and passion towards music. Be it a trumpet or a keyboard, we welcome you all to participate in strings and keys of enlace. A music festival where nature is heard through your notes and tunes
+  `;
+  const date = "";
+  const time = "";
+  const org1name = "Akarsh Pandeyr";
+  const org1mail = "akarshpandey20bcs83@iiitkottayam.ac.in";
+  const org1phone = "9599362445";
+  const org2name = "";
+  const org2mail = "";
+  const org2phone = "";
+  const link = "https://forms.gle/V3d5wCmUYEzzSAKk9";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

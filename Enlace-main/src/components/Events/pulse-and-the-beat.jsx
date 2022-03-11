@@ -4,21 +4,23 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/PulseAndTheBeat_Instagram.png";
 
 const Example = () => {
-  const eventname = "enter event name here";
+  const eventname = "Pulse and Beat";
   const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const details = `”Dance is the hidden language of the soul”.
+  We always love how exhilarating swaying your hearts can be ,even more when you do it with your friends. So tie your laces and crack your knuckles cause we are going to spin and twirl our way to bop at Pulse and Beats,a group dance contest brought to you by ENLACE.
+  `;
+  const date = "";
+  const time = "";
+  const org1name = "B Subramanyam";
+  const org1mail = "subramanyam20bcs77@iiitkottayam.ac.in";
+  const org1phone = "9392682410";
+  const org2name = "charan teja";
+  const org2mail = "charanteja20bcs43@iiitkottayam.ac.in";
+  const org2phone = "8688957441";
+  const link = "https://forms.gle/SY3BJg8MwvxMh4oZ8";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
