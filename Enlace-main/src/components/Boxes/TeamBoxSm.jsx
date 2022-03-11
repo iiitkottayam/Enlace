@@ -32,10 +32,10 @@ const TeamBoxSm = () => {
 			<div className="font-reemkufi text-4xl text-center">Team</div>
 			<div className="flex pt-10 pb-16 justify-around items-center w-full">
 				<FaChevronLeft size="1.5rem" className = "left" onClick = {() => handleRotation("left")}/>
-				<div className="flex justify-between w-9/12 items-center font-reemkufi">
-					<div className="opacity-60" style = {{fontSize: "1rem"}}>{pages[carousel[0]].name}</div>
-					<div className="font-semibold" style = {{fontSize: "1.5rem"}}>{pages[carousel[1]].name}</div>
-					<div className="opacity-60" style = {{fontSize: "1rem"}}>{pages[carousel[2]].name}</div>
+				<div className="flex justify-between w-[80%] items-center font-reemkufi">
+					<div className="text-[#ffffff99] w-[8ch] truncate" style = {{fontSize: "1rem"}}>{pages[carousel[0]].name}</div>
+					<div className="font-semibold w-[8ch] truncate" style = {{fontSize: "1.5rem"}}>{pages[carousel[1]].name}</div>
+					<div className="text-[#ffffff99] w-[8ch] truncate" style = {{fontSize: "1rem"}}>{pages[carousel[2]].name}</div>
 				</div>
 				<FaChevronRight size="1.5rem" className = "right" onClick = {() => handleRotation("right")}/>
 			</div>
