@@ -22,7 +22,7 @@ const TeamBox = () => {
             </div>
             <div className = "flex justify-center" style = {{height: "90%"}}>
                 <div className = "h-full w-1/3 flex justify-center items-center">
-                    <div className = "bg-white/40 h-5/6 w-2/3 rounded-xl flex flex-col justify-evenly items-center text-3xl font-poppins">
+                    <div className = "bg-white/40 h-5/6 w-2/3 rounded-xl flex flex-col justify-evenly items-center text-3xl font-poppins font-medium">
                         <div className = {"option cursor-pointer " + (option === "core" ? "text-[#A9FF40d6]" : "text-white")} id = "core">Core Team</div>
                         <div className = {"option cursor-pointer " + (option === "managers" ? "text-[#A9FF40d6]" : "text-white")} id = "managers">Event Managers</div>
                         <div className = {"option cursor-pointer " + (option === "sponsor" ? "text-[#A9FF40d6]" : "text-white")} id = "sponsor">Sponsorship</div>
