@@ -1,18 +1,18 @@
 import Nav from "../Navbar.jsx";
 import Eventteaser from "../Boxes/Eventteaser.jsx";
 import Footer from "../Footer.jsx";
-import examplelogo from "../../assets/Enlace-logo-name.png";
-import FakeItTillYouMakeIt from "../../assets/fake_it_till_you_make_it.jpg";
-import FindtheFiend from "../../assets/1080x1080-Find_the_Fiend_Instagram.png";
-import DancingWithTheDevil from "../../assets/DancingWithTheDevil_Instagram.png";
-import PulseAndTheBeat from "../../assets/PulseAndTheBeat_Instagram.png";
-import JokesOnTheHouse from "../../assets/Jokes_on_the_house_INSTAGRAM.png";
-import StringsAndKeys from "../../assets/StringsAndKeys_Instagram.jpg";
-import BeyondTheHarmony from "../../assets/BeyondTheHarmony_Instagram.png";
-import DevilAdvocate from "../../assets/Devil_s advocate instagram.png";
-import Blizzart from "../../assets/BLIZZART_Instagram.png";
-import BattleOfBands from "../../assets/Battle Of Bands Instagrm.jpg";
-import MxEnlace from "../../assets/MxEnlace_Instagram.png";
+import ThroughTheLens from "../../assets/eventposters/Photography instagram.jpg";
+import FakeItTillYouMakeIt from "../../assets/eventposters/fake_it_till_you_make_it.jpg";
+import FindtheFiend from "../../assets/eventposters/1080x1080-Find_the_Fiend_Instagram.png";
+import DancingWithTheDevil from "../../assets/eventposters/DancingWithTheDevil_Instagram.png";
+import PulseAndTheBeat from "../../assets/eventposters/PulseAndTheBeat_Instagram.png";
+import JokesOnTheHouse from "../../assets/eventposters/Jokes_on_the_house_INSTAGRAM.png";
+import StringsAndKeys from "../../assets/eventposters/StringsAndKeys_Instagram.jpg";
+import BeyondTheHarmony from "../../assets/eventposters/BeyondTheHarmony_Instagram.png";
+import DevilAdvocate from "../../assets/eventposters/Devil_s advocate instagram.png";
+import Blizzart from "../../assets/eventposters/BLIZZART_Instagram.png";
+import BattleOfBands from "../../assets/eventposters/Battle Of Bands Instagrm.jpg";
+import MxEnlace from "../../assets/eventposters/MxEnlace_Instagram.png";
 
 const Competitions = () => {
   return (
@@ -26,7 +26,7 @@ const Competitions = () => {
           <div className="mx-auto h-full w-5/6 flex flex-row flex-wrap justify-around items-center">
             <Eventteaser
               title="Through The Lens"
-              image={examplelogo}
+              image={ThroughTheLens}
               path="/competitions/through-the-lens"
             />
             <Eventteaser
