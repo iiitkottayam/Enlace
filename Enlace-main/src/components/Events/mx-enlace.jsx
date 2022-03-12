@@ -4,21 +4,24 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/MxEnlace_Instagram.png";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Mx. Enlace";
+  const highlight = "Personality Hunt";
+  const details = `Do you feel like you walk with the elegance of a queen? Or are you a debonair young man? Do you have the wits to grab eyeballs? Are you the life of every party?
+
+  If you are any of those things, here’s the event you’ve been waiting for. MX Enlace is here to give you the platform you deserve. It’s an unmissable opportunity to show the best version of yourself. It’s a litmus test of your attitude, your personality and your intellect
+  `;
+  const date = "April 1st, 2022";
+  const time = "8PM";
+  const org1name = "Arundhati J Kartha";
+  const org1mail = "arundhatikartha20bcs130@iiitkottayam.ac.in ";
+  const org1phone = "8078969417";
+  const org2name = "Adithyadev Mattada";
+  const org2mail = "adithyadevm20bec23@iiitkottayam.ac.in ";
+  const org2phone = "7559888295";
+  const link = "https://forms.gle/nD8vtTcYPPi4Dcnv6 ";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

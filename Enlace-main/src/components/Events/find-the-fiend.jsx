@@ -4,21 +4,23 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/1080x1080-Find_the_Fiend_Instagram.png";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Find the Fiend";
+  const highlight = "Treasure Hunt";
+  const details = `The cacophony of voices slowly goes down. A gripping silence engulfs the room. The crowd holds their collective breath as you, our modern-day Sherlock, get to work along with your fellow sleuths. 
+  Be a part of this team-based competition where participants play detective and investigate a crime to solve the mystery. 
+  Solve puzzles, figure out riddles and find clues as the mystery unravels, and find the culprit with the panache of an MI6 agent.`;
+  const date = "April 1st, 2022";
+  const time = "4:30PM";
+  const org1name = "Prashant Choudhary";
+  const org1mail = "zishanahmad20bcs78@iiitkottayam.ac.in";
+  const org1phone = "7017536979";
+  const org2name = "Zishan Ahmad";
+  const org2mail = "zishanahmad20bcs78@iiitkottayam.ac.in";
+  const org2phone = "8405861132";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLSeIxU_FI7LMZqYxvteJK43pDxYOrLtdvUzL0tCeUK9m3qgxUw/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
