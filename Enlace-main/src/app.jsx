@@ -45,112 +45,60 @@ const App = () => {
 
   return (
     <Router>
-      <>
-        <Switch>
-          <Route exact path="/">
-            <>
-              <Preloader />
-              <Home />
-            </>
-          </Route>
-          <Route exact path="/competitions">
-            <>
-              <Preloader />
-              <Competitions />
-            </>
-          </Route>
-          <Route exact path="/events">
-            <>
-              <Preloader />
-              <Events />
-            </>
-          </Route>
-          <Route exact path="/teams">
-            <>
-              <Preloader />
-              <Teams />
-            </>
-          </Route>
-          <Route exact path="/example">
-            <>
-              <Preloader />
-              <Example />
-            </>
-          </Route>
-          <Route exact path="/competitions/through-the-lens">
-            <>
-              <Preloader />
-              <Event1 />
-            </>
-          </Route>
-          <Route exact path="/competitions/fake-it-till-you-make-it">
-            <>
-              <Preloader />
-              <Event2 />
-            </>
-          </Route>
-          <Route exact path="/competitions/find-the-fiend">
-            <>
-              <Preloader />
-              <Event3 />
-            </>
-          </Route>
-          <Route exact path="/competitions/dancing-with-the-devil">
-            <>
-              <Preloader />
-              <Event4 />
-            </>
-          </Route>
-          <Route exact path="/competitions/pulse-and-the-beat">
-            <>
-              <Preloader />
-              <Event5 />
-            </>
-          </Route>
-          <Route exact path="/competitions/jokes-on-the-house">
-            <>
-              <Preloader />
-              <Event6 />
-            </>
-          </Route>
-          <Route exact path="/competitions/strings-and-keys">
-            <>
-              <Preloader />
-              <Event7 />
-            </>
-          </Route>
-          <Route exact path="/competitions/beyond-the-harmony">
-            <>
-              <Preloader />
-              <Event8 />
-            </>
-          </Route>
-          <Route exact path="/competitions/devils-advocate">
-            <>
-              <Preloader />
-              <Event9 />
-            </>
-          </Route>
-          <Route exact path="/competitions/blizzart">
-            <>
-              <Preloader />
-              <Event10 />
-            </>
-          </Route>
-          <Route exact path="/competitions/battle-of-the-bands">
-            <>
-              <Preloader />
-              <Event11 />
-            </>
-          </Route>
-          <Route exact path="/competitions/mx-enlace">
-            <>
-              <Preloader />
-              <Event12 />
-            </>
-          </Route>
-        </Switch>
-      </>
+      <Preloader />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/competitions">
+          <Competitions />
+        </Route>
+        <Route exact path="/events">
+          <Events />
+        </Route>
+        <Route exact path="/teams">
+          <Teams />
+        </Route>
+        <Route exact path="/example">
+          <Example />
+        </Route>
+        <Route exact path="/competitions/through-the-lens">
+          <Event1 />
+        </Route>
+        <Route exact path="/competitions/fake-it-till-you-make-it">
+          <Event2 />
+        </Route>
+        <Route exact path="/competitions/find-the-fiend">
+          <Event3 />
+        </Route>
+        <Route exact path="/competitions/dancing-with-the-devil">
+          <Event4 />
+        </Route>
+        <Route exact path="/competitions/pulse-and-the-beat">
+          <Event5 />
+        </Route>
+        <Route exact path="/competitions/jokes-on-the-house">
+          <Event6 />
+        </Route>
+        <Route exact path="/competitions/strings-and-keys">
+          <Event7 />
+        </Route>
+        <Route exact path="/competitions/beyond-the-harmony">
+          <Event8 />
+        </Route>
+        <Route exact path="/competitions/devils-advocate">
+          <Event9 />
+        </Route>
+        <Route exact path="/competitions/blizzart">
+          <Event10 />
+        </Route>
+        <Route exact path="/competitions/battle-of-the-bands">
+          <Event11 />
+        </Route>
+        <Route exact path="/competitions/mx-enlace">
+          <Event12 />
+        </Route>
+      </Switch>
     </Router>
   );
 };
