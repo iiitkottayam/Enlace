@@ -4,12 +4,12 @@ const TestBox = ({ heading, content }) => {
       <ul>
         <li className="border-l-[6px]  border-[#FF7979]/90 ">
           <p>.</p>
-          <h1 className="text-white font-reemkufi font-medium text-3xl m-4 lg:text-6xl lg:m-2">
+          <h1 className="text-white font-reemkufi font-medium text-2xl m-4 md:text-4xl lg:text-6xl lg:m-2">
             {heading}
           </h1>
           <p>.</p>
         </li>
-        <p className="text-white font-poppins font-medium text-2xl lg:text-3xl m-4">
+        <p className="text-white font-poppins font-medium text-base md:text-xl lg:text-3xl m-4">
           {content}
         </p>
       </ul>

@@ -22,21 +22,22 @@ A solo dance competition, wherein the participants have to submit a video of 2-4
   const org2name = "Karthika Madhu";
   const org2mail = "karthikamadhu20bec33@iiitkottayam.ac.in";
   const org2phone = "95159827629";
-  const link = "https://docs.google.com/forms/d/e/1FAIpQLSe7GCMVD5H4GVv3cID1jDoIYAuDqpFXfYKaTJNSt7r0xbFLiA/viewform";
+  const link =
+    "https://docs.google.com/forms/d/e/1FAIpQLSe7GCMVD5H4GVv3cID1jDoIYAuDqpFXfYKaTJNSt7r0xbFLiA/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
-      <div className="h-full w-full bg-competitions-bg">
+      <div className="h-full w-full bg-competitions-bg relative">
         <Nav />
         <div className="h-full w-full pt-36 space-y-10">
-          <div className=" w-full flex flex-col space-y-10 lg:flex-row justify-around mx-auto ">
+          <div className=" w-full flex flex-col space-y-10 sm:flex-row justify-around mx-auto ">
             <TextBox heading={eventname} content={highlight} />
 
             <div className="flex flex-col items-center justify-around">
               <img
                 src={image}
                 alt="event poster"
-                className="lg:w-75 lg:h-75  mx-auto rounded-2xl mb-5"
+                className="w-48 h-48 lg:w-72 lg:h-72 mx-auto rounded-2xl mb-5"
               ></img>
               <CommonButton link={link} />
             </div>
@@ -59,7 +60,9 @@ A solo dance competition, wherein the participants have to submit a video of 2-4
             />
           </div>
         </div>
-        <Footer />
+        <div className="pt-48 lg:pt-36">
+          <Footer />
+        </div>
       </div>
     </div>
   );

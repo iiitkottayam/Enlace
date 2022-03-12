@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import AOS from "aos";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap.js";
@@ -97,6 +102,9 @@ const App = () => {
         </Route>
         <Route exact path="/competitions/mx-enlace">
           <Event12 />
+        </Route>
+        <Route>
+          <Redirect to="/" />
         </Route>
       </Switch>
     </Router>
