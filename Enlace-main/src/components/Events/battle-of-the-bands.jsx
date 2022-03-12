@@ -4,21 +4,23 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/Battle Of Bands Instagrm.jpg";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Battle of the Bands";
+  const highlight = "A resplendent musical band event";
+  const details = `Ever been to a concert and thought that you could have done it better? Have friends who have flair towards music?
+  If yes then you don't have to whine about not having a stage to prove your knack for music. Be it jazz or blues we welcome you all. Call all your hyperactive music enthusiasts and show that your band can ROCK the stage. Battle of Bands is your chance to give the best concert of all time.
+  `
+  const date = "March 19th, 2022";
+  const time = "";
+  const org1name = "Amritansh Singh";
+  const org1mail = "amritanshsingh20bec17@iiitkottayam.ac.in";
+  const org1phone = "8299217060";
+  const org2name = "Sarthak Bindal";
+  const org2mail = "sarthakbindal20bcs55@iiitkottayam.ac.in";
+  const org2phone = "9009012267";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLSdKS0uUoeS3hUHZJ6NIy7jEMt8tClnAVXSlssVkyvP2p3ohyA/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

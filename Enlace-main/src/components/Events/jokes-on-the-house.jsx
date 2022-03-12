@@ -4,21 +4,24 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/Jokes_on_the_house_INSTAGRAM.png";
 
 const Example = () => {
   const eventname = "enter event name here";
   const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const details = `Details: “Comedy is the art of invigorating souls, the ploy to foil the devil and the medicine which cures the most threatening of diseases. “
+                                                                                                                                        - nobody said that lol
+I just made all of it up. That’s exactly what you need to do, make up fictitious stories, share your personal anecdotes, or deliver a dad joke which tickles the funny bone of people. Show off the comedian in you, and give us a hilarious night to remember
+`;
+  const date = "March 30th, 2022";
+  const time = "5PM";
+  const org1name = "Abhishek patil";
+  const org1mail = "abhishekh2019@iiitkottayam.ac.in";
+  const org1phone = "9400119476";
+  const org2name = "Vignesh";
+  const org2mail = "vignesh20bcs70@iiitkottayam.ac.in";
+  const org2phone = "7025753981";
+  const link = "";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

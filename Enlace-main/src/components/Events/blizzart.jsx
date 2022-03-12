@@ -4,21 +4,21 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/BLIZZART_Instagram.png";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Blizzart";
+  const highlight = "Themed Art Competition";
+  const details = `Themed Art Competition, Blizzart is an inter college themed art solo event aimed to let the artists of various colleges provide a stage to compete together on a single theme on the basis of their sketches/ drawings. So come out and show us your Creativity!`;
+  const date = "March 29th, 2022";
+  const time = "5:30PM";
+  const org1name = "Divyansh Panwar";
+  const org1mail = "divyanshpanwar20bcs67@iiitkottayam.ac.in";
+  const org1phone = "6378080121";
+  const org2name = "Shubham Anand";
+  const org2mail = "shubhamanand20bcs93@iiitkottayam.ac.in";
+  const org2phone = "9415876136";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLSc6yD8UrY_fyQr80RfN629wfsA-af0E7vtKi6-eBeoDpg7T-A/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">

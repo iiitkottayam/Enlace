@@ -4,7 +4,7 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/Devil_s advocate instagram.png";
 
 const Example = () => {
   const eventname = "enter event name here";

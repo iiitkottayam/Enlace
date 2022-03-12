@@ -4,21 +4,21 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
+import image from "../../assets/eventposters/BeyondTheHarmony_Instagram.png";
 
 const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
+  const eventname = "Beyond the Harmony";
+  const highlight = "";
+  const details = `"If I can't fly, let me sing”-Stephen Sondheim. Singing is the soul of music . Music becomes bland if not followed by symphonous lyrics. A Nightingale's melody at night or a cuckoo’s koo at dawn, music is in nature itself . So to all those canaries that are proud of their voice, Enlace brings you Beyond the Harmony, a stage to prove your passion for music with vocals.`;
+  const date = "March 19th, 2022";
+  const time = "";
+  const org1name = "Harini T";
+  const org1mail = "harinit20bcs95@iiitkottayam.ac.in";
+  const org1phone = "9597424654";
+  const org2name = "";
+  const org2mail = "";
+  const org2phone = "";
+  const link = "https://docs.google.com/forms/d/e/1FAIpQLScTQ6S6ydkHnKDKy_Gi0IIKFmdZ9KEfe4BsxU19ciHFD6-EQA/viewform";
 
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
