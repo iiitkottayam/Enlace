@@ -4,12 +4,10 @@ import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "aos/dist/aos.css";
-import Horizontal from "./components/Horizontal/Horizontal";
-import Vertical from "./components/Vertical/Vertical";
+import Home from "./components/Pages/Home";
 import Competitions from "./components/Pages/Competitions";
 import Events from "./components/Pages/Events";
 import Teams from "./components/Pages/Teams";
-import frame from "./assets/Frame.png";
 import Example from "./components/Events/Example";
 import Event1 from "./components/Events/through-the-lens";
 import Event2 from "./components/Events/fake-it-till-you-make-it";
@@ -23,6 +21,7 @@ import Event9 from "./components/Events/devils-advocate";
 import Event10 from "./components/Events/blizzart";
 import Event11 from "./components/Events/battle-of-the-bands";
 import Event12 from "./components/Events/mx-enlace";
+import Preloader from "./components/Preloader";
 
 gsap.registerPlugin(ScrollTrigger);
 const App = () => {
@@ -50,69 +49,105 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <>
-              <Vertical />
-              <div className="hidden lg:block" style={{ overflow: "hidden" }}>
-                <div
-                  className="bg"
-                  style={{
-                    backgroundImage: `url(${frame})`,
-                    height: "100vh",
-                    width: "500vw",
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <Horizontal />
-                </div>
-              </div>
+              <Preloader />
+              <Home />
             </>
           </Route>
           <Route exact path="/competitions">
-            <Competitions />
+            <>
+              <Preloader />
+              <Competitions />
+            </>
           </Route>
           <Route exact path="/events">
-            <Events />
+            <>
+              <Preloader />
+              <Events />
+            </>
           </Route>
-          <Route exact path = "/teams">
-            <Teams />
+          <Route exact path="/teams">
+            <>
+              <Preloader />
+              <Teams />
+            </>
           </Route>
           <Route exact path="/example">
-            <Example />
+            <>
+              <Preloader />
+              <Example />
+            </>
           </Route>
-          <Route exact path="/through-the-lens">
-            <Event1 />
+          <Route exact path="/competitions/through-the-lens">
+            <>
+              <Preloader />
+              <Event1 />
+            </>
           </Route>
-          <Route exact path="/fake-it-till-you-make-it">
-            <Event2 />
+          <Route exact path="/competitions/fake-it-till-you-make-it">
+            <>
+              <Preloader />
+              <Event2 />
+            </>
           </Route>
-          <Route exact path="/find-the-fiend">
-            <Event3 />
+          <Route exact path="/competitions/find-the-fiend">
+            <>
+              <Preloader />
+              <Event3 />
+            </>
           </Route>
-          <Route exact path="/dancing-with-the-devil">
-            <Event4 />
+          <Route exact path="/competitions/dancing-with-the-devil">
+            <>
+              <Preloader />
+              <Event4 />
+            </>
           </Route>
-          <Route exact path="/pulse-and-the-beat">
-            <Event5 />
+          <Route exact path="/competitions/pulse-and-the-beat">
+            <>
+              <Preloader />
+              <Event5 />
+            </>
           </Route>
-          <Route exact path="/jokes-on-the-house">
-            <Event6 />
+          <Route exact path="/competitions/jokes-on-the-house">
+            <>
+              <Preloader />
+              <Event6 />
+            </>
           </Route>
-          <Route exact path="/strings-and-keys">
-            <Event7 />
+          <Route exact path="/competitions/strings-and-keys">
+            <>
+              <Preloader />
+              <Event7 />
+            </>
           </Route>
-          <Route exact path="/beyond-the-harmony">
-            <Event8 />
+          <Route exact path="/competitions/beyond-the-harmony">
+            <>
+              <Preloader />
+              <Event8 />
+            </>
           </Route>
-          <Route exact path="/devils-advocate">
-            <Event9 />
+          <Route exact path="/competitions/devils-advocate">
+            <>
+              <Preloader />
+              <Event9 />
+            </>
           </Route>
-          <Route exact path="/blizzart">
-            <Event10 />
+          <Route exact path="/competitions/blizzart">
+            <>
+              <Preloader />
+              <Event10 />
+            </>
           </Route>
-          <Route exact path="/battle-of-the-bands">
-            <Event11 />
+          <Route exact path="/competitions/battle-of-the-bands">
+            <>
+              <Preloader />
+              <Event11 />
+            </>
           </Route>
-          <Route exact path="/mx-enlace">
-            <Event12 />
+          <Route exact path="/competitions/mx-enlace">
+            <>
+              <Preloader />
+              <Event12 />
+            </>
           </Route>
         </Switch>
       </>

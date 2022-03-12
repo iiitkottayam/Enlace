@@ -47,13 +47,31 @@ const Horizontal = () => {
       x: 7800,
       ease: "none",
     });
-  }, []);
+  });
 
   return (
     <>
-      <div className={styles.HorizontalWrapper + " PanelsContainer"} ref={panelsContainer}>
-        <img src = {jeepGif} alt = "jeep" className = "jeep" style = {{position: "absolute", zIndex: 0, width: "20rem", height: "10rem", top: "68vh", left: "1rem"}}/>
-        <div className={styles.page + " page"} ref={(e) => createPanelsRefs(e, 0)}>
+      <div
+        className={styles.HorizontalWrapper + " PanelsContainer"}
+        ref={panelsContainer}
+      >
+        <img
+          src={jeepGif}
+          alt="jeep"
+          className="jeep"
+          style={{
+            position: "absolute",
+            zIndex: 0,
+            width: "20rem",
+            height: "10rem",
+            top: "68vh",
+            left: "1rem",
+          }}
+        />
+        <div
+          className={styles.page + " page"}
+          ref={(e) => createPanelsRefs(e, 0)}
+        >
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             <Timeline />
           </div>
@@ -68,7 +86,7 @@ const Horizontal = () => {
         <div
           className={styles.page}
           ref={(e) => createPanelsRefs(e, 2)}
-          id = "sponsors"
+          id="sponsors"
         >
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="flex flex-col flex-nowrap justify-center items-center">
@@ -142,7 +160,7 @@ const Horizontal = () => {
         >
           <div className="h-full w-full flex flex-col flex-nowrap justify-center">
             <div className="mx-auto pb-14">
-              <CommonButton/>
+              <CommonButton />
             </div>
             <div className="flex gap-10 w-8/12 mx-auto pt-14">
               <OrangeBox />

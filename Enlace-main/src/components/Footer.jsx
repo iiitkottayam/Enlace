@@ -6,12 +6,18 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row flex-nowrap justify-between items-center">
         <img src={logo} alt="wildbeats logo" className="w-64 mx-20"></img>
         <div className="mt-5 flex flex-row flex-nowrap justify-around items-center text-base lg:text-xl mx-auto lg:mx-20">
-          <i className="fa-brands fa-facebook-f mx-4"></i>
-          <i className="fa-brands fa-youtube mx-4"></i>
-          <i className="fa-brands fa-twitter mx-4"></i>
-          <i className="fa-solid fa-envelope mx-4"></i>
-          <i className="fa-brands fa-twitch mx-4"></i>
-          <i className="fa-brands fa-instagram mx-4"></i>
+          <a
+            href="https://www.youtube.com/channel/UCTXmRiVLxOiu214yRVfNdKQ"
+            target="_blank"
+          >
+            <i className="fa-brands fa-youtube mx-4"></i>
+          </a>
+          <a href="mailto:wildbeats@iiitkottayam.ac.in" target="_blank">
+            <i className="fa-solid fa-envelope mx-4"></i>
+          </a>
+          <a href="https://www.instagram.com/enlace_iiitk/" target="_blank">
+            <i className="fa-brands fa-instagram mx-4"></i>
+          </a>
         </div>
       </div>
       <p className="font-montserrat text-center py-6 text-base">

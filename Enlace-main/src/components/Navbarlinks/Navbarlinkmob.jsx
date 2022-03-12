@@ -5,7 +5,7 @@ const Navbarlink = ({ title, route, navRef, iconRef, menuRef }) => {
     const nav = navRef.current;
     const icon = iconRef.current;
     const menu = menuRef.current;
-    document.body.style.overflow = "scroll";
+    document.body.style.overflow = "initial";
     nav.classList.add(
       "absolute",
       "top-3",
