@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { teams } from "../../data/teamData";
-import styles from "../../styles/teamBox.module.css";
+import styles from "../../Styles/teamBox.module.css";
 import { FaChevronDown } from "react-icons/fa";
 
 const TeamBox = () => {
