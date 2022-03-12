@@ -12,7 +12,8 @@ import past6 from "../../assets/past/past-6.png";
 import past7 from "../../assets/past/past-7.png";
 import past8 from "../../assets/past/past-8.png";
 import EventBoxSm from "../Boxes/EventBoxSm";
-import Emeraldbox from "../Boxes/Emeraldbox.jsx";
+import Goldbox from "../Boxes/Goldbox.jsx";
+import Silverbox from "../Boxes/Silverbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Footer from "../Footer.jsx";
 import { events } from "../../data/timelineData";
@@ -36,7 +37,7 @@ const Vertical = () => {
     <div className={styles.VerticalWrapper + " vertical"}>
       <Nav />
       <div className={styles.page}>
-        <div className="w-11/12 h-4/6 mx-auto flex flex-col flex-nowrap justify-around text-center items-center pt-48 lg:pt-32 lg:items-start lg:text-left md:text-left md:h-3/6 md:pt-16 md:items-start">
+        <div className="w-11/12 h-4/6 mx-auto flex flex-col flex-nowrap justify-around text-center items-center pt-48 lg:pt-32 lg:items-start lg:text-left">
           <h2 className="text-4xl text-white lg:text-5xl font-reemkufi">
             Welcome to Enlace!
           </h2>
@@ -95,7 +96,6 @@ const Vertical = () => {
             <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
             now and come join us in this wild journey!
           </p>
-          <CommonButton />
         </div>
 
         <div className="hidden lg:block mx-auto w-10/12 font-reemkufi">
@@ -170,7 +170,7 @@ const Vertical = () => {
               data-aos-duration="750"
               className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"
             >
-              <p className="text-white text-3xl py-8 px-6 font-poppins font-light">
+              <p className="text-white text-2xl py-8 px-6 font-poppins font-light">
                 Enlace, IIIT Kottayam's cultural fest, has been celebrating
                 arts, heritage, music and lifestyle since its inception in 2019.
                 We bring a myriad of events to life with impressive and
@@ -184,10 +184,10 @@ const Vertical = () => {
         <div className="lg:hidden">
           <img src={past8} alt="album" className="mx-auto pt-12" />
           <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">
-            Enlace, IIIT Kottayam's cultural fest, has been celebrating arts,
-            heritage, music and lifestyle since its inception in 2019. We bring
-            a myriad of events to life with impressive and breathtaking
-            performances.{" "}
+            Keeping the torch alight, IIIT Kottayam brings to you Enlace 2022:
+            Into the wild, a fest to mirror the beautiful chaos of nature and
+            keep you on your toes, stir your souls and spark your creative
+            flair.{" "}
           </p>
         </div>
         <div className="hidden lg:block">
@@ -211,7 +211,7 @@ const Vertical = () => {
               data-aos-duration="750"
               className="inline-block ml-28   basis-2/6  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"
             >
-              <p className="text-white text-3xl py-8 px-6 font-poppins font-light">
+              <p className="text-white text-2xl py-8 px-6 font-poppins font-light">
                 Keeping the torch alight, IIIT Kottayam brings to you Enlace
                 2022: Into the wild, a fest to mirror the beautiful chaos of
                 nature and keep you on your toes, stir your souls and spark your
@@ -219,7 +219,7 @@ const Vertical = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+          <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap py-12 px-4 ">
             <img
               data-aos="fade-up-right"
               data-aos-duration="1200"
@@ -239,7 +239,7 @@ const Vertical = () => {
               data-aos-duration="1200"
               src={past7}
               alt="album"
-              className="pl-36 pt-16"
+              className="pl-36 py-16"
             />
           </div>
         </div>
@@ -293,7 +293,7 @@ const Vertical = () => {
             <p className=" font-semibold text-2xl pt-10">Gold Sponsors</p>
           </div>
           <div className="mx-auto text-center text-white flex  justify-center item-center">
-            <Emeraldbox />
+            <Goldbox />
           </div>
         </div>
       </div>
@@ -304,10 +304,10 @@ const Vertical = () => {
             <p className=" font-semibold text-2xl py-4">Silver Sponsors</p>
           </div>
           <div className="mx-auto text-center text-white flex  justify-center item-center">
-            <Emeraldbox />
+            <Silverbox />
           </div>
-          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-24 space-y-4 text-3xl">
-            <p id="mobilefaq" className="text-6xl font-reemkufi pb-16">
+          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-24 space-y-2 text-3xl">
+            <p id="mobilefaq" className="text-6xl font-reemkufi pb-5">
               FAQ
             </p>
             <FAQbox />
@@ -317,7 +317,7 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-20 space-y-16 text-3xl">
+          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-10 space-y-10 text-3xl">
             <FAQbox />
             <FAQbox />
           </div>

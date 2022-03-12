@@ -47,13 +47,31 @@ const Horizontal = () => {
       x: 7800,
       ease: "none",
     });
-  }, []);
+  });
 
   return (
     <>
-      <div className={styles.HorizontalWrapper + " PanelsContainer"} ref={panelsContainer}>
-        <img src = {jeepGif} alt = "jeep" className = "jeep" style = {{position: "absolute", zIndex: 0, width: "20rem", height: "10rem", top: "68vh", left: "1rem"}}/>
-        <div className={styles.page + " page"} ref={(e) => createPanelsRefs(e, 0)}>
+      <div
+        className={styles.HorizontalWrapper + " PanelsContainer"}
+        ref={panelsContainer}
+      >
+        <img
+          src={jeepGif}
+          alt="jeep"
+          className="jeep"
+          style={{
+            position: "absolute",
+            zIndex: 0,
+            width: "20rem",
+            height: "10rem",
+            top: "68vh",
+            left: "1rem",
+          }}
+        />
+        <div
+          className={styles.page + " page"}
+          ref={(e) => createPanelsRefs(e, 0)}
+        >
           <div className="mx-auto w-5/6 h-full flex flex-row flex-nowrap justify-around items-center">
             <Timeline />
           </div>
@@ -68,7 +86,7 @@ const Horizontal = () => {
         <div
           className={styles.page}
           ref={(e) => createPanelsRefs(e, 2)}
-          id = "sponsors"
+          id="sponsors"
         >
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="flex flex-col flex-nowrap justify-center items-center">
@@ -78,7 +96,7 @@ const Horizontal = () => {
               <Arrow2 />
             </div>
             <div className="flex flex-col flex-nowrap justify-around items-center">
-              <h1 className="font-poppins font-semibold lg:text-6xl text-white mb-10">
+              <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white mb-10">
                 Gold Tier
               </h1>
               <Goldbox />
@@ -88,18 +106,18 @@ const Horizontal = () => {
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 3)}>
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="w-2/5 h-full flex flex-col flex-nowrap justify-around items-center">
-              <div className="w-full h-2/5 flex flex-col flex-nowrap justify-around items-center">
-                <h1 className="font-poppins font-semibold lg:text-6xl text-white text-center">
+              <div className="w-full h-2/5 flex flex-col flex-nowrap justify-evenly items-center">
+                <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white text-center">
                   Silver Tier
                 </h1>
-                <div className="w-full flex flex-row flex-wrap justify-between items-center">
+                <div className="w-full flex flex-row flex-wrap justify-around items-center">
                   <Silverbox />
                   <Silverbox />
                   <Silverbox />
                 </div>
               </div>
               <div className="w-4/5 h-2/5 flex flex-col flex-nowrap justify-evenly items-center">
-                <h1 className="font-poppins font-semibold lg:text-4xl text-white text-center">
+                <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white text-center">
                   Emerald Tier
                 </h1>
                 <div className="w-full flex flex-row flex-wrap justify-around items-center">
@@ -110,7 +128,7 @@ const Horizontal = () => {
               </div>
             </div>
             <div className="h-5/6 flex flex-col flex-nowrap justify-around items-center">
-              <h1 className="font-poppins font-semibold lg:text-5xl text-white text-center">
+              <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white text-center">
                 Sapphire Tier
               </h1>
               <div className="h-4/5 flex flex-col flex-nowrap justify-around items-center">
@@ -140,9 +158,9 @@ const Horizontal = () => {
           ref={(e) => createPanelsRefs(e, 5)}
           id="register"
         >
-          <div className="h-full w-full flex flex-col flex-nowrap justify-center">
+          <div className="relative h-full w-full flex flex-col flex-nowrap justify-center">
             <div className="mx-auto pb-14">
-              <CommonButton/>
+              <CommonButton />
             </div>
             <div className="flex gap-10 w-8/12 mx-auto pt-14">
               <OrangeBox />

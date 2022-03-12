@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
-import Navbarlink from "./Navbarlink";
-import Navbarlinkmob from "./Navbarlinkmob";
+import Navbarlink from "./Navbarlinks/Navbarlink";
+import Navbarlinkmob from "./Navbarlinks/Navbarlinkmob";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -47,11 +47,10 @@ const Navbar = () => {
         }
       });
     });
-  }, []);
+  });
 
   if (sessionStorage.getItem("load")) {
     const params = new URLSearchParams(window.location.search);
-    console.log(params.get("loc"));
     setTimeout(() => scroller("#" + params.get("loc")), 300);
     sessionStorage.setItem("load", false);
   }
@@ -87,7 +86,7 @@ const Navbar = () => {
       menu.classList.remove("hidden");
       menu.classList.add("flex");
     } else {
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = "initial";
       nav.classList.add(
         "absolute",
         "top-3",
@@ -117,7 +116,12 @@ const Navbar = () => {
       className="flex box-border container absolute top-3 left-0 right-0 justify-between px-5 md:px-7 py-2 w-11/12 md:w-auto mx-auto border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full items-center"
     >
       <div className="relative z-10">
-        <a href = "/">
+        <Link
+          to="/"
+          onClick={() => {
+            document.body.style.overflow = "initial";
+          }}
+        >
           <div className="flex items-center">
             <img
               className="h-8 w-12 md:h-10 md:w-14 pr-2"
@@ -128,7 +132,7 @@ const Navbar = () => {
               ENLACE
             </h3>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="hidden text-[#ffffffd6] font-medium text-xl md:text-sm lg:text-base md:space-x-8 lg:space-x-16 font-poppins md:flex items-center">
         <Navbarlink title="Competitions" route="/competitions" />
@@ -212,7 +216,7 @@ const Navbar = () => {
           menuRef={menuRef}
         />
         <Navbarlinkmob
-          title="Team"
+          title="Teams"
           route="/teams"
           navRef={navRef}
           iconRef={iconRef}

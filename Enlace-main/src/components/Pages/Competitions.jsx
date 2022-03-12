@@ -16,34 +16,46 @@ const Competitions = () => {
             <Eventteaser
               title="Through The Lens"
               image={examplelogo}
-              path="/through-the-lens"
+              path="/competitions/through-the-lens"
             />
             <Eventteaser
               title="Fake It Till You Make It"
-              path="/fake-it-till-you-make-it"
+              path="/competitions/fake-it-till-you-make-it"
             />
-            <Eventteaser title="Find The Fiend" path="/find-the-fiend" />
+            <Eventteaser
+              title="Find The Fiend"
+              path="/competitions/find-the-fiend"
+            />
             <Eventteaser
               title="Dancing With The Devil"
-              path="/dancing-with-the-devil"
+              path="/competitions/dancing-with-the-devil"
             />
             <Eventteaser
               title="Pulse And The Beat"
-              path="/pulse-and-the-beat"
+              path="/competitions/pulse-and-the-beat"
             />
             <Eventteaser
               title="Jokes On The House"
-              path="/jokes-on-the-house"
+              path="/competitions/jokes-on-the-house"
             />
-            <Eventteaser title="Strings And Keys" path="/strings-and-keys" />
+            <Eventteaser
+              title="Strings And Keys"
+              path="/competitions/strings-and-keys"
+            />
             <Eventteaser
               title="Beyond The Harmony"
-              path="/beyond-the-harmony"
+              path="/competitions/beyond-the-harmony"
             />
-            <Eventteaser title="Devil's Advocate" path="/devils-advocate" />
-            <Eventteaser title="Blizzart" path="/blizzart" />
-            <Eventteaser title="Battle Of Bands" path="/battle-of-the-bands" />
-            <Eventteaser title="Mx. Enlace" path="/mx-enlace" />
+            <Eventteaser
+              title="Devil's Advocate"
+              path="/competitions/devils-advocate"
+            />
+            <Eventteaser title="Blizzart" path="/competitions/blizzart" />
+            <Eventteaser
+              title="Battle Of Bands"
+              path="/competitions/battle-of-the-bands"
+            />
+            <Eventteaser title="Mx. Enlace" path="/competitions/mx-enlace" />
           </div>
         </div>
         <div className="pt-48 lg:pt-36">
