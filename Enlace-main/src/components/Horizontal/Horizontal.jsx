@@ -96,7 +96,7 @@ const Horizontal = () => {
               <Arrow2 />
             </div>
             <div className="flex flex-col flex-nowrap justify-around items-center">
-              <h1 className="font-poppins font-semibold lg:text-6xl text-white mb-10">
+              <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white mb-10">
                 Gold Tier
               </h1>
               <Goldbox />
@@ -106,18 +106,18 @@ const Horizontal = () => {
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 3)}>
           <div className="h-full w-full flex flex-row flex-nowrap justify-around items-center">
             <div className="w-2/5 h-full flex flex-col flex-nowrap justify-around items-center">
-              <div className="w-full h-2/5 flex flex-col flex-nowrap justify-around items-center">
-                <h1 className="font-poppins font-semibold lg:text-6xl text-white text-center">
+              <div className="w-full h-2/5 flex flex-col flex-nowrap justify-evenly items-center">
+                <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white text-center">
                   Silver Tier
                 </h1>
-                <div className="w-full flex flex-row flex-wrap justify-between items-center">
+                <div className="w-full flex flex-row flex-wrap justify-around items-center">
                   <Silverbox />
                   <Silverbox />
                   <Silverbox />
                 </div>
               </div>
               <div className="w-4/5 h-2/5 flex flex-col flex-nowrap justify-evenly items-center">
-                <h1 className="font-poppins font-semibold lg:text-4xl text-white text-center">
+                <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white text-center">
                   Emerald Tier
                 </h1>
                 <div className="w-full flex flex-row flex-wrap justify-around items-center">
@@ -128,7 +128,7 @@ const Horizontal = () => {
               </div>
             </div>
             <div className="h-5/6 flex flex-col flex-nowrap justify-around items-center">
-              <h1 className="font-poppins font-semibold lg:text-5xl text-white text-center">
+              <h1 className="font-poppins font-semibold lg:text-4xl xl:text-5xl text-white text-center">
                 Sapphire Tier
               </h1>
               <div className="h-4/5 flex flex-col flex-nowrap justify-around items-center">
@@ -158,7 +158,7 @@ const Horizontal = () => {
           ref={(e) => createPanelsRefs(e, 5)}
           id="register"
         >
-          <div className="h-full w-full flex flex-col flex-nowrap justify-center">
+          <div className="relative h-full w-full flex flex-col flex-nowrap justify-center">
             <div className="mx-auto pb-14">
               <CommonButton />
             </div>

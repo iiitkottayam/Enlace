@@ -5,7 +5,7 @@ import TeamBoxSm from "../Boxes/TeamBoxSm.jsx";
 
 const Teams = () => {
   return (
-    <div className="bg-black lg:bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
+    <div className="relative bg-black lg:bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
       <div className="h-max lg:h-screen w-full bg-competitions-bg relative flex flex-col">
         <div className="relative h-1/6">
           <Nav />
@@ -19,7 +19,9 @@ const Teams = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="pt-48 lg:pt-36">
+        <Footer />
+      </div>
     </div>
   );
 };

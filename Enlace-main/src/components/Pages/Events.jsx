@@ -7,7 +7,7 @@ import enlacelogo from "../../assets/Enlace-logo-name.png";
 const Events = () => {
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
-      <div className="h-full w-full bg-competitions-bg">
+      <div className="h-full w-full bg-competitions-bg relative">
         <Nav />
         <div className="h-full w-full pt-36">
           <h1 className="font-reemkufi text-4xl text-white text-center">
@@ -26,7 +26,9 @@ const Events = () => {
             <Eventteaser />
           </div>
         </div>
-        <Footer />
+        <div className="pt-48 lg:pt-36">
+          <Footer />
+        </div>
       </div>
     </div>
   );

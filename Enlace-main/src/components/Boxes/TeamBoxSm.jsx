@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { teams } from "../../data/teamData";
-import styles from "../../Styles/teamBox.module.css";
+import styles from "../../styles/teamBox.module.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const TeamBoxSm = () => {
