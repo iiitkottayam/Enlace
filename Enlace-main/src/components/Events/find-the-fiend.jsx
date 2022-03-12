@@ -15,7 +15,7 @@ const Example = () => {
   const date = "April 1st, 2022";
   const time = "4:30PM";
   const org1name = "Prashant Choudhary";
-  const org1mail = "zishanahmad20bcs78@iiitkottayam.ac.in";
+  const org1mail = "prashantchoudhary20bcs71@iiitkottayam.ac.in";
   const org1phone = "7017536979";
   const org2name = "Zishan Ahmad";
   const org2mail = "zishanahmad20bcs78@iiitkottayam.ac.in";
