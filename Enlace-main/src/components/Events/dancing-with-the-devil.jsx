@@ -30,7 +30,7 @@ A solo dance competition, wherein the participants have to submit a video of 2-4
       <div className="h-full w-full bg-competitions-bg relative">
         <Nav />
         <div className="h-full w-full pt-36 space-y-10">
-          <div className=" w-full flex flex-col space-y-10 sm:flex-row justify-around mx-auto ">
+          <div className="lg:px-36 w-full flex flex-col space-y-10 sm:flex-row justify-between mx-auto">
             <TextBox heading={eventname} content={highlight} />
 
             <div className="flex flex-col items-center justify-around">
