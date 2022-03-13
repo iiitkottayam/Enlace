@@ -6,13 +6,17 @@ const Preloader = () => {
   const animationRef = useRef(null);
   const preloaderRef = useRef(null);
 
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-      sessionStorage.setItem("doNotShowPreloader", "true");
-      document.body.style.overflow = "initial";
-      preloaderRef.current.classList.add("hidden");
-    }, 3000);
-  });
+  window.addEventListener(
+    "load",
+    () => {
+      setTimeout(() => {
+        sessionStorage.setItem("doNotShowPreloader", "true");
+        document.body.style.overflow = "initial";
+        preloaderRef.current.classList.add("hidden");
+      }, 3000);
+    },
+    { once: true }
+  );
 
   useEffect(() => {
     if (sessionStorage.getItem("doNotShowPreloader") == null) {
