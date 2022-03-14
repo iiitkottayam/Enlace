@@ -42,22 +42,20 @@ const Navbar = () => {
         e.preventDefault();
 
         if (window.location.pathname !== "/") {
-          history.push(
-            `/?loc=${e.target.getAttribute("href").slice(1)}`
-          );
+          history.push("/");
           sessionStorage.setItem("load", true);
+          sessionStorage.setItem("loc", e.target.getAttribute("href"));
         } else {
           scroller(e.target.getAttribute("href"));
         }
       });
     });
-  });
 
-  if (sessionStorage.getItem("load")) {
-    const params = new URLSearchParams(window.location.search);
-    setTimeout(() => scroller("#" + params.get("loc")), 300);
-    sessionStorage.setItem("load", false);
-  }
+    if (sessionStorage.getItem("load")) {
+      scroller(sessionStorage.getItem("loc"));
+      sessionStorage.setItem("load", false);
+    }
+  });
 
   const navRef = useRef(null);
   const iconRef = useRef(null);
