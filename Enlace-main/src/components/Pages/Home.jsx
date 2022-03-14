@@ -7,19 +7,18 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Home = () => {
   useEffect(() => {
-
-    gsap.to(".bg", {
-      xPercent: -100,
-      rotation: 0.01,
-      x: () => window.innerWidth,
-      ease: "none",
+    let t = gsap.timeline({
       scrollTrigger: {
         trigger: ".bg",
         scrub: 1,
         pin: true,
         end: () => "+=" + window.innerWidth,
-      },
+      }
     });
+
+    t
+    .to('body',{ duration: 10 }) 
+    .to('.bg',{duration: 1000, ease: 'none', xPercent: -100, rotation: 0.01, x: () => window.innerWidth})
     
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {
