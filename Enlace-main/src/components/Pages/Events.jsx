@@ -2,7 +2,7 @@ import Nav from "../Navbar.jsx";
 import Eventteaser from "../Boxes/Eventteaser.jsx";
 import Footer from "../Footer.jsx";
 import EnlaceNiteBanner from "../Boxes/EnlaceNiteBanner.jsx";
-import enlacelogo from "../../assets/Enlace-logo-name.png";
+import { eventsdata } from "../../data/eventsData";
 
 const Events = () => {
   return (
@@ -18,12 +18,15 @@ const Events = () => {
             Workshops
           </h1>
           <div className="mx-auto h-full w-5/6 flex flex-row flex-wrap justify-around items-center">
-            <Eventteaser title="enlace" image={enlacelogo} />
-            <Eventteaser />
-            <Eventteaser />
-            <Eventteaser />
-            <Eventteaser />
-            <Eventteaser />
+            {eventsdata.workshops.map((eventObj) => {
+              return (
+                <Eventteaser
+                  title={eventObj.title}
+                  image={eventObj.imageRef}
+                  path={eventObj.path}
+                />
+              );
+            })}
           </div>
         </div>
         <div className="pt-48 lg:pt-36">
