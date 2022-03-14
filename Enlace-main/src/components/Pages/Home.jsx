@@ -3,6 +3,7 @@ import Vertical from "../Vertical/Vertical";
 import frame from "../../assets/Frame.png";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Home = () => {
   useEffect(() => {
@@ -17,7 +18,15 @@ const Home = () => {
         end: () => "+=" + window.innerWidth,
       },
     });
-  });
+    
+    return () => {
+      ScrollTrigger.getAll().forEach((instance) => {
+        instance.kill();
+      });
+      // This in case a scroll animation is active while the route is updated
+      gsap.killTweensOf(window);
+    };
+  }, []);
 
   return (
     <div>
