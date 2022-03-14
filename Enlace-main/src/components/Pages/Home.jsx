@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Home = () => {
   useEffect(() => {
+    
     let t = gsap.timeline({
       scrollTrigger: {
         trigger: ".bg",
@@ -17,8 +18,8 @@ const Home = () => {
     });
 
     t
-    .to('body',{ duration: 10 }) 
-    .to('.bg',{duration: 1000, ease: 'none', xPercent: -100, rotation: 0.01, x: () => window.innerWidth})
+    .to('body',{ duration: 20 }) 
+    .to('.bg',{duration: 2000, ease: 'none', xPercent: -100, rotation: 0.01, x: () => window.innerWidth})
     
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {

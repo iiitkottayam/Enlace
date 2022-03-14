@@ -36,8 +36,8 @@ const Horizontal = () => {
     })
 
     t1
-    .to('body',{ duration: 10}) 
-    .to(panels.current ,{duration: 1000, ease: 'none', xPercent: -100 * (totalPanels - 1), rotation: 0.01})
+    .to('body',{ duration: 20}) 
+    .to(panels.current ,{duration: 2000, ease: 'none', xPercent: -100 * (totalPanels - 1), rotation: 0.01})
 
     let t2 = gsap.timeline({
       scrollTrigger: {
@@ -49,8 +49,8 @@ const Horizontal = () => {
     })
 
     t2
-    .to('body',{ duration: 10 }) 
-    .to(".jeep" ,{duration: 1000, ease: 'none', x: 7800, rotation: 0.01})
+    .to('body',{ duration: 20 }) 
+    .to(".jeep" ,{duration: 2000, ease: 'none', x: 7800, rotation: 0.01})
     
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {
