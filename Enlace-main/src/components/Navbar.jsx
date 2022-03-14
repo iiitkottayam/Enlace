@@ -54,6 +54,7 @@ const Navbar = () => {
     if (sessionStorage.getItem("load")) {
       scroller(sessionStorage.getItem("loc"));
       sessionStorage.setItem("load", false);
+      sessionStorage.removeItem("loc");
     }
   });
 
