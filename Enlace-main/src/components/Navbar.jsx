@@ -51,13 +51,9 @@ const Navbar = () => {
         }
       });
     });
-  }, [history]);
+  });
 
-  if (sessionStorage.getItem("load")) {
-    const params = new URLSearchParams(window.location.search);
-    setTimeout(() => scroller("#" + params.get("loc")), 300);
-    sessionStorage.setItem("load", false);
-  }
+  
 
   const navRef = useRef(null);
   const iconRef = useRef(null);
