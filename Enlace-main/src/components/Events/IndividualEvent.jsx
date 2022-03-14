@@ -4,54 +4,40 @@ import TextBox from "./TextBox.jsx";
 import TimeBox from "./TimeBox.jsx";
 import Orglist from "./OrgList.jsx";
 import CommonButton from "../CommonButton";
-import image from "../../assets/eventposters/eventposterplaceholder.png";
 
-const Example = () => {
-  const eventname = "enter event name here";
-  const highlight = "enter highlight of event here";
-  const details = "enter details here";
-  const date = "March 25th, 2022";
-  const time = "4:00 PM";
-  const org1name = "name of 1st organizer";
-  const org1mail = "email of 1st organizer";
-  const org1phone = "phone number of 1st organizer";
-  const org2name = "name of 2nd organizer";
-  const org2mail = "email of 2nd organizer";
-  const org2phone = "phone number of 2nd organizer";
-  const link = "enter registration form link";
-
+const IndividualEvent = ({ eventRef }) => {
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
       <div className="h-full w-full bg-competitions-bg relative">
         <Nav />
         <div className="h-full w-full pt-36 space-y-10">
           <div className="lg:px-36 w-full flex flex-col space-y-10 sm:flex-row justify-between mx-auto">
-            <TextBox heading={eventname} content={highlight} />
+            <TextBox heading={eventRef.title} content={eventRef.highlight} />
 
             <div className="flex flex-col items-center justify-around">
               <img
-                src={image}
+                src={eventRef.imageRef}
                 alt="event poster"
                 className="w-48 h-48 lg:w-72 lg:h-72 mx-auto rounded-2xl mb-5"
               ></img>
-              <CommonButton link={link} />
+              <CommonButton link={eventRef.link} />
             </div>
           </div>
           <div className="lg:px-36">
-            <TextBox heading="Details" content={details} />
-            <TimeBox date={date} time={time} />
+            <TextBox heading="Details" content={eventRef.details} />
+            <TimeBox date={eventRef.date} time={eventRef.time} />
             <TextBox
               heading="Contact The Organizers"
               content="Want more details related to this event, feel free to contact the Event Organiser."
               className="pb-4"
             />
             <Orglist
-              org1={org1name}
-              org1det={org1mail}
-              ph1={org1phone}
-              org2={org2name}
-              org2det={org2mail}
-              ph2={org2phone}
+              org1={eventRef.org1name}
+              org1det={eventRef.org1mail}
+              ph1={eventRef.org1phone}
+              org2={eventRef.org2name}
+              org2det={eventRef.org2mail}
+              ph2={eventRef.org2phone}
             />
           </div>
         </div>
@@ -63,4 +49,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default IndividualEvent;
