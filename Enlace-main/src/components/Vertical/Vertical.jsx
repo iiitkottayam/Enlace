@@ -9,6 +9,7 @@ import FAQbox from "../Boxes/FAQbox.jsx";
 import SubmissionEventsBox from "../Boxes/SubmissionEventsBox";
 import Footer from "../Footer.jsx";
 import { events, submissionEvents } from "../../data/timelineData";
+import { HashLink as Link } from "react-router-hash-link";
 
 const urls = [
   "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-1_b8bqaj.png",
@@ -259,7 +260,7 @@ const Vertical = () => {
                     ) : (
                       ""
                     )}
-                    <EventBoxSm name={e.name} time={e.time} />
+                    <Link to = {event.link} onClick = {() => window.scrollTo(0,0)}><EventBoxSm name={e.name} time={e.time} /></Link>
                   </>
                 );
               });
