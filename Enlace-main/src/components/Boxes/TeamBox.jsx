@@ -34,15 +34,6 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "managers" ? "text-[#A9FF40]" : "text-white/85")
-              }
-              id="managers"
-            >
-              Event Managers
-            </div>
-            <div
-              className={
-                "option cursor-pointer " +
                 (option === "sponsor" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="sponsor"
@@ -52,11 +43,11 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "design" ? "text-[#A9FF40]" : "text-white/85")
+                (option === "managers" ? "text-[#A9FF40]" : "text-white/85")
               }
-              id="design"
+              id="managers"
             >
-              Designing
+              Event Managers
             </div>
             <div
               className={
@@ -65,7 +56,16 @@ const TeamBox = () => {
               }
               id="webd"
             >
-              Web Devs
+              Web Devlopers
+            </div>
+            <div
+              className={
+                "option cursor-pointer " +
+                (option === "design" ? "text-[#A9FF40]" : "text-white/85")
+              }
+              id="design"
+            >
+              Designing
             </div>
           </div>
         </div>
@@ -83,9 +83,11 @@ const TeamBox = () => {
                   className="flex-1 flex-col justify-center items-center mt-5"
                   style={{ height: "16rem" }}
                 >
-                  <div className="w-full h-full bg-white/40 hover:bg-white/50 active:bg-white/30 transition duration-300 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
+                  <div data-aos="zoom-in" className="w-full h-full bg-white/40 hover:bg-white/50 active:bg-white/30 transition duration-300 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
                     <img
                       className="w-36 h-36 rounded-full"
+                      data-aos="zoom-out"
+                      data-aos-duration="2000"
                       src={person.pic}
                       alt="members"
                     ></img>
@@ -103,12 +105,12 @@ const TeamBox = () => {
               );
             })}
           </div>
-            <div
-              className="flex justify-center absolute bottom-3"
-              style={{ width: "90%" }}
-            >
-              <FaChevronDown size="2rem" />
-            </div>
+          <div
+            className="flex justify-center absolute bottom-3"
+            style={{ width: "90%" }}
+          >
+            <FaChevronDown size="2rem" />
+          </div>
         </div>
       </div>
     </>
