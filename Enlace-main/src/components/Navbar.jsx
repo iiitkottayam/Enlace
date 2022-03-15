@@ -106,9 +106,9 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className="w-full absolute top-3 px-5 py-2 flex justify-between items-center border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full"
+      className="z-10 w-full box-border absolute top-3 px-5 py-2 flex justify-between items-center border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full"
     >
-      <div className="relative z-10">
+      <div className="relative z-20">
         <Link to="/" onClick={closeMenu} className="flex items-center">
           <img
             className="h-8 w-12 md:h-10 md:w-14 pr-2"
@@ -168,7 +168,7 @@ const Navbar = () => {
           Register
         </a>
       </div>
-      <div className="relative z-10 flex items-center md:hidden">
+      <div className="relative z-20 flex items-center md:hidden">
         <i
           ref={iconRef}
           onClick={toggleNav}
@@ -177,7 +177,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className="closed z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
+        className="closed z-10 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
       >
         <Navbarlinkmob
           title="Competitions"
