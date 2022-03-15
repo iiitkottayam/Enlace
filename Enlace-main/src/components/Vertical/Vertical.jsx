@@ -1,22 +1,25 @@
 import styles from "./vertical.module.css";
 import Nav from "../Navbar.jsx";
-import dates from "../../assets/dates.png";
 import CommonButton from "../CommonButton.jsx";
 import OrangeBox from "../Boxes/OrangeBox.jsx";
-import past1 from "../../assets/past/past-1.png";
-import past2 from "../../assets/past/past-2.png";
-import past3 from "../../assets/past/past-3.png";
-import past4 from "../../assets/past/past-4.png";
-import past5 from "../../assets/past/past-5.png";
-import past6 from "../../assets/past/past-6.png";
-import past7 from "../../assets/past/past-7.png";
-import past8 from "../../assets/past/past-8.png";
 import EventBoxSm from "../Boxes/EventBoxSm";
 import Goldbox from "../Boxes/Goldbox.jsx";
 import Silverbox from "../Boxes/Silverbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Footer from "../Footer.jsx";
 import { events } from "../../data/timelineData";
+
+const urls = [
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-1_b8bqaj.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-2_eduap9.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-3_vf0ncc.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-4_szdmjn.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-5_gxwuue.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-6_wt54zw.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-7_okabbt.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-8_n40rqp.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets_Enlace/dates_qjwjqc.png"
+];
 
 const Vertical = () => {
   const startDate = 21;
@@ -67,10 +70,9 @@ const Vertical = () => {
               matter!
             </p>
             <p className="w-11/12 lg:w-6/12 text-white text-1xl lg:text-2xl py-8 mx-auto lg:hidden">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. it
-              aperiam suscipit accusamus quos corporis,Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. it aperiam suscipit accusamus
-              quos corporis,{" "}
+              has been celebrating arts, heritage, music and lifestyle since its
+              inception in 2019. A myriad of events with impressive and
+              breathtaking performances has always been the norm.{" "}
             </p>
           </div>
         </div>
@@ -79,36 +81,34 @@ const Vertical = () => {
       <div className={styles.page}>
         <div className="lg:hidden w-10/12 mx-auto text-white text-1xl py-2 pt-8 text-center pb-36 font-poppins">
           <p className="pb-0 lg:pb-16">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.aperiam
-            suscipit accusamus quos corporis,Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. it aperiam suscipit accusamus quos
-            corporis, it aperiam suscipit accusamus quos corporis,
+              It's the amalgamation of mind gruelling competitions, thought
+              provoking expert talks and workshops that stimulate your cerebral
+              matter!
           </p>
         </div>
 
         <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-16">
           <img
-            src={dates}
+            src={urls[8]}
             alt="dates"
             className="pb-28 lg:pb-40 w-8/12 lg:w-2/5 ml-2 -mt-20"
           />
-          <p className="text-1xl lg:text-2xl text-white pb-20 mx-auto text-center w-9/12 font-poppins">
+          <a href="/#SOMEBODY FILL THIS WITH THE REGISTER LINK">
+            <p className="text-1xl lg:text-2xl text-white pb-20 mx-auto text-center w-9/12 font-poppins">
             <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
             now and come join us in this wild journey!
-          </p>
+            </p>
+          </a>
         </div>
 
         <div className="hidden lg:block mx-auto w-10/12 font-reemkufi">
-          <p className="text-5xl text-opacity-70 text-white font-medium pt-2">
+          <p className="text-6xl text-opacity-70 text-white font-medium pt-2">
             Into the wild
           </p>
-          <p className="text-6xl text-opacity-50 text-white font-semibold pt-4">
+          <p className="text-7xl text-opacity-50 text-white font-semibold pt-4">
             Into the wild
           </p>
-          <p className="text-8xl text-opacity-30 text-white font-bold pt-6">
-            Into the wild
-          </p>
-          <p className="text-9xl text-opacity-20 text-white font-black pt-8">
+          <p className="text-9xl text-opacity-30 text-white font-bold pt-6">
             Into the wild
           </p>
         </div>
@@ -121,7 +121,7 @@ const Vertical = () => {
           </h1>
         </div>
         <div className="lg:hidden">
-          <img src={past1} alt="album" className="pt-16 mx-auto" />
+          <img src={urls[0]} alt="album" className="pt-16 mx-auto" />
           <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">
             Enlace, IIIT Kottayam's cultural fest, has been celebrating arts,
             heritage, music and lifestyle since its inception in 2019. We bring
@@ -135,14 +135,14 @@ const Vertical = () => {
             <img
               data-aos="fade-down-right"
               data-aos-duration="1200"
-              src={past1}
+              src={urls[0]}
               alt="album"
               className="pl-24 "
             />
             <img
               data-aos="flip-up"
               data-aos-duration="1200"
-              src={past8}
+              src={urls[7]}
               alt="album"
               className="pl-24 "
             />
@@ -160,7 +160,7 @@ const Vertical = () => {
             <img
               data-aos="zoom-out"
               data-aos-duration="1200"
-              src={past6}
+              src={urls[5]}
               alt="album"
               className="pl-36 pt-16"
             />
@@ -182,7 +182,7 @@ const Vertical = () => {
       </div>
       <div className={styles.page}>
         <div className="lg:hidden">
-          <img src={past8} alt="album" className="mx-auto pt-12" />
+          <img src={urls[7]} alt="album" className="mx-auto pt-12" />
           <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">
             Keeping the torch alight, IIIT Kottayam brings to you Enlace 2022:
             Into the wild, a fest to mirror the beautiful chaos of nature and
@@ -195,14 +195,14 @@ const Vertical = () => {
             <img
               data-aos="fade-right"
               data-aos-duration="1200"
-              src={past5}
+              src={urls[4]}
               alt="album"
               className="p-12 basis-2/6"
             />
             <img
               data-aos="flip-right"
               data-aos-duration="1200"
-              src={past3}
+              src={urls[2]}
               alt="album"
               className="p-16 basis-1/6"
             />
@@ -223,23 +223,16 @@ const Vertical = () => {
             <img
               data-aos="fade-up-right"
               data-aos-duration="1200"
-              src={past2}
+              src={urls[1]}
               alt="album"
               className="pl-16 pt-16"
             />
             <img
               data-aos="zoom-in-down"
               data-aos-duration="1200"
-              src={past4}
+              src={urls[3]}
               alt="album"
               className="pl-36 pt-16"
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              src={past7}
-              alt="album"
-              className="pl-36 py-16"
             />
           </div>
         </div>

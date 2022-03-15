@@ -2,10 +2,14 @@ import Nav from "../Navbar.jsx";
 import Footer from "../Footer.jsx";
 import TeamBox from "../Boxes/TeamBox.jsx";
 import TeamBoxSm from "../Boxes/TeamBoxSm.jsx";
+import { Helmet } from "react-helmet";
 
 const Teams = () => {
   return (
     <div className="relative bg-black lg:bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
+      <Helmet>
+        <title>Enlace | Teams</title>
+      </Helmet>
       <div className="h-max lg:h-screen w-full bg-competitions-bg relative flex flex-col">
         <div className="relative h-1/6">
           <Nav />
