@@ -2,10 +2,14 @@ import Nav from "../Navbar.jsx";
 import Eventteaser from "../Boxes/Eventteaser.jsx";
 import Footer from "../Footer.jsx";
 import { eventsdata } from "../../data/eventsData";
+import { Helmet } from "react-helmet";
 
 const Competitions = () => {
   return (
     <div className="h-full w-full bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
+      <Helmet>
+        <title>Enlace | Competitions</title>
+      </Helmet>
       <div className="h-full w-full bg-competitions-bg relative">
         <Nav />
         <div className="h-full w-full pt-36">

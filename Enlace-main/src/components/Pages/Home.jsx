@@ -35,7 +35,6 @@ const Home = () => {
     <div>
       <Helmet>
         <title>Enlace</title>
-        <link rel = "icon" href = "../../assets/favicon-32x32.png" type="image/png" sizes="32x32"/>
       </Helmet>
       <Vertical />
       <div className="hidden lg:block" style={{ overflow: "hidden" }}>
