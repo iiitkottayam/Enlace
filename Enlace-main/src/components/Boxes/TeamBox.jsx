@@ -25,7 +25,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "core" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "core" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="core"
             >
@@ -34,7 +34,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "managers" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "managers" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="managers"
             >
@@ -43,7 +43,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "sponsor" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "sponsor" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="sponsor"
             >
@@ -52,7 +52,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "design" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "design" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="design"
             >
@@ -61,7 +61,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "webd" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "webd" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="webd"
             >
@@ -83,7 +83,7 @@ const TeamBox = () => {
                   className="flex-1 flex-col justify-center items-center mt-5"
                   style={{ height: "16rem" }}
                 >
-                  <div className="w-full h-full bg-white/40 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
+                  <div className="w-full h-full bg-white/40 hover:bg-white/50 active:bg-white/30 transition duration-300 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
                     <img
                       className="w-36 h-36 rounded-full"
                       src={person.pic}
