@@ -17,14 +17,17 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
+  background-color: #614242;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 25px;
-  border: 6px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-left: 0;
   border-right: 0;
   background-color: #8070d4;
   outline: 1px solid slategrey;
+}
+body::-webkit-scrollbar-thumb:active{
+  background-color: #4b4277;
 }
