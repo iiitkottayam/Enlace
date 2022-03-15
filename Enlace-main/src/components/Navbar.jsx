@@ -194,7 +194,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className="z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-xl sm:text-2xl font-poppins"
+        className="z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
       >
         <Navbarlinkmob
           title="Competitions"
