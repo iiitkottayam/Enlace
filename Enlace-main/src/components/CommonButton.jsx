@@ -10,7 +10,7 @@ const commonButton = ({ content, link }) => {
 };
 commonButton.defaultProps = {
   content: "Register!",
-  link: "#",
+  link: "/competitions",
 };
 
 export default commonButton;
