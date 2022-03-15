@@ -163,8 +163,8 @@ const Horizontal = () => {
               <CommonButton />
             </div>
             <div className="flex gap-10 w-8/12 mx-auto pt-14">
-              <OrangeBox />
-              <OrangeBox />
+              <OrangeBox buttonContent={"Ask Us"} text={"Have any query ?"} link={"https://docs.google.com/forms/d/e/1FAIpQLScH6prke7fPTi7ysQPfsarxe6iK2FbJg-6ZKR3-zNf912bVMw/viewform"} />
+              <OrangeBox buttonContent={"Sponsor Us"} text={"Want to become a sponsor"} link={"https://forms.gle/ZBB5ZvZytwxsmc1EA"} />
             </div>
           </div>
         </div>

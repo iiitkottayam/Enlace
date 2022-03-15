@@ -327,8 +327,8 @@ const Vertical = () => {
       <div className={styles.page}>
         <div id="mobilecontactus" className="lg:hidden">
           <div className="mx-auto space-y-8 flex flex-col justify-between items-center ">
-            <OrangeBox />
-            <OrangeBox />
+            <OrangeBox buttonContent={"Ask Us"} text={"Have any query ?"} link={"https://docs.google.com/forms/d/e/1FAIpQLScH6prke7fPTi7ysQPfsarxe6iK2FbJg-6ZKR3-zNf912bVMw/viewform"} />
+            <OrangeBox buttonContent={"Sponsor Us"} text={"Want to become a sponsor"} link={"https://forms.gle/ZBB5ZvZytwxsmc1EA"} />
             <CommonButton />
             <Footer />
           </div>
