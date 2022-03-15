@@ -11,10 +11,10 @@ const EventBox = ({ name, time }) => {
       // data-aos-duration="1000"
     >
       <div className="p-2 w-full h-full bg-box-fill/80 rounded-xl cursor-pointer flex flex-col items-center justify-center text-white hover:text-black hover:bg-box-fill/0">
-        <h2 className="font-reemkufi text-base lg:text-3xl text-center">
+        <h2 className="text-2xl font-reemkufi text-base lg:text-3xl text-center">
           {name}
         </h2>
-        <h2 className="font-reemkufi text-base lg:text-3xl text-center mt-5">
+        <h2 className="text-2xl font-reemkufi text-base lg:text-3xl text-center mt-5">
           {time}
         </h2>
       </div>

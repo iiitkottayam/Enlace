@@ -1,4 +1,3 @@
-import logo from "../assets/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 import Navbarlink from "./Navbarlinks/Navbarlink";
 import Navbarlinkmob from "./Navbarlinks/Navbarlinkmob";
@@ -6,9 +5,13 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+import { useHistory } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Navbar = () => {
+
+  const history = useHistory();
+
   const scroller = (e) => {
     const panelsContainer = document.querySelector(".PanelsContainer");
     const page = document.querySelector(".page");
@@ -38,22 +41,21 @@ const Navbar = () => {
         e.preventDefault();
 
         if (window.location.pathname !== "/") {
-          window.location.assign(
-            `/?loc=${e.target.getAttribute("href").slice(1)}`
-          );
+          history.push("/");
           sessionStorage.setItem("load", true);
+          sessionStorage.setItem("loc", e.target.getAttribute("href"));
         } else {
           scroller(e.target.getAttribute("href"));
         }
       });
     });
-  });
 
-  if (sessionStorage.getItem("load")) {
-    const params = new URLSearchParams(window.location.search);
-    setTimeout(() => scroller("#" + params.get("loc")), 300);
-    sessionStorage.setItem("load", false);
-  }
+    if (sessionStorage.getItem("load")) {
+      scroller(sessionStorage.getItem("loc"));
+      sessionStorage.setItem("load", false);
+      sessionStorage.removeItem("loc");
+    }
+  });
 
   const navRef = useRef(null);
   const iconRef = useRef(null);
@@ -125,7 +127,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <img
               className="h-8 w-12 md:h-10 md:w-14 pr-2"
-              src={logo}
+              src="https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/logo_qycuyz.png"
               alt="logo"
             />
             <h3 className="text-xl md:text-2xl xl:text-3xl text-white font-reemkufi">
@@ -143,7 +145,13 @@ const Navbar = () => {
             About us
           </div>
           <nav className="transition-transform duration-300 origin-top scale-y-0 peer-hover:scale-y-100 hover:scale-y-100 md:flex flex-col text-center box-border container w-40 h-36 absolute top-16 justify-between px-0 py-4 -mx-9 items-center border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-2xl ">
-            <Navbarlink title="Who We Are" route="/#whoweare" />
+            <a
+              href="#whoweare"
+              className="register relative hover:after:scale-x-100 after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform"
+              id="anchor"
+            >
+              Who We Are
+            </a>
             <a
               href="#register"
               className="register relative hover:after:scale-x-100 after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform"
@@ -185,7 +193,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className="z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-xl sm:text-2xl font-poppins"
+        className="z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
       >
         <Navbarlinkmob
           title="Competitions"

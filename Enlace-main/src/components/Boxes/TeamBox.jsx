@@ -25,7 +25,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "core" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "core" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="core"
             >
@@ -34,7 +34,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "managers" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "managers" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="managers"
             >
@@ -43,7 +43,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "sponsor" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "sponsor" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="sponsor"
             >
@@ -52,7 +52,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "design" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "design" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="design"
             >
@@ -61,7 +61,7 @@ const TeamBox = () => {
             <div
               className={
                 "option cursor-pointer " +
-                (option === "webd" ? "text-[#A9FF40d6]" : "text-white")
+                (option === "webd" ? "text-[#A9FF40]" : "text-white/85")
               }
               id="webd"
             >
@@ -72,7 +72,7 @@ const TeamBox = () => {
         <div className="h-full w-2/3 flex flex-col justify-center items-left relative">
           <div
             className={
-              "members grid grid-cols-4 h-5/6 gap-10 overflow-auto justify-center items-center " +
+              "members grid grid-cols-4 h-5/6 gap-x-8 gap-y-14 overflow-auto justify-center items-center " +
               styles.members
             }
             style={{ width: "90%" }}
@@ -80,16 +80,16 @@ const TeamBox = () => {
             {teams[option].map((person) => {
               return (
                 <div
-                  className="flex flex-col justify-center items-center mt-1"
-                  style={{ height: "12rem" }}
+                  className="flex-1 flex-col justify-center items-center mt-5"
+                  style={{ height: "16rem" }}
                 >
-                  <div className="w-full bg-white/40 flex flex-col justify-evenly items-center rounded-2xl py-4">
+                  <div className="w-full h-full bg-white/40 hover:bg-white/50 active:bg-white/30 transition duration-300 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
                     <img
-                      className="w-8/12 h-10/12 rounded-full"
+                      className="w-36 h-36 rounded-full"
                       src={person.pic}
                       alt="members"
                     ></img>
-                    <div className="font-medium text-lg font-poppins pt-2">
+                    <div className="font-medium text-lg font-poppins pt-4">
                       {person.name}
                     </div>
                   </div>
@@ -103,16 +103,12 @@ const TeamBox = () => {
               );
             })}
           </div>
-          {teams[option].length > 8 ? (
             <div
               className="flex justify-center absolute bottom-3"
               style={{ width: "90%" }}
             >
               <FaChevronDown size="2rem" />
             </div>
-          ) : (
-            ""
-          )}
         </div>
       </div>
     </>

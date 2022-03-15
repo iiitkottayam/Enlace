@@ -9,9 +9,10 @@ import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import Sapphirebox from "../Boxes/Sapphirebox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Timeline from "../Timeline/Timeline.jsx";
-import jeepGif from "../../assets/jeep.gif";
 import CommonButton from "../CommonButton.jsx";
 import OrangeBox from "../Boxes/OrangeBox.jsx";
+
+const urls = ["https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/jeep_ptmw97.gif"];
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,28 +27,40 @@ const Horizontal = () => {
   useEffect(() => {
     const totalPanels = panels.current.length;
 
-    gsap.to(panels.current, {
-      xPercent: -100 * (totalPanels - 1),
-      ease: "none",
+    let t1 = gsap.timeline({
       scrollTrigger: {
         trigger: panelsContainer.current,
         pin: true,
         scrub: 1.5,
         end: () => "+=" + panelsContainer.current.offsetWidth,
-      },
-    });
+      }
+    })
 
-    gsap.to(".jeep", {
+    t1
+    .to('body',{ duration: 20}) 
+    .to(panels.current ,{duration: 2000, ease: 'none', xPercent: -100 * (totalPanels - 1), rotation: 0.01})
+
+    let t2 = gsap.timeline({
       scrollTrigger: {
         trigger: ".jeep",
         start: "bottom 90%",
         end: "bottom -1000px",
         scrub: 1,
-      },
-      x: 7800,
-      ease: "none",
-    });
-  });
+      }
+    })
+
+    t2
+    .to('body',{ duration: 20 }) 
+    .to(".jeep" ,{duration: 2000, ease: 'none', x: 7800, rotation: 0.01})
+    
+    return () => {
+      ScrollTrigger.getAll().forEach((instance) => {
+        instance.kill();
+      });
+      // This in case a scroll animation is active while the route is updated
+      gsap.killTweensOf(window);
+    };
+  }, []);
 
   return (
     <>
@@ -56,7 +69,7 @@ const Horizontal = () => {
         ref={panelsContainer}
       >
         <img
-          src={jeepGif}
+          src={urls[0]}
           alt="jeep"
           className="jeep"
           style={{
