@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const urls = [
 	{
 		name: "placeholder",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/jokesonthehouse_yc3cqu.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/Events/jokesonthehouse_yc3cqu.png",
 	},
 ];
 

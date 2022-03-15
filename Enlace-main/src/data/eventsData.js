@@ -1,51 +1,51 @@
 const urls = [
 	{
 		name: "battleofthebands",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279774/battleofthebands_rs4arv.jpg",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279774/Events/battleofthebands_rs4arv.jpg",
 	},
 	{
 		name: "beyondtheharmony",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279774/beyondtheharmony_hj7zty.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279774/Events/beyondtheharmony_hj7zty.png",
 	},
 	{
 		name: "blizzart",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/blizzart_p03f8m.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/Events/blizzart_p03f8m.png",
 	},
 	{
 		name: "dancingwiththedevil",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279774/dancingwiththedevil_m00i8c.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279774/Events/dancingwiththedevil_m00i8c.png",
 	},
 	{
 		name: "devilsadvocate",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/devilsadvocate_uy8baw.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/Events/devilsadvocate_uy8baw.png",
 	},
 	{
 		name: "fakeittillyoumakeit",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/fakeittillyoumakeit_fta9en.jpg",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/Events/fakeittillyoumakeit_fta9en.jpg",
 	},
 	{
 		name: "findthefiend",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/findthefiend_btkrms.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/Events/findthefiend_btkrms.png",
 	},
 	{
 		name: "jokesonthehouse",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/jokesonthehouse_yc3cqu.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279775/Events/jokesonthehouse_yc3cqu.png",
 	},
 	{
 		name: "mxenlace",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/mxenlace_q0leuv.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/Events/mxenlace_q0leuv.png",
 	},
 	{
 		name: "pulseandthebeat",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/pulseandthebeat_txffac.png",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/Events/pulseandthebeat_txffac.png",
 	},
 	{
 		name: "stringsandkeys",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/stringsandkeys_zgmvjd.jpg",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/Events/stringsandkeys_zgmvjd.jpg",
 	},
 	{
 		name: "throughthelens",
-		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/throughthelens_t8vmqs.jpg",
+		url: "https://res.cloudinary.com/roshin/image/upload/v1647279776/Events/throughthelens_t8vmqs.jpg",
 	},
 ];
 
