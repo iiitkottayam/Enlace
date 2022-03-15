@@ -59,79 +59,56 @@ const Navbar = () => {
   const iconRef = useRef(null);
   const menuRef = useRef(null);
 
-  const toggleNav = () => {
+  const openMenu = () => {
     const nav = navRef.current;
     const icon = iconRef.current;
     const menu = menuRef.current;
+    document.body.style.overflow = "hidden";
+    nav.classList.remove("top-3", "rounded-full", "border-2", "items-center");
+    nav.classList.add("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+    menu.classList.remove("hidden");
+    menu.classList.add("flex");
+  };
+
+  const closeMenu = () => {
+    const nav = navRef.current;
+    const icon = iconRef.current;
+    const menu = menuRef.current;
+    document.body.style.overflow = "initial";
+    nav.classList.add("top-3", "rounded-full", "border-2", "items-center");
+    nav.classList.remove("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
+    icon.classList.add("fa-bars");
+    icon.classList.remove("fa-xmark");
+    menu.classList.add("hidden");
+    menu.classList.remove("flex");
+  };
+
+  const toggleNav = () => {
+    const icon = iconRef.current;
     if (icon.classList.contains("fa-bars")) {
-      document.body.style.overflow = "hidden";
-      nav.classList.remove(
-        "absolute",
-        "top-3",
-        "rounded-full",
-        "border-2",
-        "w-11/12",
-        "items-center"
-      );
-      nav.classList.add(
-        "fixed",
-        "top-0",
-        "h-[100vh]",
-        "items-start",
-        "pt-6",
-        "px-9"
-      );
-      icon.classList.remove("fa-bars");
-      icon.classList.add("fa-xmark");
-      menu.classList.remove("hidden");
-      menu.classList.add("flex");
+      openMenu();
     } else {
-      document.body.style.overflow = "initial";
-      nav.classList.add(
-        "absolute",
-        "top-3",
-        "rounded-full",
-        "border-2",
-        "w-11/12",
-        "items-center"
-      );
-      nav.classList.remove(
-        "fixed",
-        "top-0",
-        "h-[100vh]",
-        "items-start",
-        "pt-6",
-        "px-9"
-      );
-      icon.classList.add("fa-bars");
-      icon.classList.remove("fa-xmark");
-      menu.classList.add("hidden");
-      menu.classList.remove("flex");
+      closeMenu();
     }
   };
 
   return (
     <nav
       ref={navRef}
-      className="flex box-border container absolute top-3 left-0 right-0 justify-between px-5 md:px-7 py-2 w-11/12 md:w-auto mx-auto border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full items-center"
+      className="w-full absolute top-3 px-5 py-2 flex justify-between items-center border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full"
     >
       <div className="relative z-10">
-        <Link
-          to="/"
-          onClick={() => {
-            document.body.style.overflow = "initial";
-          }}
-        >
-          <div className="flex items-center">
-            <img
-              className="h-8 w-12 md:h-10 md:w-14 pr-2"
-              src={logo}
-              alt="logo"
-            />
-            <h3 className="text-xl md:text-2xl xl:text-3xl text-white font-reemkufi">
-              ENLACE
-            </h3>
-          </div>
+        <Link to="/" onClick={closeMenu} className="flex items-center">
+          <img
+            className="h-8 w-12 md:h-10 md:w-14 pr-2"
+            src={logo}
+            alt="logo"
+          />
+          <h3 className="text-xl md:text-2xl xl:text-3xl text-white font-reemkufi">
+            ENLACE
+          </h3>
         </Link>
       </div>
       <div className="hidden text-[#ffffffd6] font-medium text-xl md:text-sm lg:text-base md:space-x-8 lg:space-x-16 font-poppins md:flex items-center">
