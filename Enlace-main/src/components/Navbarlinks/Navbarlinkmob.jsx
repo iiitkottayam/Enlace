@@ -10,8 +10,8 @@ const Navbarlink = ({ title, route, navRef, iconRef, menuRef }) => {
     nav.classList.remove("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
     icon.classList.add("fa-bars");
     icon.classList.remove("fa-xmark");
-    menu.classList.add("hidden");
-    menu.classList.remove("flex");
+    menu.classList.add("hidden", "closed");
+    menu.classList.remove("flex", "open");
   };
 
   return (

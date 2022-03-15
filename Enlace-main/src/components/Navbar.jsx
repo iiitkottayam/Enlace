@@ -54,6 +54,14 @@ const Navbar = () => {
       sessionStorage.setItem("load", false);
       sessionStorage.removeItem("loc");
     }
+
+    window.addEventListener("resize", () => {
+      let mediaquery = window.matchMedia("(min-width: 768px)").matches;
+      const menu = menuRef.current;
+      if (mediaquery && menu.classList.contains("open")) {
+        closeMenu();
+      }
+    });
   });
 
   const navRef = useRef(null);
@@ -69,8 +77,8 @@ const Navbar = () => {
     nav.classList.add("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
     icon.classList.remove("fa-bars");
     icon.classList.add("fa-xmark");
-    menu.classList.remove("hidden");
-    menu.classList.add("flex");
+    menu.classList.remove("hidden", "closed");
+    menu.classList.add("flex", "open");
   };
 
   const closeMenu = () => {
@@ -82,8 +90,8 @@ const Navbar = () => {
     nav.classList.remove("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
     icon.classList.add("fa-bars");
     icon.classList.remove("fa-xmark");
-    menu.classList.add("hidden");
-    menu.classList.remove("flex");
+    menu.classList.add("hidden", "closed");
+    menu.classList.remove("flex", "open");
   };
 
   const toggleNav = () => {
@@ -169,7 +177,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className="z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
+        className="closed z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
       >
         <Navbarlinkmob
           title="Competitions"
