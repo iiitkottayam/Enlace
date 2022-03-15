@@ -18,7 +18,7 @@ const urls = [
   "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-6_wt54zw.png",
   "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-7_okabbt.png",
   "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-8_n40rqp.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets_Enlace/dates_qjwjqc.png"
+  "https://res.cloudinary.com/roshin/image/upload/v1647321261/Assets_Enlace/unknown_ekxnep.png"
 ];
 
 const Vertical = () => {
@@ -93,7 +93,7 @@ const Vertical = () => {
             alt="dates"
             className="pb-28 lg:pb-40 w-8/12 lg:w-2/5 ml-2 -mt-20"
           />
-          <a href="/#SOMEBODY FILL THIS WITH THE REGISTER LINK">
+          <a href="/competitions">
             <p className="text-1xl lg:text-2xl text-white pb-20 mx-auto text-center w-9/12 font-poppins">
             <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
             now and come join us in this wild journey!
@@ -274,7 +274,7 @@ const Vertical = () => {
 
       <div className={styles.page}>
         <div className="lg:hidden">
-          <div className="mx-auto w-4/6 text-center text-white py-8 space-y-4 text-4xl font-reemkufi">
+          <div className="mx-auto w-4/6 text-center text-white py-12 space-y-4 text-4xl font-reemkufi">
             <p className="font-semibold ">Total prize of </p>
             <p className="font-semibold ">Rs. 55,000</p>
             <p className="font-regular text-[#ffffffc0]">
@@ -283,9 +283,9 @@ const Vertical = () => {
             <p id="mobilesponsors" className="py-6 font-bold text-4xl">
               Our Sponsors
             </p>
-            <p className=" font-semibold text-2xl pt-10">Gold Sponsors</p>
+            <p className="text-3xl pt-10">Gold Sponsors</p>
           </div>
-          <div className="mx-auto text-center text-white flex  justify-center item-center">
+          <div className="mx-auto text-center text-white flex flex-col justify-center items-center">
             <Goldbox />
           </div>
         </div>
@@ -294,16 +294,12 @@ const Vertical = () => {
       <div className={styles.page}>
         <div className="lg:hidden">
           <div className="mx-auto w-4/6 text-center text-white space-y-4 text-4xl font-reemkufi">
-            <p className=" font-semibold text-2xl py-4">Silver Sponsors</p>
+            <p className="text-3xl py-8">Silver Sponsors</p>
           </div>
-          <div className="mx-auto text-center text-white flex  justify-center item-center">
+          <div className="mx-auto text-center text-white flex flex-col justify-center items-center gap-y-10">
             <Silverbox />
-          </div>
-          <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-24 space-y-2 text-3xl">
-            <p id="mobilefaq" className="text-6xl font-reemkufi pb-5">
-              FAQ
-            </p>
-            <FAQbox />
+            <Silverbox />
+            <Silverbox />
           </div>
         </div>
       </div>
@@ -311,6 +307,10 @@ const Vertical = () => {
       <div className={styles.page}>
         <div className="lg:hidden">
           <div className=" flex flex-col items-center justify-center mx-auto w-full text-center text-white pt-10 space-y-10 text-3xl">
+            <p id="mobilefaq" className="text-6xl font-reemkufi pb-5">
+              FAQ
+            </p>
+            <FAQbox />
             <FAQbox />
             <FAQbox />
           </div>
