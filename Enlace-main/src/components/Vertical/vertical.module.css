@@ -10,77 +10,77 @@
 }
 
 .page:nth-of-type(1) {
-  background: url(../../assets/Landing1.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing1_sb9kwc.png);
   background-size: 100% 100%;
   padding-top: 100px;
 }
 .page:nth-of-type(2) {
-  background: url(../../assets/Landing2.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing2_fj9ngw.png);
   background-size: 100% 100%;
 }
 .page:nth-of-type(3) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   background-size: 100% 100%;
   height: 150vh;
   position: relative;
 }
 .page:nth-of-type(4) {
-  background: url(../../assets/Starry1.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279804/Assets_Enlace/Starry1_dtddin.png);
   background-size: 100% 100%;
   height: fit-content;
   position: relative;
 }
 .page:nth-of-type(5) {
-  background: url(../../assets/Starry2.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279804/Assets_Enlace/Starry2_zcpnbu.png);
   background-size: 100% 100%;
   height: fit-content;
   position: relative;
 }
 .page:nth-of-type(6) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   height: 0px;
   background-size: 100% 100%;
   position: relative;
 }
 .page:nth-of-type(7) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   background-size: 100% 100%;
   height: 0px;
   position: relative;
 }
 .page:nth-of-type(8) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   background-size: 100% 100%;
   height: 0px;
   position: relative;
 }
 .page:nth-of-type(9) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   height: 0px;
   background-size: 100% 100%;
   position: relative;
 }
 .page:nth-of-type(10) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   height: 0px;
   background-size: 100% 100%;
   position: relative;
 }
 .page:nth-of-type(11) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   height: 0px;
   background-size: 100% 100%;
   position: relative;
 }
 .page:nth-of-type(12) {
-  background: url(../../assets/Landing3.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing3_bxgcej.png);
   height: 0px;
   background-size: 100% 100%;
   position: relative;
 }
 
 .mobi-1 {
-  background: url(../../assets/Landing1.png);
+  background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/Landing1_sb9kwc.png);
   background-size: 100% 100%;
   height: 650px;
 }
@@ -90,59 +90,59 @@
     height: 650px;
   }
   .page:nth-of-type(1) {
-    background: url(../../assets/M1.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/M1_n99hxr.png);
     background-size: 100% 100%;
 
     padding-top: 100px;
   }
   .page:nth-of-type(2) {
-    background: url(../../assets/M2.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/M2_pcqlfy.png);
     background-size: 100% 100%;
   }
   .page:nth-of-type(3) {
-    background: url(../../assets/M3.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M3_bvxbia.png);
     background-size: 100% 100%;
     height: 820px;
     position: relative;
   }
   .page:nth-of-type(4) {
-    background: url(../../assets/M4.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M4_wtvrk4.png);
     background-size: 100% 100%;
     height: 750px;
     position: relative;
   }
   .page:nth-of-type(5) {
-    background: url(../../assets/M5.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M5_dohaft.png);
     background-size: 100% 100%;
     position: relative;
     height: 650px;
   }
   .page:nth-of-type(6) {
-    background: url(../../assets/M6L.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M6L_ck9wb2.png);
     background-size: 100% 100%;
     position: relative;
     height: auto;
   }
   .page:nth-of-type(7) {
-    background: url(../../assets/M7.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M7_wacuaa.png);
     background-size: 100% 100%;
     position: relative;
     height: 650px;
   }
   .page:nth-of-type(8) {
-    background: url(../../assets/M8.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M8_hj3xls.png);
     background-size: 100% 100%;
     position: relative;
     height: 650px;
   }
   .page:nth-of-type(9) {
-    background: url(../../assets/M9.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M9_uqm10a.png);
     height: 750px;
     background-size: 100% 100%;
     position: relative;
   }
   .page:nth-of-type(10) {
-    background: url(../../assets/M10.png);
+    background: url(https://res.cloudinary.com/roshin/image/upload/v1647279804/Assets_Enlace/M10_vjez0s.png);
     height: 700px;
     background-size: 100% 100%;
     position: relative;

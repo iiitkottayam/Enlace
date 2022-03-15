@@ -70,14 +70,14 @@ const TeamBoxSm = () => {
           {teams[pages[carousel[1]].id].map((person) => {
             return (
               <div className="flex flex-col justify-center items-center">
-                <div className="w-full bg-white/40 flex flex-col justify-center items-center rounded-2xl px-3 py-5">
+                <div className="w-full h-full bg-white/40 flex flex-col items-center rounded-2xl px-3 py-5">
                   <img
-                    className="w-4/5 h-4/5 rounded-full"
+                    className="w-28 h-28 rounded-full"
                     src={person.pic}
                     alt="members"
                   ></img>
                   <div
-                    className="font-semibold pt-2"
+                    className="font-semibold pt-3"
                     style={{ fontSize: "1rem" }}
                   >
                     {person.name}
