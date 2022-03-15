@@ -1,4 +1,3 @@
-import image from "../assets/logo.png";
 import { useRef, useEffect } from "react";
 import anime from "animejs";
 

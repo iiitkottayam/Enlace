@@ -1,4 +1,3 @@
-import logo from "../assets/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 import Navbarlink from "./Navbarlinks/Navbarlink";
 import Navbarlinkmob from "./Navbarlinks/Navbarlinkmob";
@@ -128,7 +127,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <img
               className="h-8 w-12 md:h-10 md:w-14 pr-2"
-              src={logo}
+              src="https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/logo_qycuyz.png"
               alt="logo"
             />
             <h3 className="text-xl md:text-2xl xl:text-3xl text-white font-reemkufi">
