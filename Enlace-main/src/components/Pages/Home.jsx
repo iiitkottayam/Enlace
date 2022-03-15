@@ -1,10 +1,11 @@
 import Horizontal from "../Horizontal/Horizontal";
 import Vertical from "../Vertical/Vertical";
-import frame from "../../assets/Frame.png";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Helmet } from "react-helmet";
+
+const urls = ["https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets_Enlace/Frame_eadgpz.png"];
 
 const Home = () => {
   useEffect(() => {
@@ -41,7 +42,7 @@ const Home = () => {
         <div
           className="bg"
           style={{
-            backgroundImage: `url(${frame})`,
+            backgroundImage: `url(${urls[0]})`,
             height: "100vh",
             width: "500vw",
             backgroundSize: "cover",

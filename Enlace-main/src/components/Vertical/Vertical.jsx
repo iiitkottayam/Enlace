@@ -1,6 +1,5 @@
 import styles from "./vertical.module.css";
 import Nav from "../Navbar.jsx";
-import dates from "../../assets/dates.png";
 import CommonButton from "../CommonButton.jsx";
 import OrangeBox from "../Boxes/OrangeBox.jsx";
 import EventBoxSm from "../Boxes/EventBoxSm";
@@ -19,6 +18,7 @@ const urls = [
   "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-6_wt54zw.png",
   "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-7_okabbt.png",
   "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-8_n40rqp.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets_Enlace/dates_qjwjqc.png"
 ];
 
 const Vertical = () => {
@@ -89,7 +89,7 @@ const Vertical = () => {
 
         <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-16">
           <img
-            src={dates}
+            src={urls[8]}
             alt="dates"
             className="pb-28 lg:pb-40 w-8/12 lg:w-2/5 ml-2 -mt-20"
           />
@@ -236,13 +236,6 @@ const Vertical = () => {
               src={urls[3]}
               alt="album"
               className="pl-36 pt-16"
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              src={urls[6]}
-              alt="album"
-              className="pl-36 py-16"
             />
           </div>
         </div>

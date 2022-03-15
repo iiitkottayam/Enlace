@@ -1,4 +1,4 @@
-import logo from "../assets/wildbeatslogo.png";
+const logo = ["https://res.cloudinary.com/roshin/image/upload/v1647279804/Assets_Enlace/wildbeatslogo_z8itxy.png"];
 
 const Footer = () => {
   return (
@@ -9,13 +9,14 @@ const Footer = () => {
           <a
             href="https://www.youtube.com/channel/UCTXmRiVLxOiu214yRVfNdKQ"
             target="_blank"
+            rel="noreferrer"
           >
             <i className="fa-brands fa-youtube mx-4 transition-transform lg:hover:text-white hover:scale-150"></i>
           </a>
-          <a href="mailto:wildbeats@iiitkottayam.ac.in" target="_blank">
+          <a href="mailto:wildbeats@iiitkottayam.ac.in" target="_blank" rel="noreferrer">
             <i className="fa-solid fa-envelope mx-4 transition-transform lg:hover:text-white hover:scale-150"></i>
           </a>
-          <a href="https://www.instagram.com/enlace_iiitk/" target="_blank">
+          <a href="https://www.instagram.com/enlace_iiitk/" target="_blank" rel="noreferrer">
             <i className="fa-brands fa-instagram mx-4 transition-transform lg:hover:text-white hover:scale-150"></i>
           </a>
         </div>

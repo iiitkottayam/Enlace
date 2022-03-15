@@ -9,9 +9,10 @@ import Emeraldbox from "../Boxes/Emeraldbox.jsx";
 import Sapphirebox from "../Boxes/Sapphirebox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
 import Timeline from "../Timeline/Timeline.jsx";
-import jeepGif from "../../assets/jeep.gif";
 import CommonButton from "../CommonButton.jsx";
 import OrangeBox from "../Boxes/OrangeBox.jsx";
+
+const urls = ["https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/jeep_ptmw97.gif"];
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +69,7 @@ const Horizontal = () => {
         ref={panelsContainer}
       >
         <img
-          src={jeepGif}
+          src={urls[0]}
           alt="jeep"
           className="jeep"
           style={{
