@@ -102,16 +102,13 @@ const Vertical = () => {
         </div>
 
         <div className="hidden lg:block mx-auto w-10/12 font-reemkufi">
-          <p className="text-5xl text-opacity-70 text-white font-medium pt-2">
+          <p className="text-6xl text-opacity-70 text-white font-medium pt-2">
             Into the wild
           </p>
-          <p className="text-6xl text-opacity-50 text-white font-semibold pt-4">
+          <p className="text-7xl text-opacity-50 text-white font-semibold pt-4">
             Into the wild
           </p>
-          <p className="text-8xl text-opacity-30 text-white font-bold pt-6">
-            Into the wild
-          </p>
-          <p className="text-9xl text-opacity-20 text-white font-black pt-8">
+          <p className="text-9xl text-opacity-30 text-white font-bold pt-6">
             Into the wild
           </p>
         </div>
