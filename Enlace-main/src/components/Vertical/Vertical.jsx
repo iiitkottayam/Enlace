@@ -22,19 +22,12 @@ const urls = [
 ];
 
 const Vertical = () => {
-  const startDate = 21;
-  const postfix = (date) => {
-    switch (date % 10) {
-      case 1:
-        return "st";
-      case 2:
-        return "nd";
-      case 3:
-        return "rd";
-      default:
-        return "th";
-    }
-  };
+  const dates = {
+    1: "29th March",
+    2: "30th March",
+    3: "31st March",
+    4: "1st April"
+  }
 
   return (
     <div className={styles.VerticalWrapper + " vertical"}>
@@ -87,14 +80,14 @@ const Vertical = () => {
           </p>
         </div>
 
-        <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-16">
+        <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-10">
           <img
             src={urls[8]}
             alt="dates"
             className="pb-28 lg:pb-40 w-8/12 lg:w-2/5 ml-2 -mt-20"
           />
           <a href="/competitions">
-            <p className="text-1xl lg:text-2xl text-white pb-20 mx-auto text-center w-9/12 font-poppins">
+            <p className="text-1xl lg:text-2xl text-white pb-0 mx-auto text-center w-9/12 font-poppins">
             <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
             now and come join us in this wild journey!
             </p>
@@ -102,13 +95,16 @@ const Vertical = () => {
         </div>
 
         <div className="hidden lg:block mx-auto w-10/12 font-reemkufi">
-          <p className="text-6xl text-opacity-70 text-white font-medium pt-2">
+          <p className="text-5xl text-opacity-70 text-white font-medium pt-2">
             Into the wild
           </p>
-          <p className="text-7xl text-opacity-50 text-white font-semibold pt-4">
+          <p className="text-6xl text-opacity-50 text-white font-semibold pt-4">
             Into the wild
           </p>
-          <p className="text-9xl text-opacity-30 text-white font-bold pt-6">
+          <p className="text-7xl text-opacity-30 text-white font-bold pt-6">
+            Into the wild
+          </p>
+          <p className="text-8xl text-opacity-30 text-white font-bold pt-8">
             Into the wild
           </p>
         </div>
@@ -257,8 +253,7 @@ const Vertical = () => {
                         className="text-white font-semibold font-reemkufi text-3xl pb-3"
                         style={{ marginTop: "-1rem" }}
                       >
-                        {startDate + index}
-                        {postfix(startDate + index)} March
+                        {dates[index + 1]}
                       </p>
                     ) : (
                       ""
@@ -310,9 +305,10 @@ const Vertical = () => {
             <p id="mobilefaq" className="text-6xl font-reemkufi pb-5">
               FAQ
             </p>
+            <FAQbox question = "Where will the events be conducted?" answer = "The events will be conducted in a fully virtual mode using video and audio conferencing technologies." />
+            <FAQbox question = "Will I get any certificates for event participation?" answer = "Yes/No" />
             <FAQbox />
-            <FAQbox />
-            <FAQbox />
+            <FAQbox question = "Is it virtual?" answer = "Yes completely online"/>
           </div>
         </div>
       </div>

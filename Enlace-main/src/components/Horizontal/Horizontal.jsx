@@ -92,7 +92,7 @@ const Horizontal = () => {
         <div className={styles.page} ref={(e) => createPanelsRefs(e, 1)}>
           <div className="w-full h-full flex justify-center items-center">
             <h1 className="font-reemkufi lg:text-7xl text-white">
-              Total Prize of <br /> ₹ 55,000
+              Total Prize of <br /> ₹ 52,000
             </h1>
           </div>
         </div>
@@ -157,13 +157,13 @@ const Horizontal = () => {
           ref={(e) => createPanelsRefs(e, 4)}
           id="faq"
         >
-          <div className="mx-auto h-full w-4/6 flex flex-col flex-wrap justify-evenly items-center">
-            <FAQbox question="Why?" answer="Why not?" />
-            <FAQbox question="Where?" answer="Here" />
-            <FAQbox />
-            <FAQbox />
-            <FAQbox />
-            <FAQbox />
+          <div className = "flex items-center justify-evenly h-full">
+            <div className="mx-auto h-3/5 w-4/6 flex grid grid-cols-2 justify-center items-center gap-y-10">
+              <FAQbox question = "Where will the events be conducted?" answer = "The events will be conducted in a fully virtual mode using video and audio conferencing technologies." />
+              <FAQbox question = "Will I get any certificates for event participation?" answer = "Yes/No" />
+              <FAQbox />
+              <FAQbox question = "Is it virtual?" answer = "Yes completely online"/>
+            </div>
           </div>
         </div>
         <div
