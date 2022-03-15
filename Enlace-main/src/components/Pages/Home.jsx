@@ -27,7 +27,7 @@ const Home = () => {
       // This in case a scroll animation is active while the route is updated
       gsap.killTweensOf(window);
     };
-  }, []);
+  });
 
   return (
     <div>

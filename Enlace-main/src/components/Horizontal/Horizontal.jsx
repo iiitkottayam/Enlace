@@ -45,7 +45,7 @@ const Horizontal = () => {
         scrub: 1,
       },
       ease: 'none', x: 7800, rotation: 0.01
-    }, [])
+    })
     
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {
@@ -54,7 +54,7 @@ const Horizontal = () => {
       // This in case a scroll animation is active while the route is updated
       gsap.killTweensOf(window);
     };
-  }, []);
+  });
 
   return (
     <>
