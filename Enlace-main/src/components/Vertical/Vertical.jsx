@@ -11,14 +11,14 @@ import Footer from "../Footer.jsx";
 import { events } from "../../data/timelineData";
 
 const urls = [
-  "https://res.cloudinary.com/roshin/image/upload/v1647279783/past-1_b8bqaj.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279783/past-2_eduap9.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279783/past-3_vf0ncc.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279783/past-4_szdmjn.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279783/past-5_gxwuue.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279783/past-6_wt54zw.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279784/past-7_okabbt.png",
-  "https://res.cloudinary.com/roshin/image/upload/v1647279784/past-8_n40rqp.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-1_b8bqaj.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-2_eduap9.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-3_vf0ncc.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-4_szdmjn.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-5_gxwuue.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-6_wt54zw.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-7_okabbt.png",
+  "https://res.cloudinary.com/roshin/image/upload/v1647279784/Past/past-8_n40rqp.png",
 ];
 
 const Vertical = () => {
