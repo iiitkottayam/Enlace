@@ -56,7 +56,7 @@ const TeamBox = () => {
               }
               id="webd"
             >
-              Web Developer
+              Web Developers
             </div>
             <div
               className={
@@ -104,12 +104,13 @@ const TeamBox = () => {
                 </div>
               );
             })}
-          </div>
-          <div
-            className="flex justify-center absolute bottom-3"
-            style={{ width: "90%" }}
-          >
-            <FaChevronDown size="2rem" />
+            {teams[option].length > 4 ? 
+              <div
+                className="flex justify-center absolute bottom-3"
+                style={{ width: "90%" }}
+              >
+                <FaChevronDown size="2rem" />
+              </div> : ""}
           </div>
         </div>
       </div>
