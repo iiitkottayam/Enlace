@@ -112,7 +112,7 @@ const teams = {
     },
     {
       name: "Sarthak Bindal",
-      pic: "https://res.cloudinary.com/roshin/image/upload/v1647278782/Team/heman_rzzlu0_dpqjku.jpg",
+      pic: "https://res.cloudinary.com/roshin/image/upload/v1647321122/Team/IMG_20220312_214442_Bokeh_izts04.jpg",
       designation: "",
     },
     {
