@@ -2,7 +2,7 @@ const logo = ["https://res.cloudinary.com/roshin/image/upload/v1647279804/Assets
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0 bg-gradient-to-b from-[#2D4769]/0 to-[#000000]/100 text-white lg:text-[#ffffffb0] w-full">
+    <div className="w-full absolute bottom-0 bg-gradient-to-b from-[#2D4769]/0 to-[#000000]/100 text-white lg:text-[#ffffffb0]">
       <div className="flex flex-col md:flex-row flex-nowrap justify-between items-center">
         <img src={logo} alt="wildbeats logo" className="w-64 mx-20"></img>
         <div className="mt-5 flex flex-row flex-nowrap justify-around items-center text-base lg:text-xl mx-auto lg:mx-20">

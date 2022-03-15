@@ -9,7 +9,6 @@ import { useHistory } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Navbar = () => {
-
   const history = useHistory();
 
   const scroller = (e) => {
@@ -55,85 +54,70 @@ const Navbar = () => {
       sessionStorage.setItem("load", false);
       sessionStorage.removeItem("loc");
     }
+
+    window.addEventListener("resize", () => {
+      let mediaquery = window.matchMedia("(min-width: 768px)").matches;
+      const menu = menuRef.current;
+      if (mediaquery && menu.classList.contains("open")) {
+        closeMenu();
+      }
+    });
   });
 
   const navRef = useRef(null);
   const iconRef = useRef(null);
   const menuRef = useRef(null);
 
-  const toggleNav = () => {
+  const openMenu = () => {
     const nav = navRef.current;
     const icon = iconRef.current;
     const menu = menuRef.current;
+    document.body.style.overflow = "hidden";
+    nav.classList.remove("top-3", "rounded-full", "border-2", "items-center");
+    nav.classList.add("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+    menu.classList.remove("hidden", "closed");
+    menu.classList.add("flex", "open");
+  };
+
+  const closeMenu = () => {
+    const nav = navRef.current;
+    const icon = iconRef.current;
+    const menu = menuRef.current;
+    document.body.style.overflow = "initial";
+    nav.classList.add("top-3", "rounded-full", "border-2", "items-center");
+    nav.classList.remove("top-0", "h-[100vh]", "items-start", "pt-6", "px-9");
+    icon.classList.add("fa-bars");
+    icon.classList.remove("fa-xmark");
+    menu.classList.add("hidden", "closed");
+    menu.classList.remove("flex", "open");
+  };
+
+  const toggleNav = () => {
+    const icon = iconRef.current;
     if (icon.classList.contains("fa-bars")) {
-      document.body.style.overflow = "hidden";
-      nav.classList.remove(
-        "absolute",
-        "top-3",
-        "rounded-full",
-        "border-2",
-        "w-11/12",
-        "items-center"
-      );
-      nav.classList.add(
-        "fixed",
-        "top-0",
-        "h-[100vh]",
-        "items-start",
-        "pt-6",
-        "px-9"
-      );
-      icon.classList.remove("fa-bars");
-      icon.classList.add("fa-xmark");
-      menu.classList.remove("hidden");
-      menu.classList.add("flex");
+      openMenu();
     } else {
-      document.body.style.overflow = "initial";
-      nav.classList.add(
-        "absolute",
-        "top-3",
-        "rounded-full",
-        "border-2",
-        "w-11/12",
-        "items-center"
-      );
-      nav.classList.remove(
-        "fixed",
-        "top-0",
-        "h-[100vh]",
-        "items-start",
-        "pt-6",
-        "px-9"
-      );
-      icon.classList.add("fa-bars");
-      icon.classList.remove("fa-xmark");
-      menu.classList.add("hidden");
-      menu.classList.remove("flex");
+      closeMenu();
     }
   };
 
   return (
     <nav
       ref={navRef}
-      className="flex box-border container absolute top-3 left-0 right-0 justify-between px-5 md:px-7 py-2 w-11/12 md:w-auto mx-auto border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full items-center"
+      className="w-full absolute top-3 px-5 py-2 flex justify-between items-center border-solid border-2 border-[#A9FF40] border-border-nav[0.69] bg-bg-nav/[0.6] backdrop-blur-md rounded-full"
     >
       <div className="relative z-10">
-        <Link
-          to="/"
-          onClick={() => {
-            document.body.style.overflow = "initial";
-          }}
-        >
-          <div className="flex items-center">
-            <img
-              className="h-8 w-12 md:h-10 md:w-14 pr-2"
-              src="https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/logo_qycuyz.png"
-              alt="logo"
-            />
-            <h3 className="text-xl md:text-2xl xl:text-3xl text-white font-reemkufi">
-              ENLACE
-            </h3>
-          </div>
+        <Link to="/" onClick={closeMenu} className="flex items-center">
+          <img
+            className="h-8 w-12 md:h-10 md:w-14 pr-2"
+            src="https://res.cloudinary.com/roshin/image/upload/v1647279802/Assets_Enlace/logo_qycuyz.png"
+            alt="logo"
+          />
+          <h3 className="text-xl md:text-2xl xl:text-3xl text-white font-reemkufi">
+            ENLACE
+          </h3>
         </Link>
       </div>
       <div className="hidden text-[#ffffffd6] font-medium text-xl md:text-sm lg:text-base md:space-x-8 lg:space-x-16 font-poppins md:flex items-center">
@@ -193,7 +177,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className="z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
+        className="closed z-0 md:hidden absolute top-0 bottom-0 left-0 right-0 hidden flex-col items-center justify-center space-y-8 text-[#ffffffd6] font-medium text-base text-2xl font-poppins"
       >
         <Navbarlinkmob
           title="Competitions"
