@@ -56,7 +56,7 @@ const TeamBox = () => {
               }
               id="webd"
             >
-              Web Devlopers
+              Web Developer
             </div>
             <div
               className={
