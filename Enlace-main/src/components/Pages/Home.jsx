@@ -4,6 +4,7 @@ import frame from "../../assets/Frame.png";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   useEffect(() => {
@@ -32,6 +33,10 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Enlace</title>
+        <link rel = "icon" href = "../../assets/favicon-32x32.png" type="image/png" sizes="32x32"/>
+      </Helmet>
       <Vertical />
       <div className="hidden lg:block" style={{ overflow: "hidden" }}>
         <div
