@@ -10,18 +10,15 @@ const urls = ["https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets
 const Home = () => {
   useEffect(() => {
     
-    let t = gsap.timeline({
+    gsap.to(".bg", {
       scrollTrigger: {
         trigger: ".bg",
         scrub: 1,
         pin: true,
         end: () => "+=" + window.innerWidth,
-      }
+      },
+      ease: 'none', xPercent: -100, rotation: 0.01, x: () => window.innerWidth
     });
-
-    t
-    .to('body',{ duration: 20 }) 
-    .to('.bg',{duration: 2000, ease: 'none', xPercent: -100, rotation: 0.01, x: () => window.innerWidth})
     
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {

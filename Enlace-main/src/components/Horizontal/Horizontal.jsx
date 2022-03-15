@@ -27,31 +27,25 @@ const Horizontal = () => {
   useEffect(() => {
     const totalPanels = panels.current.length;
 
-    let t1 = gsap.timeline({
+    gsap.to(panels.current, {
       scrollTrigger: {
         trigger: panelsContainer.current,
         pin: true,
         scrub: 1.5,
         end: () => "+=" + panelsContainer.current.offsetWidth,
-      }
+      },
+      ease: 'none', xPercent: -100 * (totalPanels - 1), rotation: 0.01
     })
 
-    t1
-    .to('body',{ duration: 20}) 
-    .to(panels.current ,{duration: 2000, ease: 'none', xPercent: -100 * (totalPanels - 1), rotation: 0.01})
-
-    let t2 = gsap.timeline({
+    gsap.to(".jeep", {
       scrollTrigger: {
         trigger: ".jeep",
         start: "bottom 90%",
         end: "bottom -1000px",
         scrub: 1,
-      }
-    })
-
-    t2
-    .to('body',{ duration: 20 }) 
-    .to(".jeep" ,{duration: 2000, ease: 'none', x: 7800, rotation: 0.01})
+      },
+      ease: 'none', x: 7800, rotation: 0.01
+    }, [])
     
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {

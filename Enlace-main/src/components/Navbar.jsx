@@ -30,7 +30,6 @@ const Navbar = () => {
         y: y,
         autoKill: false,
       },
-      duration: 1,
     });
   };
 
