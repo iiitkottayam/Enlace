@@ -10,7 +10,9 @@ const urls = [
 const Eventteaser = ({ title, image, path }) => {
 	return (
 		<Link
+
 			to={path + "#"}
+			data-aos="zoom-out"
 			className="m-10 p-5 bg-gradient-to-r from-gradient-start to-gradient-stop rounded-lg flex flex-col flex-nowrap justify-evenly items-center"
 		>
 			<img
