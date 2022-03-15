@@ -83,7 +83,7 @@ const TeamBox = () => {
                   className="flex-1 flex-col justify-center items-center mt-5"
                   style={{ height: "16rem" }}
                 >
-                  <div data-aos="zoom-in" className="w-full h-full bg-white/40 hover:bg-white/50 active:bg-white/30 transition duration-300 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
+                  <div className="w-full h-full bg-white/40 hover:bg-white/50 active:bg-white/30 transition duration-300 flex flex-col items-center rounded-2xl pb-4 pt-5 px-3">
                     <img
                       className="w-36 h-36 rounded-full"
                       data-aos="zoom-out"
@@ -118,3 +118,6 @@ const TeamBox = () => {
 };
 
 export default TeamBox;
+
+
+// data-aos="zoom-in"
