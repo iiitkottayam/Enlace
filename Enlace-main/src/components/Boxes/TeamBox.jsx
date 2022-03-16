@@ -77,10 +77,10 @@ const TeamBox = () => {
             }
             style={{ width: "90%" }}
           >
-            {teams[option].map((person) => {
+            {teams[option].map((person, index) => {
               return (
                 <div
-
+                  key = {index}
                   className="flex-1 flex-col justify-center items-center mt-5"
                   style={{ height: "16rem" }}
                 >

@@ -242,7 +242,7 @@ const Vertical = () => {
             {Object.entries(events).map((event, index) => {
               return event[1].map((e, i) => {
                 return (
-                  <>
+                  <div key = {i}>
                     {i === 0 ? (
                       <p className="text-white font-semibold font-reemkufi text-4xl py-7">
                         Day {index + 1}
@@ -260,8 +260,8 @@ const Vertical = () => {
                     ) : (
                       ""
                     )}
-                    <Link to={e.link} onClick={() => window.scrollTo(0, 0)}><EventBoxSm name={e.name} time={e.time} /></Link>
-                  </>
+                    <Link to = {e.link} onClick = {() => window.scrollTo(0,0)}><EventBoxSm name={e.name} time={e.time} /></Link>
+                  </div>
                 );
               });
             })}

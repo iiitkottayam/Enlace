@@ -127,7 +127,7 @@
     background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M7_wacuaa.png);
     background-size: 100% 100%;
     position: relative;
-    height: 650px;
+    height: 700px;
   }
   .page:nth-of-type(8) {
     background: url(https://res.cloudinary.com/roshin/image/upload/v1647279803/Assets_Enlace/M8_hj3xls.png);
@@ -143,7 +143,7 @@
   }
   .page:nth-of-type(10) {
     background: url(https://res.cloudinary.com/roshin/image/upload/v1647279804/Assets_Enlace/M10_vjez0s.png);
-    height: 700px;
+    height: 750px;
     background-size: 100% 100%;
     position: relative;
   }
