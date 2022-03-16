@@ -14,7 +14,7 @@ const events = {
     {
         name: 'Dance Workshop',
         time: '7:00 PM - 9:00 PM',
-        link: '/',
+        link: '/events/dance-workshop',
     }],
 
     // Day 2    
@@ -26,12 +26,12 @@ const events = {
     {
         name: 'Freelance Writing',
         time: '7:00 PM - 8:30 PM',
-        link: '/',
+        link: '/events/freelance-writing',
     },
     {
         name: 'Sorabh - Enlace Nite',
         time: '8:30 PM',
-        link: '/',
+        link: '/events/enlace-nite',
     }],
 
     // Day 3    
@@ -56,7 +56,7 @@ const events = {
         
         name: 'Srini - Film Workshop',
         time: '6:30 PM - 8:00 PM',
-        link: '/',
+        link: '/events/filmie-talk',
     },
     {
         
