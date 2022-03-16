@@ -76,9 +76,9 @@ const Vertical = () => {
       <div className={styles.page}>
         <div className="lg:hidden w-10/12 mx-auto text-white text-1xl py-2 pt-8 text-center pb-36 font-poppins">
           <p className="pb-0 lg:pb-16">
-              It's the amalgamation of mind gruelling competitions, thought
-              provoking expert talks and workshops that stimulate your cerebral
-              matter!
+            It's the amalgamation of mind gruelling competitions, thought
+            provoking expert talks and workshops that stimulate your cerebral
+            matter!
           </p>
         </div>
 
@@ -90,8 +90,8 @@ const Vertical = () => {
           />
           <a href="/competitions">
             <p className="text-1xl lg:text-2xl text-white pb-0 mx-auto text-center w-9/12 font-poppins">
-            <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
-            now and come join us in this wild journey!
+              <span className="text-[#F48614] lg:text-[#FFD74B]">Register </span>
+              now and come join us in this wild journey!
             </p>
           </a>
         </div>
@@ -260,21 +260,21 @@ const Vertical = () => {
                     ) : (
                       ""
                     )}
-                    <Link to = {event.link} onClick = {() => window.scrollTo(0,0)}><EventBoxSm name={e.name} time={e.time} /></Link>
+                    <Link to={e.link} onClick={() => window.scrollTo(0, 0)}><EventBoxSm name={e.name} time={e.time} /></Link>
                   </>
                 );
               });
             })}
           </div>
-          <div className = "flex mx-auto w-4/5 flex-col flex-wrap text-center font-semibold font-reemkufi text-1xl">
-            <p className = "text-white text-2xl my-5">Submission Events</p>
-            <SubmissionEventsBox name = {submissionEvents[0].name} link = {submissionEvents[0].link} info = {submissionEvents[0].info}/>
-            <SubmissionEventsBox name = {submissionEvents[1].name} link = {submissionEvents[1].link} info = {submissionEvents[1].info}/>
-            <SubmissionEventsBox name = {submissionEvents[2].name} link = {submissionEvents[2].link} info = {submissionEvents[2].info}/>
-            <SubmissionEventsBox name = {submissionEvents[3].name} link = {submissionEvents[3].link} info = {submissionEvents[3].info}/>
-            <SubmissionEventsBox name = {submissionEvents[4].name} link = {submissionEvents[4].link} info = {submissionEvents[4].info}/>
-            <SubmissionEventsBox name = {submissionEvents[5].name} link = {submissionEvents[5].link} info = {submissionEvents[5].info}/>
-            <SubmissionEventsBox name = {submissionEvents[6].name} link = {submissionEvents[6].link} info = {submissionEvents[6].info}/>
+          <div className="flex mx-auto w-4/5 flex-col flex-wrap text-center font-semibold font-reemkufi text-1xl">
+            <p className="text-white text-2xl my-5">Submission Events</p>
+            <SubmissionEventsBox name={submissionEvents[0].name} link={submissionEvents[0].link} info={submissionEvents[0].info} />
+            <SubmissionEventsBox name={submissionEvents[1].name} link={submissionEvents[1].link} info={submissionEvents[1].info} />
+            <SubmissionEventsBox name={submissionEvents[2].name} link={submissionEvents[2].link} info={submissionEvents[2].info} />
+            <SubmissionEventsBox name={submissionEvents[3].name} link={submissionEvents[3].link} info={submissionEvents[3].info} />
+            <SubmissionEventsBox name={submissionEvents[4].name} link={submissionEvents[4].link} info={submissionEvents[4].info} />
+            <SubmissionEventsBox name={submissionEvents[5].name} link={submissionEvents[5].link} info={submissionEvents[5].info} />
+            <SubmissionEventsBox name={submissionEvents[6].name} link={submissionEvents[6].link} info={submissionEvents[6].info} />
           </div>
         </div>
       </div>
@@ -317,10 +317,10 @@ const Vertical = () => {
             <p id="mobilefaq" className="text-6xl font-reemkufi pb-5">
               FAQ
             </p>
-            <FAQbox question = "Where will the events be conducted?" answer = "The events will be conducted in a fully virtual mode using video and audio conferencing technologies." />
-            <FAQbox question = "Will I get any certificates for event participation?" answer = "Yes/No" />
+            <FAQbox question="Where will the events be conducted?" answer="The events will be conducted in a fully virtual mode using video and audio conferencing technologies." />
+            <FAQbox question="Will I get any certificates for event participation?" answer="Yes/No" />
             <FAQbox />
-            <FAQbox question = "Is it virtual?" answer = "Yes completely online"/>
+            <FAQbox question="Is it virtual?" answer="Yes completely online" />
           </div>
         </div>
       </div>
