@@ -9,7 +9,7 @@ const TeamBoxSm = () => {
   const [pages, setPages] = useState([
     { id: "webd", name: "Web Devs" },
     { id: "core", name: "Core Team" },
-    { id: "managers", name: "Managers" },
+    { id: "managers", name: "Event Managers" },
     { id: "sponsor", name: "Sponsorship" },
     { id: "design", name: "Designing" },
   ]);
@@ -67,9 +67,9 @@ const TeamBoxSm = () => {
 
       <div className="">
         <div className="grid grid-cols-2 gap-6 w-11/12 mx-auto">
-          {teams[pages[carousel[1]].id].map((person) => {
+          {teams[pages[carousel[1]].id].map((person, index) => {
             return (
-              <div className="flex flex-col justify-center items-center">
+              <div key = {index} className="flex flex-col justify-center items-center">
                 <div className="w-full h-full bg-white/40 flex flex-col items-center rounded-2xl px-3 py-5">
                   <img
                     className="w-28 h-28 rounded-full"

@@ -38,12 +38,13 @@ const Preloader = () => {
         loop: false,
         opacity: [0, 1],
       });
+
+    animationRef.current.restart();
   }, []);
 
   return (
     <div
       ref={preloaderRef}
-      onLoad={() => animationRef.current.restart()}
       className="hidden image bg-gradient-to-br from-[#FFFFE5] to-[#FFD6B3] absolute z-50 top-0 bottom-0 left-0 right-0 pt-[150px] font-reemkufi space-y-5 text-4xl bg-white"
     >
       <img

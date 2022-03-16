@@ -3,13 +3,13 @@ import Vertical from "../Vertical/Vertical";
 import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const urls = ["https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets_Enlace/Frame_eadgpz.png"];
-
+gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
+  
   useEffect(() => {
-    
     gsap.to(".bg", {
       scrollTrigger: {
         trigger: ".bg",
@@ -30,25 +30,27 @@ const Home = () => {
   });
 
   return (
-    <div>
-      <Helmet>
-        <title>Enlace</title>
-      </Helmet>
-      <Vertical />
-      <div className="hidden lg:block" style={{ overflow: "hidden" }}>
-        <div
-          className="bg"
-          style={{
-            backgroundImage: `url(${urls[0]})`,
-            height: "100vh",
-            width: "500vw",
-            backgroundSize: "cover",
-          }}
-        >
-          <Horizontal />
+    <HelmetProvider>
+      <div>
+        <Helmet>
+          <title>Enlace</title>
+        </Helmet>
+        <Vertical />
+        <div className="hidden lg:block" style={{ overflow: "hidden" }}>
+          <div
+            className="bg"
+            style={{
+              backgroundImage: `url(${urls[0]})`,
+              height: "100vh",
+              width: "500vw",
+              backgroundSize: "cover",
+            }}
+          >
+            <Horizontal />
+          </div>
         </div>
       </div>
-    </div>
+    </HelmetProvider>
   );
 };
 
