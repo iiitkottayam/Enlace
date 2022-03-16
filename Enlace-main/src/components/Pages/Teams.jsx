@@ -15,7 +15,7 @@ const Teams = () => {
           <Nav />
         </div>
         <div className="text-white h-5/6 text-center">
-          <div id="desktop" className="hidden lg:block h-full flex flex-col">
+          <div id="desktop" className="hidden  h-full lg:flex flex-col">
             <TeamBox />
           </div>
           <div id="mobile" className="lg:hidden h-full pt-28 pb-8">
