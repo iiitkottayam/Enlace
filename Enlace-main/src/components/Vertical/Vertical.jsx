@@ -82,7 +82,7 @@ const Vertical = () => {
           </p>
         </div>
 
-        <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-10">
+        <div className="flex flex-col flex-start justify-center items-center text-center w-full pb-20">
           <img
             src={urls[8]}
             alt="dates"
@@ -128,7 +128,7 @@ const Vertical = () => {
           </p>
         </div>
 
-        <div id="whoweare" className="hidden lg:block">
+        <div id="whoweare" className="hidden lg:block p-10">
           <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap pt-28 px-4 ">
             <img
               data-aos="fade-down-right"
@@ -147,28 +147,27 @@ const Vertical = () => {
             <div
               data-aos="zoom-in-up"
               data-aos-duration="750"
-              className="inline-block mt-24 ml-28  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-24 w-94 rounded-2xl items-center"
+              className="inline-block flex justify-center mt-24 ml-28 from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-24 w-94 rounded-2xl items-center"
             >
               <p className="text-white text-5xl py-5 px-16 font-reemkufi">
                 Who We Are
               </p>
             </div>
           </div>
-          <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+          <div className="w-full h-3/6 mx-auto flex flex-wrap pt-12 px-4 flex item-center justify-evenly">
             <img
               data-aos="zoom-out"
               data-aos-duration="1200"
               src={urls[5]}
               alt="album"
-              className="pl-36 pt-16"
             />
 
             <div
               data-aos="zoom-in-up"
               data-aos-duration="750"
-              className="inline-block  ml-64  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"
+              className="p-5 inline-block from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br w-2/6 rounded-2xl flex justify-center items-center"
             >
-              <p className="text-white text-2xl py-8 px-6 font-poppins font-light">
+              <p className="text-white text-2xl font-poppins font-light">
                 Enlace, IIIT Kottayam's cultural fest, has been celebrating
                 arts, heritage, music and lifestyle since its inception in 2019.
                 We bring a myriad of events to life with impressive and
@@ -179,7 +178,7 @@ const Vertical = () => {
         </div>
       </div>
       <div className={styles.page}>
-        <div className="lg:hidden">
+        <div className="lg:hidden p-10">
           <img src={urls[7]} alt="album" className="mx-auto pt-12" />
           <p className="text-xl text-white w-10/12 mx-auto text-center pt-12 font-poppins font-light">
             Keeping the torch alight, IIIT Kottayam brings to you Enlace 2022:
@@ -189,27 +188,25 @@ const Vertical = () => {
           </p>
         </div>
         <div className="hidden lg:block">
-          <div className="w-full h-3/6 mx-auto flex  flex-row  flex-wrap pt-12 px-4 ">
+          <div className="w-full h-3/6 mx-auto flex flex-wrap pt-12 px-4 items-center justify-evenly">
             <img
               data-aos="fade-right"
               data-aos-duration="1200"
               src={urls[4]}
               alt="album"
-              className="p-12 basis-2/6"
             />
             <img
               data-aos="flip-right"
               data-aos-duration="1200"
               src={urls[2]}
               alt="album"
-              className="p-16 basis-1/6"
             />
             <div
               data-aos="zoom-in-up"
               data-aos-duration="750"
-              className="inline-block ml-28   basis-2/6  from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl items-center"
+              className="p-5 inline-block basis-2/6 from-[#FFD4AC]/30 via-[#F0616D]/30 to-[#FFD4AC]/30 bg-gradient-to-br h-96 w-2/6 rounded-2xl flex justify-center items-center"
             >
-              <p className="text-white text-2xl py-8 px-6 font-poppins font-light">
+              <p className="text-white text-2xl font-poppins font-light">
                 Keeping the torch alight, IIIT Kottayam brings to you Enlace
                 2022: Into the wild, a fest to mirror the beautiful chaos of
                 nature and keep you on your toes, stir your souls and spark your
@@ -217,7 +214,7 @@ const Vertical = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-2/6 mx-auto flex  flex-row  flex-wrap py-12 px-4 ">
+          <div className="w-full h-2/6 mx-auto flex items-center justify-evenly flex-wrap py-12 px-4 ">
             <img
               data-aos="fade-up-right"
               data-aos-duration="1200"
@@ -318,7 +315,7 @@ const Vertical = () => {
               FAQ
             </p>
             <FAQbox question="Where will the events be conducted?" answer="The events will be conducted in a fully virtual mode using video and audio conferencing technologies." />
-            <FAQbox question="Will I get any certificates for event participation?" answer="Yes/No" />
+            <FAQbox question="Will I get any certificates for event participation?" answer="Only winners will get certificates" />
             <FAQbox />
             <FAQbox question="Is it virtual?" answer="Yes completely online" />
           </div>

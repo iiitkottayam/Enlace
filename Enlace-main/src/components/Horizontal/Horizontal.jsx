@@ -154,7 +154,7 @@ const Horizontal = () => {
           <div className = "flex items-center justify-evenly h-full">
             <div className="mx-auto h-3/5 w-4/6 flex grid grid-cols-2 justify-center items-center gap-y-10">
               <FAQbox question = "Where will the events be conducted?" answer = "The events will be conducted in a fully virtual mode using video and audio conferencing technologies." />
-              <FAQbox question = "Will I get any certificates for event participation?" answer = "Yes/No" />
+              <FAQbox question = "Will I get any certificates for event participation?" answer = "Only winners will get certificates" />
               <FAQbox />
               <FAQbox question = "Is it virtual?" answer = "Yes completely online"/>
             </div>

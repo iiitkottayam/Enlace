@@ -1,7 +1,7 @@
 const FAQbox = ({ question, answer }) => {
   return (
     <div className="p-0.5 lg:w-96 lg:h-40 w-10/12 bg-gradient-to-r from-gradient-start/60 to-gradient-stop/60 rounded-2xl box-border">
-      <div className="p-4 py-6 lg:p-5 w-full h-full bg-white/60 rounded-2xl font-poppins flex flex-col items-left justify-evenly">
+      <div className="p-4 py-6 lg:p-5 w-full h-full bg-white/60 rounded-2xl font-poppins flex flex-col items-center justify-evenly text-center">
         <p className="text-xl lg:text-xl text-black font-semibold">
           {question}
         </p>
