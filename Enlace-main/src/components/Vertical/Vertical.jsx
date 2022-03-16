@@ -6,8 +6,10 @@ import EventBoxSm from "../Boxes/EventBoxSm";
 import Goldbox from "../Boxes/Goldbox.jsx";
 import Silverbox from "../Boxes/Silverbox.jsx";
 import FAQbox from "../Boxes/FAQbox.jsx";
+import SubmissionEventsBox from "../Boxes/SubmissionEventsBox";
 import Footer from "../Footer.jsx";
-import { events } from "../../data/timelineData";
+import { events, submissionEvents } from "../../data/timelineData";
+import { HashLink as Link } from "react-router-hash-link";
 
 const urls = [
   "https://res.cloudinary.com/roshin/image/upload/v1647279783/Past/past-1_b8bqaj.png",
@@ -258,11 +260,21 @@ const Vertical = () => {
                     ) : (
                       ""
                     )}
-                    <EventBoxSm name={e.name} time={e.time} />
+                    <Link to = {event.link} onClick = {() => window.scrollTo(0,0)}><EventBoxSm name={e.name} time={e.time} /></Link>
                   </>
                 );
               });
             })}
+          </div>
+          <div className = "flex mx-auto w-4/5 flex-col flex-wrap text-center font-semibold font-reemkufi text-1xl">
+            <p className = "text-white text-2xl my-5">Submission Events</p>
+            <SubmissionEventsBox name = {submissionEvents[0].name} link = {submissionEvents[0].link} info = {submissionEvents[0].info}/>
+            <SubmissionEventsBox name = {submissionEvents[1].name} link = {submissionEvents[1].link} info = {submissionEvents[1].info}/>
+            <SubmissionEventsBox name = {submissionEvents[2].name} link = {submissionEvents[2].link} info = {submissionEvents[2].info}/>
+            <SubmissionEventsBox name = {submissionEvents[3].name} link = {submissionEvents[3].link} info = {submissionEvents[3].info}/>
+            <SubmissionEventsBox name = {submissionEvents[4].name} link = {submissionEvents[4].link} info = {submissionEvents[4].info}/>
+            <SubmissionEventsBox name = {submissionEvents[5].name} link = {submissionEvents[5].link} info = {submissionEvents[5].info}/>
+            <SubmissionEventsBox name = {submissionEvents[6].name} link = {submissionEvents[6].link} info = {submissionEvents[6].info}/>
           </div>
         </div>
       </div>
@@ -271,7 +283,7 @@ const Vertical = () => {
         <div className="lg:hidden">
           <div className="mx-auto w-4/6 text-center text-white py-12 space-y-4 text-4xl font-reemkufi">
             <p className="font-semibold ">Total prize of </p>
-            <p className="font-semibold ">Rs. 55,000</p>
+            <p className="font-semibold ">₹ 52,000</p>
             <p className="font-regular text-[#ffffffc0]">
               + exiciting gifts from
             </p>
