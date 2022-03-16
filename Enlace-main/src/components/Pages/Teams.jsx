@@ -10,8 +10,8 @@ const Teams = () => {
       <Helmet>
           <title>Enlace | Teams</title>
       </Helmet>
-      <div className="relative bg-black lg:bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769] ">
-        <div className="h-max lg:h-screen w-full bg-competitions-bg relative flex flex-col">
+      <div className="relative bg-black lg:bg-gradient-to-b from-[#000000] via-[#04619F] to-[#2D4769]" style = {{minHeight: "100vh"}}>
+        <div className="h-full lg:h-screen w-full bg-competitions-bg relative flex flex-col">
           <div className="relative h-1/6">
             <Nav />
           </div>
