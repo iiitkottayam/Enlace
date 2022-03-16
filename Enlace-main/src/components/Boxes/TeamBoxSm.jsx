@@ -9,7 +9,7 @@ const TeamBoxSm = () => {
   const [pages, setPages] = useState([
     { id: "webd", name: "Web Devs" },
     { id: "core", name: "Core Team" },
-    { id: "managers", name: "Managers" },
+    { id: "managers", name: "Event Managers" },
     { id: "sponsor", name: "Sponsorship" },
     { id: "design", name: "Designing" },
   ]);
