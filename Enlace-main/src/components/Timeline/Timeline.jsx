@@ -71,8 +71,7 @@ const Timeline = () => {
       </div>
       <div className="flex flex-col flex-nowrap justify-between w-3/8 ml-5">
         {events[currentDay].map((event, index) => {
-          // wrap EventBox component with Link from react router dom when required
-          return <Link to = {event.link} onClick = {() => window.scrollTo(0,0)}><EventBox key = {index} name={event.name} time={event.time} /></Link>;
+          return <Link to = {event.link} onClick = {() => window.scrollTo(0,0)} key = {index}><EventBox name={event.name} time={event.time} /></Link>;
         })}
       </div>
       <div className="flex flex-col flex-nowrap w-1/2 ml-20 h-full">

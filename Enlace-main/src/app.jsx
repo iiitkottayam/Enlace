@@ -5,8 +5,6 @@ import {
   Redirect,
 } from "react-router-dom";
 import AOS from "aos";
-import { gsap } from "gsap/dist/gsap.js";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "aos/dist/aos.css";
 import Home from "./components/Pages/Home";
 import Competitions from "./components/Pages/Competitions";
@@ -16,7 +14,6 @@ import IndividualEvent from "./components/Events/IndividualEvent";
 import { eventsdata } from "./data/eventsData";
 import Preloader from "./components/Preloader";
 
-gsap.registerPlugin(ScrollTrigger);
 const App = () => {
   AOS.init({
     mirror: true,
@@ -38,17 +35,17 @@ const App = () => {
         <Route exact path="/teams">
           <Teams />
         </Route>
-        {eventsdata.competitions.map((eventObj) => {
+        {eventsdata.competitions.map((eventObj, index) => {
           return (
-            <Route exact path={eventObj.path}>
-              <IndividualEvent eventRef={eventObj} />
+            <Route exact path={eventObj.path} key = {index}>
+              <IndividualEvent eventRef={eventObj} key = {index}/>
             </Route>
           );
         })}
-        {eventsdata.workshops.map((eventObj) => {
+        {eventsdata.workshops.map((eventObj, index) => {
           return (
-            <Route exact path={eventObj.path}>
-              <IndividualEvent eventRef={eventObj} />
+            <Route exact path={eventObj.path} key = {index} >
+              <IndividualEvent eventRef={eventObj} key = {index}/>
             </Route>
           );
         })}

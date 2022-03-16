@@ -11,29 +11,39 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Navbar = () => {
   const history = useHistory();
 
-  const scroller = (e) => {
-    const panelsContainer = document.querySelector(".PanelsContainer");
-    const page = document.querySelector(".page");
-    const vertical = document.querySelector(".vertical");
-    let targetElem = document.querySelector(e),
-      y = targetElem;
-    if (targetElem && panelsContainer.isSameNode(targetElem.parentElement)) {
-      var totalScroll = page.offsetWidth,
-        totalMovement = 5 * targetElem.offsetWidth;
-      y = Math.round(
-        vertical.offsetHeight +
-          (targetElem.offsetLeft / totalMovement) * totalScroll
-      );
-    }
-    gsap.to(window, {
-      scrollTo: {
-        y: y,
-        autoKill: false,
-      },
-    });
-  };
-
   useEffect(() => {
+
+    const scroller = (e) => {
+      const panelsContainer = document.querySelector(".PanelsContainer");
+      const page = document.querySelector(".page");
+      const vertical = document.querySelector(".vertical");
+      let targetElem = document.querySelector(e),
+        y = targetElem;
+      if (targetElem && panelsContainer.isSameNode(targetElem.parentElement)) {
+        var totalScroll = page.offsetWidth,
+          totalMovement = 5 * targetElem.offsetWidth;
+        y = Math.round(
+          vertical.offsetHeight +
+            (targetElem.offsetLeft / totalMovement) * totalScroll
+        );
+      }
+      gsap.to(window, {
+        scrollTo: {
+          y: y,
+          // autoKill: false,
+        },
+        duration: 1.5,
+      });
+
+      return () => {
+        ScrollTrigger.getAll().forEach((instance) => {
+          instance.kill();
+        });
+        // This in case a scroll animation is active while the route is updated
+        gsap.killTweensOf(window);
+      };
+    };
+
     document.querySelectorAll("#anchor").forEach((anchor) => {
       anchor.addEventListener("click", (e) => {
         e.preventDefault();
@@ -61,6 +71,7 @@ const Navbar = () => {
         closeMenu();
       }
     });
+  
   });
 
   const navRef = useRef(null);
