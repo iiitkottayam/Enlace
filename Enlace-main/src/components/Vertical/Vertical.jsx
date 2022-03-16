@@ -154,7 +154,7 @@ const Vertical = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-3/6 mx-auto flex flex-wrap pt-12 px-4 flex item-center justify-evenly">
+          <div className="w-full h-3/6 mx-auto flex flex-wrap pt-20 px-4 flex item-center justify-evenly">
             <img
               data-aos="zoom-out"
               data-aos-duration="1200"
@@ -214,7 +214,7 @@ const Vertical = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-2/6 mx-auto flex items-center justify-evenly flex-wrap py-12 px-4 ">
+          <div className="w-full h-2/6 mx-auto flex items-center justify-evenly flex-wrap pt-10 pb-20 px-4 ">
             <img
               data-aos="fade-up-right"
               data-aos-duration="1200"
