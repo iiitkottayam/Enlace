@@ -282,7 +282,7 @@ const Vertical = () => {
             <p className="font-semibold ">Total prize of </p>
             <p className="font-semibold ">₹ 52,000</p>
             <p className="font-regular text-[#ffffffc0]">
-              + exiciting gifts from
+              + exciting gifts from
             </p>
             <p id="mobilesponsors" className="py-6 font-bold text-4xl">
               Our Sponsors
