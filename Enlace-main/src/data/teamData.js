@@ -203,6 +203,11 @@ const teams = {
       pic: "https://res.cloudinary.com/roshin/image/upload/v1647278431/Team/Screenshot_2022-03-12-12-38-32-98_6012fa4d4ddec268fc5c7112cbb265e7_-_SHAH_ARNAV_KAUSHAL_-IIITK_uubjkm.jpg",
       designation: "",
     },
+    {
+      name: "Yashwanth Deshaboina",
+      pic: "https://res.cloudinary.com/roshin/image/upload/v1648531569/Team/Yashwanth_-_YASHWANTH_-2019BCSIIITK_w9eq3w.jpg",
+      designation: "",
+    },
   ],
 
   // Web Devs
