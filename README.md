@@ -16,11 +16,11 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 ## How to use
 
-1. If you dont have [node](https://nodejs.org/en/) then download 16.14.0 LTS version.
+1. If you don't have [node](https://nodejs.org/en/) then download 16.14.0 LTS version.
    ![image](https://user-images.githubusercontent.com/69361857/154659541-8667aeb1-8ad2-4a40-bace-320c95c0fbc1.png)
 
-2. Clone this repo
-3. Open the Enlace-main folder inside the cloned repo in terminal and run the command
+2. Clone this repository.
+3. Open the Enlace-main folder inside the cloned repo in terminal and run the command ->
 
 ```bash
 npm install
