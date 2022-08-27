@@ -6,7 +6,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Competitions = () => {
   return (
-    <HelmetProvider> 
+    <HelmetProvider>
       <Helmet>
         <title>Enlace | Competitions</title>
       </Helmet>
@@ -22,7 +22,7 @@ const Competitions = () => {
                 return (
                   <Eventteaser
                     title={eventObj.title}
-                    key = {index}
+                    key={index}
                     image={eventObj.imageRef}
                     path={eventObj.path}
                   />

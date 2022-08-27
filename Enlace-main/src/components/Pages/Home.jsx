@@ -8,18 +8,18 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 const urls = ["https://res.cloudinary.com/roshin/image/upload/v1647279801/Assets_Enlace/Frame_eadgpz.png"];
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
-  
+
   useEffect(() => {
     gsap.to(".bg", {
       scrollTrigger: {
         trigger: ".bg",
-        scrub: 1,
+        scrub: 1.25,
         pin: true,
         end: () => "+=" + window.innerWidth,
       },
       ease: 'none', xPercent: -100, rotation: 0.01, x: () => window.innerWidth
     });
-    
+
     return () => {
       ScrollTrigger.getAll().forEach((instance) => {
         instance.kill();
