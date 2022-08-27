@@ -6,7 +6,7 @@
 -   [React](https://reactjs.org/)
 -   [GSAP](https://greensock.com/)
 -   [Anime.js](https://animejs.com/)
--   [Animate on Scrool](https://michalsnik.github.io/aos/)
+-   [Animate on Scroll](https://michalsnik.github.io/aos/)
 
 ## Deploy your own
 
